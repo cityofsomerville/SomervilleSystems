@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!-- created by Daniel Hadley from twitter bootstrap -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Somerville Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Highcharts scripts -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script src="js/highcharts.js"></script>
+    
+    </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="http://somervilleresistat.blogspot.com">ResiStat</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="http://www.somervillema.gov/">City Home</a>
+              </li>
+              <li class="">
+                <a href="live.html">Live</a>
+              </li>
+              <li class="">
+                <a href="work.html">Work</a>
+              </li>
+              <li class="active">
+                <a href="play.html">Play</a>
+              </li>
+              <li class="">
+                <a href="family.html">Raise a Family</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="jumbotron masthead">
+  <div class="container">
+    <p>Mayor Curtatone's Key Systems Indicators</p>  
+    
+  </div>
+</div>
+
+<!-- The Charts are all here so that I can style them in a similar way.
+They load to the specified containers -->
+
+<script>
+    $(function() {
+    Highcharts.setOptions({
+        chart: {
+            backgroundColor: 'rgba(230, 230, 230, .9)',
+            borderWidth: 1,
+            plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+            plotShadow: true,
+            plotBorderWidth: 1,
+	    style: {
+            fontFamily: 'Helvetica'
+	    }
+        }
+    });
+
+<!-- Rec Programs -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'RecProgramChartContainer',
+	    type: 'bar'
+        },
+	title: {
+            text: '10 Most Popular Recreation Programs, 2013 (through November)'
+        },
+	subtitle: {
+            text: 'Source: City of Somerville'
+        },
+        xAxis: {
+	    categories: ['Somertime Day','Tot Time','Come Inside and Play','NFL Youth Flag Football League','Parkour Jr.','Boys Somerville Youth League Basketball','Adult Parkour','Zumba','Boys and Girls Basketball Clinic','Mass Youth Soccer Clinic']
+        },
+	yAxis: {
+	    title: {
+		text: 'Registrations'
+	    },
+	    max: 700,
+	    plotLines: [{
+		value: 0,
+		width: 1,
+		color: '#808080'
+	    }]
+        },   
+	legend: {
+	    enabled: false
+	},
+        series: [{
+	    name: 'Registrations',
+            data: [674,129,124,107,102,81,72,71,68,61]
+	}]
+    });
+    
+<!-- Temporary Food Licenses -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'TempFoodLicensesChartContainer',
+	    type: 'column'
+        },
+	title: {
+            text: 'Temporary Licenses for Food and Beverage Vendors'
+        },
+	subtitle: {
+            text: 'Source: City of Somerville'
+        },
+        xAxis: {
+	    categories: ['2005','2006','2007','2008','2009','2010','2011','2012','2013 (through October)']
+        },
+	yAxis: {
+	    title: {
+		text: 'Licenses'
+	    },
+	    tickInterval: 25,
+	    plotLines: [{
+		value: 0,
+		width: 1,
+		color: '#808080'
+	    }]
+        },   
+	legend: {
+	    enabled: false
+	},
+        series: [{
+	    name: 'Temporary Licenses',
+            data: [1,6,3,18,21,38,87,127,154]
+	}]
+    });
+
+    
+    
+<!-- Moving Pred -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'MoveChartContainer',
+	    type: 'bar'
+        },
+	title: {
+            text: 'Factors That Predict Whether Someone Will Move or Stay'
+        },
+	subtitle: {
+            text: 'Source: Happiness Survey'
+        },
+        xAxis: {
+	    categories: ["What is your age","How long have you lived here",
+"How would you rate the social community events",
+"How would you rate the effectiveness of the police",
+"How would you rate the appearance of parks",
+"How would you rate the aesthetics of the City",
+"How would you rate the the cost of housing",
+"How would you rate the Aesthetics of your neighborhood",
+"How satisfied are you with your neighborhood",
+"How would you rate the public schools",
+"Do you have children who live with you",]
+        },
+	yAxis: {
+	    title: {
+		text: '%IncMSE, i.e., how much this variable predicts plans to move away from Somerville'
+	    },
+	    tickInterval: 25,
+	    plotLines: [{
+		value: 0,
+		width: 1,
+		color: '#808080'
+	    }]
+        },   
+	legend: {
+	    enabled: false
+	},
+        series: [{
+	    name: '%IncMSE',
+            data: [41,27,17,14,13,12,8,6,6,5,3]
+	}]
+    });
+});
+
+
+</script>
+
+<!-- Parks Map -->
+<div class="container">
+
+  <div class="marketing">
+    
+    <div class="row-fluid">
+        <h1 class="section header">Open Space</h1>
+	<p>Somerville has 39 parks, 10 community gardens, and 3 dog parks. Use this map to find one in your neighborhood!</p>
+      <div class="row">
+        <div class="span4">
+            <div class="tasks-header bg-color dark-blue rounded-top">
+                <div class="box-padding narrow-horizontal clearfix">
+                    <h4 class="light no-margin">Summary</h4>
+                </div>
+            </div>
+            <div class="bg-color dark-blue columns clearfix">
+		<div class="col_50 lines lines-light aligncenter">
+                    <h5 class="no-margin normal">Parks & Open Spaces</h5>
+		    <h2 class="normal inline">52</h2>
+		</div>
+		<div class="col_50 lines lines-light aligncenter">
+                    <h5 class="no-margin normal">Current open space</h5>
+		    <h2 class="normal inline">177 Acres</h2>
+		</div>
+	    </div>
+            <div class="bg-color greenfade">
+		<div class="box-padding aligncenter">
+		    <h5 class="no-margin normal">SomerVision goal for new open space</h5>
+			<h1 class="no-margin normal">120 Acres</h1>
+		</div>
+	    </div>
+            <button class="btn btn-large btn-block" type="button">More Info</button>
+        </div>
+        <div class="span8">
+            <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
+                <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps/ms?msid=211816278758072461460.0004b2069db52421307db&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=42.385462,-71.094203&amp;spn=0.011094,0.018239&amp;output=embed">
+                </iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Seattle,+WA&amp;aq=0&amp;oq=seattle&amp;sll=37.822293,-85.76824&amp;sspn=6.628688,16.907959&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;z=11&amp;ll=47.60621,-122.332071" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+            </div>
+            <p>Somerville Park Map</p>
+       </div>
+        
+        </div>
+     </div>
+    
+    </div>
+</div>
+
+
+
+
+<!-- Rec Programs -->	
+<div class="container">
+    <div class="marketing">
+	<div class="row-fluid">
+	  <h1 class="section header">Recreation Programs</h1>
+	  <p>There were over 2,300 registrations for Somerville recreation programs in the first 11 months of 2013. Check out
+	  <a href="http://www.somervillerec.com/info/default.aspx" target="_blank">SomervilleRec</a> to find a program for you or
+	  someone in your family.</p>
+	  <div id="RecProgramChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+    </div>
+</div>
+
+<!-- Special Events -->
+<div class="container">
+    <div class="marketing">
+	<div class="row-fluid">
+	  <h1 class="section header">Special Events</h1>
+	    <p>While analyzing data from the 2013 happiness survey, SomerStat director Daniel Hadley discovered that one of
+	    the single best predictors of whether someone plans to move away from Somerville is how highly he or she rates the
+	    city's social community events. For this and many other reasons, the City has encouraged and supported events
+	    that bring neighbors together - a fact which can be seen in the explosion of temporary food licenses over the past few years.</p>
+	    <div id="MoveChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+<br></br>	  
+	<div class="row-fluid">
+	    <div class="span6">
+		<div id="TempFoodLicensesChartContainer" style="width:100%; height:400px;"></div> 
+	    </div>
+	    <div class="span6">
+		<table class="table table-hover table-bordered table-condensed table-responsive">
+			<thead>
+			    <tr>
+				<th>Events in 2013 (through October)</th>
+				<th>Number of Temporary Licenses for Vendors</th>
+			    </tr>
+			</thead>
+			<tbody>
+			    <tr>
+				<td>Assembled</td>
+				<td>16</td>
+			    </tr>
+			    <tr>
+				<td>Union Square Farmers Market</td>
+				<td>15</td>
+			    </tr>
+			    <tr>
+				<td>Art Beat</td>
+				<td>12</td>
+			    </tr>
+			    <tr>
+				<td>Harvard Book Store Warehouse Weekend</td>
+				<td>10</td>
+			    </tr>
+			    <tr>
+				<td>Harvest Fest</td>
+				<td>10</td>
+			    </tr>
+			    <tr>
+				<td>Davis Square Farmers Market</td>
+				<td>9</td>
+			    </tr>
+			    <tr>
+				<td>Fluff Festival</td>
+				<td>9</td>
+			    </tr>
+			    <tr>
+				<td>Ignite!</td>
+				<td>8</td>
+			    </tr>
+			    <tr>
+				<td>Davis Flea Market</td>
+				<td>6</td>
+			    </tr>
+			    <tr>
+				<td>Hyper-Local Craft Brewfest</td>
+				<td>6</td>
+			    </tr>
+			    <tr>
+				<td>Local is for Lovers Market</td>
+				<td>6</td>
+			    </tr>
+			    <tr>
+				<td>Somerville by Design @ Davis Square</td>
+				<td>6</td>
+			    </tr>
+			    <tr>
+				<td>Spring on the Green @ Maxwell's Green</td>
+				<td>5</td>
+			    </tr>
+			    <tr>
+				<td>Herbstalk</td>
+				<td>4</td>
+			    </tr>
+			    <tr>
+				<td>Tuftonia's Day</td>
+				<td>4</td>
+			    </tr>
+			    <tr>
+				<td>Day of the Dead @ Taza</td>
+				<td>3</td>
+			    </tr>
+			    <tr>
+				<td>Riverfest</td>
+				<td>3</td>
+			    </tr>
+			    <tr>
+				<td>Brooklyn Boulder Opening</td>
+				<td>2</td>
+			    </tr>
+			    <tr>
+				<td>Cinco de Mayo @ Taza</td>
+				<td>2</td>
+			    </tr>
+			    <tr>
+				<td>SomerStreets</td>
+				<td>2</td>
+			    </tr>
+			    <tr>
+				<td>Drink Craft Beer @ Taza</td>
+				<td>1</td>
+			    </tr>	    
+			    <tr>
+				<td>Greater Boston Convention & Visitor's Bureau Open House</td>
+				<td>1</td>
+			    </tr>    			    
+			    <tr>
+				<td>Ladies' Pampering Day</td>
+				<td>1</td>
+			    </tr>   
+			    <tr>
+				<td>Mayor's Fitness Challenge</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>Parts & Crafts</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>Rock and Roll Yard Sale</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>Ross Richmond Campaign Event</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>Somerville Homeless Coalition Road Race</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>Soccer @ Dilboy</td>
+				<td>1</td>
+			    </tr>			    
+			    <tr>
+				<td>Somerville Dog Festival</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>Somerville Dog Spring Fling</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>Summer Shingdig @ Taza</td>
+				<td>1</td>
+			    </tr>
+			    
+			    <tr>
+				<td>Tibet Arts Cultural Festival</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>Tufts Farmers Market</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>Utsav!</td>
+				<td>1</td>
+			    </tr>
+			    <tr>
+				<td>YMCA District Swim Meet</td>
+				<td>1</td>
+			    </tr>
+			</tbody>
+		    </table>
+	    </div>
+	</div>
+    </div>
+</div>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Somerville Systems  | Design: <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap </a>
+ / 
+<a href="https://twitter.com/danielphadley/"> D. Hadley</a></p>
+
+<br>
+<img src="./img/somervilleSeal.png" alt="Kippt">
+       
+        
+        
+      
+
+</div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    
+
+  
+
+</body></html>

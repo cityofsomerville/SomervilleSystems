@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<!-- created by Daniel Hadley from twitter bootstrap -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Somerville Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Highcharts scripts -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script src="js/highcharts.js"></script>
+    
+</head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="http://somervilleresistat.blogspot.com">ResiStat</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="http://www.somervillema.gov/">City Home</a>
+              </li>
+              <li class="">
+                <a href="live.html">Live</a>
+              </li>
+              <li class="active">
+                <a href="work.html">Work</a>
+              </li>
+              <li class="">
+                <a href="play.html">Play</a>
+              </li>
+              <li class="">
+                <a href="family.html">Raise a Family</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="jumbotron masthead">
+  <div class="container">
+    <p>Mayor Curtatone's Key Systems Indicators</p>  
+    
+  </div>
+</div>
+
+<!-- The Charts are all here so that I can style them in a similar way.
+They load to the specified containers -->
+
+<script>
+    $(function() {
+    Highcharts.setOptions({
+        chart: {
+            backgroundColor: 'rgba(230, 230, 230, .9)',
+            borderWidth: 1,
+            plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+            plotShadow: true,
+            plotBorderWidth: 1,
+	    style: {
+            fontFamily: 'Helvetica'
+	    },
+        },
+	lang: {
+	    numericSymbols: [' thousand', ' million', ' billion']
+	}
+    });
+  
+<!-- Unemployment -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'UnemploymentChartContainer',
+	    type: 'line'
+        },
+	title: {
+                text: 'Unemployment Rate'
+            },
+	     subtitle: {
+                text: 'Source: bls.gov'
+            },
+	    
+        tooltip: {
+            formatter: function() {
+                return this.x + '<br/>' + '<b>' + this.series.name + ': ' + this.y + '%' + '</b>';
+	    }
+        },
+	    
+        xAxis: {
+                categories: ['2000', '2001', '2002', '2003', '2004', '2005',
+			     '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013']
+            },
+	yAxis: {
+                title: {
+                    text: 'Unemployment Rate'
+                },
+                labels: {
+		    format: '{value}%'
+		},
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+
+        series: [{
+	    name: 'Somerville',
+            data: [2,3,4.5,4.8,4,3.5,3.5,3.2,3.9,6.1,6.1,5.1,4.5,4.5]
+	      }, {
+	    name: 'Massachusetts',
+            data: [2.7,3.7,5.3,5.8,5.2,4.8,4.8,4.5,5.4,8.2,8.3,7.3,6.7,6.5]
+	      }, {
+	    name: 'U.S.',
+            data: [4,4.7,5.8,6,5.5,5.1,4.6,4.6,5.8,9.3,9.6,8.9,8.1,7.7]
+        }]
+    });
+    
+<!-- Wages -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'WagesChartContainer',
+	    type: 'line'
+        },
+	title: {
+                text: 'Average Weekly Wages in Somerville'
+            },
+	     subtitle: {
+                text: 'Source: Executive Office of Labor and Workforce Development'
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>${point.y:,.0f}</b>'
+	    },
+	    
+        xAxis: {
+                categories: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012']
+            },
+	yAxis: {
+                title: {
+                    text: 'Average Weekly Wages'
+                },
+                labels: {
+		    format: '${value}'
+		},
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+
+	legend: {
+	    enabled: false
+	},
+	
+        series: [{
+	    name: 'Weekly Wages',
+            data: [868, 875, 912, 888, 901, 823, 814, 829]
+	      }]
+    });
+    
+<!-- Jobs -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'JobsChartContainer',
+	    type: 'line'
+        },
+	title: {
+                text: 'Jobs in Somerville'
+            },
+	     subtitle: {
+                text: 'Source: Executive Office of Labor and Workforce Development'
+            },
+	tooltip: {
+            pointFormat: '<b>{point.y:,.0f}'
+	    },	    
+	    
+        xAxis: {
+                categories: ['2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012']
+            },
+	yAxis: {
+                title: {
+                    text: 'Number of Jobs'
+                },
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+
+	legend: {
+	    enabled: false
+	},
+	
+        series: [{
+	    name: 'Jobs',
+            data: [21038,21102,21451,21856,21082,21262,22402,22702]
+	      }]
+    });
+ 
+ <!-- Commercial Property Value -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'PropertyValueContainer',
+	    type: 'column'
+        },
+	title: {
+                text: 'Residential and Commercial Property Value'
+            },
+	     subtitle: {
+                text: 'Source: City of Somerville'
+            },
+	xAxis: {
+                title: {
+		    text: 'Fiscal Year'
+		},
+		categories: ['1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007',
+			     '2008', '2009', '2010', '2011', '2012', '2013', '2014']
+            },
+	yAxis: {
+                min: 0,
+		title: {
+                    text: 'Property Value ($)'
+                },
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },   
+	plotOptions: {
+            column: {
+                stacking: 'normal'
+                }
+            },
+	tooltip: {
+            pointFormat: '<b>${point.y:,.0f}</b>'
+        },
+	legend: {
+	    enabled: true,
+	    reversed: true
+	},
+	series: [{
+	    name: 'Commercial',
+	    data: [621333281,677321785,710504110,821589645,930173140,997464473,1158227198,887935750,900926278,973447611,1022198148,1228148835,1248700880,1231085973,1243422590,1270163365,1291505078,1302088548,1551345051]
+	},{
+	    name: 'Residential',
+            data: [2155918524,2414608127,2445616947,2651239012,2937428052,2975444502,3337867183,4786203050,5712928622,6282436389,6872700152,7523926865,7343629210,7178108247,7017857230,7027712955,7099067112,7293246502,7894327349]
+	}]
+    });
+
+<!-- Commuting -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'CommuteChartContainer',
+	    type: 'column'
+        },
+	title: {
+                text: 'Commuting Methods'
+            },
+	     subtitle: {
+                text: 'Source: 2012 American Community Survey'
+            },
+	    
+        tooltip: {
+            formatter: function() {
+                return this.x + '<br/>' + '<b>' + this.series.name + ': ' + this.y + '%' + '</b>';
+	    }
+        },
+	    
+        xAxis: {
+                categories: ['Drove alone','Carpooled','Public transportation','Walked',
+			     'Other means','Worked at home']
+            },
+	yAxis: {
+                title: {
+                    text: 'Percent of All Commuters'
+                },
+                labels: {
+		    format: '{value}%'
+		},
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+
+        series: [{
+	    name: 'Somerville',
+            data: [41.0,8.9,30.4,12.5,3.9,3.3]
+	      }, {
+	    name: 'Massachusetts',
+            data: [71.9,7.8,9.4,4.9,1.7,4.2]
+	       }, {
+	    name: 'U.S.',
+            data: [76.3,9.7,5.0,2.8,1.8,4.4]
+        }]
+    });
+
+<!-- Commuting2 -->
+     var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'Commute2ChartContainer',
+	    type: 'bar'
+        },
+        
+	title: {
+            text: 'Cities with Highest Concentrations of Transit Commuters, 2012'
+        },
+            
+        subtitle: {
+            text: 'Source: 2012 American Community Survey'
+        },
+	
+        tooltip: {
+            pointFormat: '<b>{point.y:,.1f}%</b>'
+        },
+	
+	legend: {
+	    enabled: false
+	},
+	
+        xAxis: {
+            categories: ["New York, NY",
+"Jersey City, NJ",
+"Union City, NJ",
+"Washington, DC",
+"Boston, MA",
+"San Francisco, CA",
+"Somerville, MA",
+"Silver Spring, MD",
+"Mount Vernon City, NY",
+"Newark, NJ",
+"Chicago, IL"]
+        },
+	
+        yAxis: {
+	    min: 0,
+	    
+	    labels: {
+                format: '{value}%'
+            },
+	    
+	    title: {
+                text: 'Percent of All Commuters who Take Transit'
+            },
+            
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+
+        series: [{
+	    name: 'Cities',
+            data: [55.9,
+45.1,
+41.3,
+38.6,
+34.6,
+33.1,
+30.4,
+30.1,
+28.8,
+27.8,
+26.3]
+        }]
+    });    
+
+<!-- Commuting2 -->
+     var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'Commute3ChartContainer',
+	    type: 'bar'
+        },
+        
+	title: {
+            text: 'Cities where the most people take transit to work, 2012'
+        },
+            
+        subtitle: {
+            text: 'Source: American Community Survey'
+        },
+	
+        tooltip: {
+            pointFormat: '{point.y:,.1f}</b>%'
+        },
+	
+	legend: {
+	    enabled: false
+	},
+	
+        xAxis: {
+            categories: ["New York, New York",
+"Jersey City, New Jersey",
+"Union City, New Jersey",
+"Washington, District of Columbia",
+"Boston, Massachusetts",
+"San Francisco, California",
+"Somerville, Massachusetts",
+"Silver Spring, Maryland",
+"Mount Vernon city, New York",
+"Newark, New Jersey",
+"Chicago, Illinois"]
+        },
+	
+        yAxis: {
+	    min: 1,
+	    
+	    labels: {
+                format: '{value}%'
+            },
+	    
+	    title: {
+                text: 'Percent of People who take transit'
+            },
+            
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+
+        series: [{
+	    name: 'Cities',
+            data: [55.9,
+45.1,
+41.3,
+38.6,
+34.6,
+33.1,
+30.4,
+30.1,
+28.8,
+27.8,
+26.3]
+        }]
+    });    
+    
+<!-- This is an empty chart- a place holder if we want to use more than one chart but style them in the same way -->
+    var chart2 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container2',
+            type: 'column'
+        },
+
+        xAxis: {
+            type: 'datetime'
+        },
+
+        series: [{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+            pointStart: Date.UTC(2010, 0, 1),
+            pointInterval: 3600 * 1000 // one hour
+        }]
+    });
+});
+</script>
+
+<div class="container">
+    <div class="marketing">
+
+<!-- Property Value -->
+	<div class="row-fluid">
+	  <h1 class="section header">Economic Growth</h1>
+	  <p>Commercial property value increased by nearly 20% between FY13 and FY14, primarily due to new development in Assembly
+	  Row, and residential property value grew by 8%. Commercial properties now account for over 16 percent of all property
+	  value, the highest proportion since 2002.</p>
+	    <div id="PropertyValueContainer" style="width:100%; height:400px;"></div>
+	</div>
+	
+	<br></br>
+	
+	<div class="row-fluid">
+	<p>Between FY13 and FY14, the residential tax rate decreased 5.7%, in large part because of the growth of commercial property values.
+	    This map shows the average growth in the assessed value for each parcel in the City. Dark red parcels tend to either be newly developed commercial properties,
+	    or parcels where the owners made significant improvements. White parcels indicate negative or zero grwoth
+	    (or in a few cases, missing data). <a href="http://www.somervillema.gov/news/property-tax-rates-going-down-thanks-mainly-assembly-square-growth" target="_blank">
+	    More information.</a></p>
+	    <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
+               <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="http://a.tiles.mapbox.com/v3/resistat.SomervilleAssessors/page.html#14/42.3952/-71.1000">
+                </iframe>
+            </div>
+	</div>
+
+<!-- Employment -->
+	<div class="row-fluid">
+	  <h1 class="section header">Employment</h1>
+	  <p>Somerville's unemployment rate is consistently below the Massachusetts and national rates, and the spread has increased
+	  over time. The number of jobs in Somerville has more than recovered after falling during the recession. Weekly wages are
+	  also on the rise, though they remain below pre-recession levels.</p>
+	    <div id="UnemploymentChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+
+<br></br>
+    
+	<div class="row-fluid">
+	    <div class="span6">
+		<div id="JobsChartContainer" style="width:100%; height:400px;"></div>
+	    </div>
+	    <div class="span6">
+		<div id="WagesChartContainer" style="width:100%; height:400px;"></div>
+	    </div>
+	</div>
+
+<!-- Commuting -->
+	<div class="row-fluid">
+	  <h1 class="section header">Commuting</h1>
+	  <p>Somerville commuters are far less likely to drive and far more likely to walk or take public transporation than their
+	  counterparts in Massachusetts and the U.S. In fact, Somerville has the 7th highest concentration of transit commuters in the U.S.</p>
+
+
+    <!-- Commute -->
+	    <div id="CommuteChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+
+<br></br>
+
+    <!-- Commute2 -->
+	<div class="row-fluid">
+	    <div id="Commute2ChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+
+    </div>
+</div>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Somerville Systems  | Design: <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap </a>
+ / 
+<a href="https://twitter.com/danielphadley/"> D. Hadley</a></p>
+
+<br>
+<img src="./img/somervilleSeal.png" alt="Kippt">
+       
+        
+        
+      
+
+</div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    
+
+  
+
+</body></html>

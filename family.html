@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!-- created by Daniel Hadley from twitter bootstrap -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Somerville Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Highcharts scripts -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script src="js/highcharts.js"></script>
+    
+</head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="http://somervilleresistat.blogspot.com">ResiStat</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="http://www.somervillema.gov/">City Home</a>
+              </li>
+              <li class="">
+                <a href="live.html">Live</a>
+              </li>
+              <li class="">
+                <a href="work.html">Work</a>
+              </li>
+              <li class="">
+                <a href="play.html">Play</a>
+              </li>
+              <li class="active">
+                <a href="family.html">Raise a Family</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="jumbotron masthead">
+  <div class="container">
+    <p>Mayor Curtatone's Key Systems Indicators</p>  
+    
+  </div>
+</div>
+
+<!-- The Charts are all here so that I can style them in a similar way.
+They load to the specified containers -->
+
+<script>
+    $(function() {
+    Highcharts.setOptions({
+        chart: {
+            backgroundColor: 'rgba(230, 230, 230, .9)',
+            borderWidth: 1,
+            plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+            plotShadow: true,
+            plotBorderWidth: 1,
+	    style: {
+            fontFamily: 'Helvetica'
+	    }
+        }
+    });
+  
+<!-- Affordable Housing  -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'HousingChartContainer',
+	    type: 'column'
+        },
+	title: {
+                text: 'Affordable Housing Units'
+            },
+	     subtitle: {
+                text: 'Source: Commonwealth of Massachusetts & City of Somerville'
+            },
+	    
+        xAxis: {
+                categories: ['2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013']
+            },
+	yAxis: {
+                title: {
+                    text: 'Number of Units'
+                },
+                min: 2000,
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>{point.y:,.0f}</b>'
+        },
+	
+	legend: {
+	    enabled: false
+	},
+
+        series: [{
+	    name: 'Affordable Units',
+            data: [2840,2858,2912,2974,3160,3082,3129,3181,3184,3184,3314,3315]
+	      }]
+    });
+    
+<!-- Birth Rate -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'BirthsChartContainer',
+	    type: 'line'
+        },
+	title: {
+                text: 'Birth Rate'
+            },
+	     subtitle: {
+                text: 'Source: Massachusetts Department of Public Health'
+            },
+	    
+        xAxis: {
+                categories: ['1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010']
+            },
+	yAxis: {
+		title: {
+                    text: 'Births per 1,000 Females Ages 15-44'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+        tooltip: {
+            formatter: function() {
+                return this.x + '<br/>' + '<b>' + this.series.name + ': ' + this.y + '</b>';
+	    }
+        },
+	    
+        series: [{
+	    name: 'Somerville',
+            data: [12.2,12.1,12.0,11.3,11.7,11.9,11.0,12.0,11.4,12.8,12.7,13.3,12.4]
+	      }, {
+	    name: 'Massachusetts',
+            data: [13.1,12.9,12.8,12.8,12.7,12.6,12.4,11.9,12.1,12.1,11.8,11.4,11.1]
+        }]
+    });
+
+<!-- Age Distribution -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'AgeChartContainer',
+	    type: 'column'
+        },
+	title: {
+                text: 'Age Distribution'
+            },
+	     subtitle: {
+                text: 'Source: 2010 US Census'
+            },
+	    
+        tooltip: {
+            formatter: function() {
+                return this.x + '<br/>' + '<b>' + this.series.name + ': ' + this.y + '%' + '</b>';
+	    }
+        },  
+        xAxis: {
+                categories: ['Under 5 years','5 to 9 years','10 to 14 years','15 to 19 years',
+			     '20 to 24 years','25 to 29 years','30 to 34 years','35 to 39 years',
+			     '40 to 44 years','45 to 49 years','50 to 54 years','55 to 59 years',
+			     '60 to 64 years','65 to 69 years','70 to 74 years','75 to 79 years',
+			     '80 to 84 years','85 years and over']
+            },
+	yAxis: {
+                title: {
+                    text: 'Percent in Age Group'
+                },
+                labels: {
+		    format: '{value}%'
+		},
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+
+        series: [{
+	    name: 'Somerville',
+            data: [4.6,3.1,2.6,4.6,12.2,18.6,12.8,8.3,6,5.4,4.9,4.2,3.8,2.6,2.1,1.7,1.4,1.4]
+	      }, {
+	    name: 'Massachusetts',
+            data: [5.6,5.9,6.2,7.1,7.3,6.7,6.2,6.4,7.2,7.9,7.6,6.6,5.7,4,2.9,2.5,2.1,2.2]
+        }]
+    });
+
+<!-- Birth Region -->
+   
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'BirthRegionChartContainer',
+	    type: 'pie'
+        },
+	
+	title: {
+                text: 'Region of Birth'
+            },
+	     subtitle: {
+                text: 'Source: 2007-2011 American Community Survey'
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>{point.y:,.1f}%</b>'
+        },
+
+        series: [{
+	    name: 'Region',
+            data: [
+                ['United States',   74.0],
+		['Latin America', 10.2],
+		['Asia',    7.9],
+                ['Europe',       6.1],
+                ['Africa',     0.8],
+		['North America', 0.8],
+                ['Oceania',   0.3],
+		]
+	}]
+    });
+
+<!-- Language -->
+    var chart1 = new Highcharts.Chart({
+	chart: {
+            renderTo: 'LanguageChartContainer',
+	    type: 'pie'
+        },
+	
+	title: {
+                text: 'Language Spoken at Home'
+        },
+	    subtitle: {
+                text: 'Source: 2007-2011 American Community Survey'
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>{point.y:,.1f}%</b>'
+        },
+
+        series: [{
+	    name: 'Language',
+            data: [
+		['English',67.7],
+		['Spanish or Spanish Creole',9.0],
+		['Portuguese or Portuguese Creole',7.3],
+		['Other Indic languages',2.3],
+		['Chinese',2.3],
+		['French Creole',1.6],
+		['French',1.3],
+		['Italian',1.0],
+		['Hindi',0.9],
+		['Greek',0.8],
+		['Other Asian languages',0.8],
+		['Hebrew',0.6],
+		['Russian',0.5],
+		['Korean',0.5],
+		['German',0.4],
+		['Japanese',0.4],
+		['African languages',0.4],
+		['Gujarati',0.3],
+		['Thai',0.3],
+		['Other Indo-European languages',0.3],
+		['Arabic',0.3],
+		['Urdu',0.2],
+		['Scandinavian languages',0.2],
+		['Persian',0.2],
+		['Mon-Khmer/Cambodian',0.1],
+		['Serbo-Croatian',0.1],
+		['Polish',0.1],
+		['Vietnamese',0.1],
+		['Tagalog',0.1],
+		['Other West Germanic languages',0.1],
+		['Other Slavic languages',0.1],
+		['Other Pacific Island languages',0.1],
+		['Laotian',0.0],
+		['Armenian',0.0],
+		['Other Native North American languages',0.0],
+	    ]
+	}]
+    });
+
+<!-- Same-sex couples -->
+     var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'SameSexChartContainer',
+	    type: 'bar'
+        },
+        
+	title: {
+            text: 'Cities with the Highest Concentrations of Same-Sex Couple Households, 2012'
+        },
+            
+        subtitle: {
+            text: 'Source: American Community Survey'
+        },
+	
+        tooltip: {
+            pointFormat: '<b>{point.y:,.1f}%</b>'
+        },
+	
+	legend: {
+	    enabled: false
+	},
+	
+        xAxis: {
+            categories: ["Fort Lauderdale, FL","Seattle, WA","San Francisco, CA","Minneapolis, MN","Portland, ME",
+            "Somerville, MA","Oakland, CA","Providence, RI","Washington, DC","Warwick, RI"]
+        },
+	
+        yAxis: {
+	    min: 1,
+	    labels: {
+                format: '{value}%'
+            },
+	    title: {
+                text: 'Same-Sex Couple Households as a Share of all Households'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+
+        series: [{
+	    name: 'Cities',
+            data: [2.8,2.6,2.5,2.4,2.2,2.0,1.9,1.7,1.7,1.6]
+        }]
+    });
+
+<!-- This is an empty chart- a place holder if we want to use more than one chart but style them in the same way -->
+    var chart2 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container2',
+            type: 'column'
+        },
+
+        xAxis: {
+            type: 'datetime'
+        },
+
+        series: [{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+            pointStart: Date.UTC(2010, 0, 1),
+            pointInterval: 3600 * 1000 // one hour
+        }]
+    });
+});
+</script>
+
+
+<div class="container">
+
+  <div class="marketing">
+    
+    <div class="row-fluid">
+        <h1 class="section header">Housing</h1>
+	<p>Somerville's stock of affordable housing units has increased by nearly 500 since 2002. These units represent almost 10% of
+	the City's housing stock. Somerville residents set a goal of adding an additional 1,200 affordable units through the
+	SomerVision process.</p>
+      <div class="row">
+        <div class="span4">
+            <div class="tasks-header bg-color dark-blue rounded-top">
+                <div class="box-padding narrow-horizontal clearfix">
+                    <h4 class="light no-margin">Summary</h4>
+                </div>
+            </div>
+            <div class="bg-color dark-blue columns clearfix">
+		<div class="col_50 lines lines-light aligncenter">
+                    <h5 class="no-margin normal">Housing Units in the City</h5>
+		    <h2 class="normal inline">33,720</h2>
+		</div>
+		<div class="col_50 lines lines-light aligncenter">
+                    <h5 class="no-margin normal">Designated Affordable</h5>
+		    <h2 class="normal inline">3,315</h2>
+		</div>
+	    </div>
+            <div class="bg-color greenfade">
+		<div class="box-padding aligncenter">
+		    <h5 class="no-margin normal">SomerVision goal for new housing:</h5>
+			<h1 class="no-margin normal">6,000</h1>
+			<h5 class="no-margin normal">Permanently Affordable:</h5>
+			<h1 class="no-margin normal">1,200 (20%)</h1>
+		</div>
+	    </div>
+            <button class="btn btn-large btn-block" type="button"
+		    onclick="location.href='http://www.somervillema.gov/sites/default/files/SomerVisionComprehensivePlanWithAppendicesAdoptedApril-19-2012.pdf';">
+		    More Info</button>
+        </div>
+        <div class="span8">
+            <div id="HousingChartContainer" style="width:100%; height:400px;"></div>
+       </div>
+        
+        </div>
+     </div>
+    
+    </div>
+
+</div>
+
+<!-- Demographics -->
+<div class="container">
+    <div class="marketing">
+      <h1 class="section header">Demographics</h1>
+
+<!-- Births Chart -->
+      <p>Since 2007, women of reproductive age in Somerville have been more likely to give birth than their counterparts in
+      Massachusetts.</p>
+	<div class="row-fluid">
+	    <div id="BirthsChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+    
+<!-- Age Chart -->
+<br></br>
+      <p>The proportion of Somerville's population between the ages of 20 and 34 is remarkably large, over 40%, which is more than
+      double the equivalent proportion in Massachusetts. In fact, Somerville has the second highest concentration of 25- to 34-year-olds in the country behind Hoboken, NJ.</p>
+	<div class="row-fluid">
+	    <div id="AgeChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+
+<!-- Diversity -->
+<br></br>
+      <p>Somerville is an incredibly diverse city. Over a quarter of the population was born outside of the United States, and our
+      residents speak more than 35 languages at home.</p>
+	<div class="row-fluid">
+	<div class="span6">
+	    <div id="BirthRegionChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+	<div class="span6">
+	    <div id="LanguageChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+	</div>
+
+<!-- Same Sex Couple Households -->
+<br></br>
+      <p>There is also diversity in family structure in Somerville: the City has the 6th largest concentration of same-sex couple households in the country.</p>
+	<div class="row-fluid">
+	    <div id="SameSexChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+
+    </div>
+</div>
+
+<!-- MCAS chart -->
+
+<div class="container">
+    <div class="marketing">
+      <h1 class="section header">MCAS Growth</h1>
+      <p>DAN</p>
+	<div class="row-fluid">
+
+	    
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js">
+{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AlY_jIpLYtpydDg4U1pGdHZHSEtqNzFkTW5YTnFpRVE&transpose=0&headers=1&range=A1%3AF486&gid=0&pub=1",
+"options":{"state":'{"xZoomedIn":false,"orderedByY":false,"sizeOption":"5","xLambda":1,"uniColorForNonSelected":false,"time":"2011","xZoomedDataMax":78,"showTrails":false,"iconType":"BUBBLE","iconKeySettings":[{"key":{"dim0":"Somerville"}},{"key":{"dim0":"Arlington"},"LabelX":1,"LabelY":-55},{"key":{"dim0":"Springfield"}},{"key":{"dim0":"Cambridge"}},{"key":{"dim0":"Medford"}},{"key":{"dim0":"Boston"},"LabelX":-9,"LabelY":-80}],"yAxisOption":"3","yZoomedDataMin":12,"dimensions":{"iconDimensions":["dim0"]},"yZoomedDataMax":72,"xZoomedDataMin":13,"nonSelectedAlpha":0.3,"xAxisOption":"2","playDuration":15000,"yLambda":1,"duration":{"timeUnit":"Y","multiplier":1},"yZoomedIn":false,"orderedByX":false,"colorOption":"4"}',
+"titleTextStyle":{"fontSize":16},"vAxes":[{"useFormatFromData":true,"title":"Left vertical axis title","minValue":null,
+"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,
+"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Chart title",
+"hAxis":{"useFormatFromData":true,"title":"Horizontal axis title","minValue":null,"viewWindow":{"min":null,"max":null},
+"maxValue":null},"width":1000,"height":740,"animation":{"duration":0}},"state":{},"view":{},"isDefaultVisualization":true,
+"chartType":"MotionChart","chartName":"Chart 1"} </script>
+	
+	</div>
+    
+    </div>
+	
+            </div>
+
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Somerville Systems  | Design: <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap </a>
+ / 
+<a href="https://twitter.com/danielphadley/"> D. Hadley</a></p>
+
+<br>
+<img src="./img/somervilleSeal.png" alt="Kippt">
+       
+        
+        
+      
+
+</div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    
+
+  
+
+</body></html>
