@@ -35,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="http://somervilleresistat.blogspot.com">ResiStat</a>
+          <a class="brand" href="index.html">Home</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -69,6 +69,11 @@
     
   </div>
 </div>
+
+<!-- I added a beta tag, which we should remove after working out the bugs -->
+<a href="https://github.com/DanielHadley/SomervilleSystems">
+    <img style="position: absolute; top: 10; right: 0; border: 0;" src="./img/beta_banner.png" alt="this site is in beta"></a>
+
 
 <!-- The Charts are all here so that I can style them in a similar way.
 They load to the specified containers -->
@@ -279,18 +284,19 @@ They load to the specified containers -->
 	}]
     });
 
-<!-- Commuting -->
+<!-- Commuting1 -->
     var chart1 = new Highcharts.Chart({
         chart: {
-            renderTo: 'CommuteChartContainer',
+            renderTo: 'Commute1ChartContainer',
 	    type: 'column'
         },
+
 	title: {
                 text: 'Commuting Methods'
             },
 	     subtitle: {
-                text: 'Source: 2012 American Community Survey'
-            },
+                text: 'Source: 2010-2012 American Community Survey'
+        },
 	    
         tooltip: {
             formatter: function() {
@@ -299,11 +305,12 @@ They load to the specified containers -->
         },
 	    
         xAxis: {
-                categories: ['Drove alone','Carpooled','Public transportation','Walked',
-			     'Other means','Worked at home']
-            },
+                categories: ['Drove alone','Carpooled','Public transportation','Walked', 'Bicycle', 'Other means','Worked at home']
+        },
+
 	yAxis: {
-                title: {
+                max: 80,
+		title: {
                     text: 'Percent of All Commuters'
                 },
                 labels: {
@@ -314,17 +321,17 @@ They load to the specified containers -->
                     width: 1,
                     color: '#808080'
                 }]
-            },
+        },
 
         series: [{
 	    name: 'Somerville',
-            data: [41.0,8.9,30.4,12.5,3.9,3.3]
+            data: [43, 8.6, 29.1, 11.3,	3.7, 0.9, 3.4]
 	      }, {
 	    name: 'Massachusetts',
-            data: [71.9,7.8,9.4,4.9,1.7,4.2]
+            data: [72.3, 8, 9.2, 4.8, 0.7, 0.8, 4.3]
 	       }, {
 	    name: 'U.S.',
-            data: [76.3,9.7,5.0,2.8,1.8,4.4]
+            data: [76.4, 9.7, 5, 2.8, 0.6, 1.2, 4.3]
         }]
     });
 
@@ -340,7 +347,7 @@ They load to the specified containers -->
         },
             
         subtitle: {
-            text: 'Source: 2012 American Community Survey'
+            text: 'Source: 2010-2012 American Community Survey'
         },
 	
         tooltip: {
@@ -352,17 +359,8 @@ They load to the specified containers -->
 	},
 	
         xAxis: {
-            categories: ["New York, NY",
-"Jersey City, NJ",
-"Union City, NJ",
-"Washington, DC",
-"Boston, MA",
-"San Francisco, CA",
-"Somerville, MA",
-"Silver Spring, MD",
-"Mount Vernon City, NY",
-"Newark, NJ",
-"Chicago, IL"]
+            categories: ["New York, NY", "Hoboken, NJ", "Jersey City, NJ", "West New York, NJ", "Union City, NJ", "Washington, DC",
+			 "Boston, MA", "San Francisco, CA", "Atlantic City, NJ", "Somerville, MA"]
         },
 	
         yAxis: {
@@ -373,7 +371,7 @@ They load to the specified containers -->
             },
 	    
 	    title: {
-                text: 'Percent of All Commuters who Take Transit'
+                text: 'Percent of All Commuters who Take Public Transportation'
             },
             
             plotLines: [{
@@ -385,91 +383,155 @@ They load to the specified containers -->
 
         series: [{
 	    name: 'Cities',
-            data: [55.9,
-45.1,
-41.3,
-38.6,
-34.6,
-33.1,
-30.4,
-30.1,
-28.8,
-27.8,
-26.3]
+            data: [56, 55.8, 46.7, 41.6, 40.5, 38.7, 33.3, 33, 30.3, {
+                y: 29.1,
+                color: '#263c53'
+            }]
         }]
     });    
 
-<!-- Commuting2 -->
-     var chart1 = new Highcharts.Chart({
+
+    
+<!-- Commuting3 -->
+    var chart1 = new Highcharts.Chart({
         chart: {
             renderTo: 'Commute3ChartContainer',
-	    type: 'bar'
+	    type: 'column'
         },
-        
 	title: {
-            text: 'Cities where the most people take transit to work, 2012'
-        },
-            
-        subtitle: {
-            text: 'Source: American Community Survey'
-        },
-	
+                text: 'Percent of Residents with Jobs who Work Outside Community of Residence'
+            },
+	     subtitle: {
+                text: 'Source: 2010-2012 American Community Survey'
+            },
+	    
         tooltip: {
-            pointFormat: '{point.y:,.1f}</b>%'
+            pointFormat: '<b>{point.y:,.1f}%</b>'
         },
-	
+	    
+        xAxis: {
+                categories: ['Arlington','Boston','Cambridge','Everett', 'Medford','Somerville', 'MA', 'U.S.']
+            },
+	yAxis: {
+                title: {
+                    text: 'Percent of All Workers 16 and Older'
+                },
+                labels: {
+		    format: '{value}%'
+		},
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
 	legend: {
 	    enabled: false
 	},
 	
-        xAxis: {
-            categories: ["New York, New York",
-"Jersey City, New Jersey",
-"Union City, New Jersey",
-"Washington, District of Columbia",
-"Boston, Massachusetts",
-"San Francisco, California",
-"Somerville, Massachusetts",
-"Silver Spring, Maryland",
-"Mount Vernon city, New York",
-"Newark, New Jersey",
-"Chicago, Illinois"]
+        series: [{
+	    name: 'Percent of workers',
+            data: [84.3, 32.1, 55, 86.2, 83.6, {
+                y: 81.7,
+                color: '#263c53'
+            }, 46, 42.9]
+	      }]
+    });
+
+<!-- Commuting4 -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'Commute4ChartContainer',
+	    type: 'column'
         },
+	title: {
+                text: 'Average Commute'
+            },
+	     subtitle: {
+                text: 'Source: 2010-2012 American Community Survey'
+            },
+	    
+        tooltip: {
+            pointFormat: '<b>{point.y:,.1f}</b>'
+        },
+	    
+        xAxis: {
+                categories: ['Arlington','Boston','Cambridge','Everett', 'Medford','Somerville', 'MA', 'U.S.']
+            },
+	yAxis: {
+                title: {
+                    text: 'Minutes'
+                },
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+
+	legend: {
+	    enabled: false
+	},
 	
-        yAxis: {
-	    min: 1,
-	    
-	    labels: {
-                format: '{value}%'
+        series: [{
+	    name: 'Commute - minutes',
+            data: [29.5, 28.9, 25.2, 31.6, 28.7, {
+                y: 28.3,
+                color: '#263c53'
+            }, 28, 25.5]
+	}]
+    });
+
+<!-- Educational attainment -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'EdAttainChartContainer',
+	    type: 'column'
+        },
+
+	title: {
+                text: 'Educational Attainment'
             },
+	     subtitle: {
+                text: 'Source: 2010-2012 American Community Survey'
+        },
 	    
-	    title: {
-                text: 'Percent of People who take transit'
-            },
-            
-            plotLines: [{
-                value: 0,
-                width: 1,
-                color: '#808080'
-            }]
+        tooltip: {
+            formatter: function() {
+                return this.x + '<br/>' + '<b>' + this.series.name + ': ' + this.y + '%' + '</b>';
+	    }
+        },
+	    
+        xAxis: {
+                categories: ["Less than 9th Grade", "9th to 12 Grade, No Diploma", "High School Graduate", "Some College", "Associate's Degree", "Bachelor's Degree", "Graduate or Professional Degree"]
+        },
+
+	yAxis: {
+		title: {
+                    text: 'Percent of Residents Ages 25+'
+                },
+                labels: {
+		    format: '{value}%'
+		},
+		plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
         },
 
         series: [{
-	    name: 'Cities',
-            data: [55.9,
-45.1,
-41.3,
-38.6,
-34.6,
-33.1,
-30.4,
-30.1,
-28.8,
-27.8,
-26.3]
+	    name: 'Somerville',
+            data: [5.1, 6.4, 20.7, 9.6, 4.1, 27.2, 26.9]
+	      }, {
+	    name: 'Massachusetts',
+            data: [4.9, 5.8, 26, 16.5, 7.6, 22.3, 16.9]
+	       }, {
+	    name: 'U.S.',
+            data: [6, 8.1, 28.3, 21.3, 7.8, 18, 10.7]
         }]
-    });    
-    
+    });
+
 <!-- This is an empty chart- a place holder if we want to use more than one chart but style them in the same way -->
     var chart2 = new Highcharts.Chart({
         chart: {
@@ -490,10 +552,9 @@ They load to the specified containers -->
 });
 </script>
 
+<!-- Property Value -->
 <div class="container">
     <div class="marketing">
-
-<!-- Property Value -->
 	<div class="row-fluid">
 	  <h1 class="section header">Economic Growth</h1>
 	  <p>Commercial property value increased by nearly 20% between FY13 and FY14, primarily due to new development in Assembly
@@ -512,12 +573,16 @@ They load to the specified containers -->
 	    More information.</a></p>
 	    <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
                <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="http://a.tiles.mapbox.com/v3/resistat.SomervilleAssessors/page.html#14/42.3952/-71.1000">
+                        src="http://a.tiles.mapbox.com/v3/resistat.SomervilleAssessors/mm/zoompan,geocoder,legend,share.html?secure=1#14/42.3952/-71.1000">
                 </iframe>
             </div>
 	</div>
+    </div>
+</div>
 
 <!-- Employment -->
+<div class="container">
+    <div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">Employment</h1>
 	  <p>Somerville's unemployment rate is consistently below the Massachusetts and national rates, and the spread has increased
@@ -536,21 +601,49 @@ They load to the specified containers -->
 		<div id="WagesChartContainer" style="width:100%; height:400px;"></div>
 	    </div>
 	</div>
+    </div>
+</div>
+
+<!-- Employment -->
+<div class="container">
+    <div class="marketing">
+	<div class="row-fluid">
+	  <h1 class="section header">Education</h1>
+	  <p>Somerville residents have high levels of educational attainment compared to their counterparts in Massachusetts and the U.S. Indeed, a remarkable 54 percent have a college degree or more. </p>
+	    <div id="EdAttainChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+    </div>
+</div>
 
 <!-- Commuting -->
+<div class="container">
+    <div class="marketing">
+
 	<div class="row-fluid">
 	  <h1 class="section header">Commuting</h1>
-	  <p>Somerville commuters are far less likely to drive and far more likely to walk or take public transporation than their
-	  counterparts in Massachusetts and the U.S. In fact, Somerville has the 7th highest concentration of transit commuters in the U.S.</p>
+	  <p>Over 80 percent of Somerville residents with jobs do not work in Somerville, a much higher proportion than
+	  in Cambridge, Boston, Massachusetts, or the U.S. Nonetheless, Somerville commuters spend approximately the same time
+	  traveling to work as their counterparts in Somerville's neighboring communities as well as the state and country as a whole.</p>
+	</div>
+	
+	<div class="row-fluid"> 
+	    <div class="span6">
+		<div id="Commute3ChartContainer" style="width:100%; height:400px;"></div>
+	    </div>
+	    <div class="span6">
+		<div id="Commute4ChartContainer" style="width:100%; height:400px;"></div>
+	    </div>
+	</div>
 
-
-    <!-- Commute -->
-	    <div id="CommuteChartContainer" style="width:100%; height:400px;"></div>
+<br></br>
+	<div class="row-fluid">
+	  <p>Somerville commuters are far less likely to drive and far more likely to walk, bike, or take public transporation than their
+	  counterparts in Massachusetts and the U.S. In fact, Somerville has the 10.th highest concentration of transit commuters in the U.S.</p>
+	    <div id="Commute1ChartContainer" style="width:100%; height:400px;"></div>
 	</div>
 
 <br></br>
 
-    <!-- Commute2 -->
 	<div class="row-fluid">
 	    <div id="Commute2ChartContainer" style="width:100%; height:400px;"></div>
 	</div>
@@ -558,14 +651,12 @@ They load to the specified containers -->
     </div>
 </div>
 
-
     <!-- Footer
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p>Somerville Systems  | Design: <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap </a>
- / 
-<a href="https://twitter.com/danielphadley/"> D. Hadley</a></p>
+        <p>Somerville Systems : D. Hadley & E. Monea | <a href="https://github.com/DanielHadley/SomervilleSystems">Code.</a> </p>
+<p><a href="mailto:dhadley@somervillema.gov">Contact us</a> with questions, requests, and suggestions.</p>
 
 <br>
 <img src="./img/somervilleSeal.png" alt="Kippt">

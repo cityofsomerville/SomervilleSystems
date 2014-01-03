@@ -24,6 +24,7 @@
 </head>
 
   <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+    
 
     <!-- Navbar
     ================================================== -->
@@ -35,7 +36,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="http://somervilleresistat.blogspot.com">ResiStat</a>
+          <a class="brand" href="index.html">Home</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -69,6 +70,11 @@
     
   </div>
 </div>
+
+<!-- I added a beta tag, which we should remove after working out the bugs -->
+<a href="https://github.com/DanielHadley/SomervilleSystems">
+    <img style="position: absolute; top: 10; right: 0; border: 0;" src="./img/beta_banner.png" alt="this site is in beta"></a>
+
 
 <!-- The Charts are all here so that I can style them in a similar way.
 They load to the specified containers -->
@@ -168,7 +174,10 @@ They load to the specified containers -->
 
         series: [{
 	    name: 'Property Tax',
-            data: [1709,2706,3482,3532,4512,4636,4793,4935,4944,5108,5212,5332,5433,5444,6224,6772]
+            data: [1709,2706,{
+                y: 3482,
+                color: '#263c53'
+            },3532,4512,4636,4793,4935,4944,5108,5212,5332,5433,5444,6224,6772]
 	      }]
     });
 
@@ -478,7 +487,11 @@ They load to the specified containers -->
     <div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">Happiness Survey</h1>
-	  <p>DAN</p>
+	  <p>Somerville made headlines when it became the first city in the country to measure wellbeing through
+	  a citywide survey. These charts show data from the 2013 survey, which demonstrated that city residents have a high
+	  degree of satisfaction, both with their personal lives and with Somerville as a place to live. The lowest average
+	  rating was given to the cost of housing, while the highest was reserved for the availability of social and community
+	  events. </p>
 	    <div class="row">
 		<div class="span6">
 		    <div id="HappyChartContainer" style="width:100%; height:400px;"></div>
@@ -500,7 +513,7 @@ They load to the specified containers -->
 	    East Somerville is still high, but relatively lower than other parts of the city.</p>
 	    <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
                <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="http://a.tiles.mapbox.com/v3/resistat.SomervilleNeighborhoodSatisfaction2/page.html#14/42.3952/-71.1000">
+                        src="http://a.tiles.mapbox.com/v3/resistat.SomervilleNeighborhoodSatisfaction2/mm/zoompan,geocoder,legend,share.html?secure=1#14/42.3952/-71.1000">
                 </iframe>
             </div>
 	</div>
@@ -511,11 +524,45 @@ They load to the specified containers -->
 <div class="container">
     <div class="marketing">
 	<div class="row-fluid">
-	  <h1 class="section header">Public Safety</h1>	
-	    <div id="PublicSafetyChartContainer" style="width:100%; height:400px;"></div> 
+	  <h1 class="section header">Public Safety</h1>
+	    <p>Crime is generally down in the City of Somerville, as this first chart indicates.
+	    The heat maps below that show three of the most important types of crime, from a typical resident&#146;s perspective:
+	    street robberies, burglaries, and car breaks. These and other crimes tend to occur more often in the eastern part
+	    of the City, a fact of which the Somerville Police is well aware.</p>    
+	    <div id="PublicSafetyChartContainer" style="width:100%; height:400px;"></div>
+	    <br></br>
+	    <!--  Carousel - consult the Twitter Bootstrap docs at
+      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <img class="center" src="./img/StreetRobberies.png" alt="" />
+      <div class="carousel-caption">
+        <p>Street Robberies</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="center" src="./img/AllBurglary.png" alt="" />
+      <div class="carousel-caption">
+        <p>All Burglary</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="center" src="./img/CarBreaks.png" alt="" />
+      <div class="carousel-caption">
+        <p>Car Breaks</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
 	</div>
     </div>
 </div>
+
 
 <!-- 311 Map -->
 
@@ -528,7 +575,7 @@ They load to the specified containers -->
 	    It shows where these types of calls tend to cluster, e.g., noise calls in the vicinity of Tufts.</p>
 	    <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
                <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://a.tiles.mapbox.com/v3/resistat.SomervilleQoL2/page.html?secure=1#14/42.3952/-71.1000">
+                        src="https://a.tiles.mapbox.com/v3/resistat.SomervilleQoL2/mm/zoompan,geocoder,legend,share.html?secure=1#14/42.3952/-71.1000">
                 </iframe>
             </div>
 	</div>
@@ -618,7 +665,7 @@ They load to the specified containers -->
         <div class="span8">
             <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
                <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps/ms?msa=0&amp;msid=211435730713785105131.000492ea712f7e25c9ddf&amp;ie=UTF8&amp;t=m&amp;z=13&amp;output=embed">
+                        src="https://maps.google.com/maps/ms?msa=0&amp;msid=211435730713785105131.000492ea712f7e25c9ddf&amp;ie=UTF8&amp;t=p&amp;z=13&amp;output=embed">
                 </iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Seattle,+WA&amp;aq=0&amp;oq=seattle&amp;sll=37.822293,-85.76824&amp;sspn=6.628688,16.907959&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;z=11&amp;ll=47.60621,-122.332071" style="color:#0000FF;text-align:left">View Larger Map</a></small>
             </div>
             <p>Proposed Green Line Extension</p>
@@ -637,9 +684,8 @@ They load to the specified containers -->
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p>Somerville Systems  | Design: <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap </a>
- / 
-<a href="https://twitter.com/danielphadley/"> D. Hadley</a></p>
+        <p>Somerville Systems : D. Hadley & E. Monea | <a href="https://github.com/DanielHadley/SomervilleSystems">Code.</a> </p>
+<p><a href="mailto:dhadley@somervillema.gov">Contact us</a> with questions, requests, and suggestions.</p>
 
 <br>
 <img src="./img/somervilleSeal.png" alt="Kippt">

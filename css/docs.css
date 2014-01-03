@@ -295,6 +295,15 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   margin: 0 auto 20px;
   max-height: 145px;
 }
+.marketing .marketing-index {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #999;
+}
 
 
 

@@ -35,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="http://somervilleresistat.blogspot.com">ResiStat</a>
+          <a class="brand" href="index.html">Home</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -69,6 +69,11 @@
     
   </div>
 </div>
+
+<!-- I added a beta tag, which we should remove after working out the bugs -->
+<a href="https://github.com/DanielHadley/SomervilleSystems">
+    <img style="position: absolute; top: 10; right: 0; border: 0;" src="./img/beta_banner.png" alt="this site is in beta"></a>
+
 
 <!-- The Charts are all here so that I can style them in a similar way.
 They load to the specified containers -->
@@ -359,7 +364,10 @@ They load to the specified containers -->
 
         series: [{
 	    name: 'Cities',
-            data: [2.8,2.6,2.5,2.4,2.2,2.0,1.9,1.7,1.7,1.6]
+            data: [2.8,2.6,2.5,2.4,2.2,{
+                y: 2.0,
+                color: '#263c53'
+            },1.9,1.7,1.7,1.6]
         }]
     });
 
@@ -481,7 +489,11 @@ They load to the specified containers -->
 <div class="container">
     <div class="marketing">
       <h1 class="section header">MCAS Growth</h1>
-      <p>DAN</p>
+      <p>This motion chart shows the extrodinary growth in Somerville's Student Growth Percentile scores (SGP).
+      Click play to see the SPS progress to one of the top spots in the State on this very important metric
+      (if you are having trouble viewing the motion chart, click <a href="http://imgur.com/a/6l1qI" target="_blank">here</a>  for the images)
+      There is much more information
+      <a href="http://www.somervillema.gov/news/somerville-public-schools-show-phenomenal-growth-mcas" target="_blank">in the press release</a>.</p>
 	<div class="row-fluid">
 
 	    
@@ -508,9 +520,8 @@ They load to the specified containers -->
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p>Somerville Systems  | Design: <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap </a>
- / 
-<a href="https://twitter.com/danielphadley/"> D. Hadley</a></p>
+        <p>Somerville Systems : D. Hadley & E. Monea | <a href="https://github.com/DanielHadley/SomervilleSystems">Code.</a> </p>
+<p><a href="mailto:dhadley@somervillema.gov">Contact us</a> with questions, requests, and suggestions.</p>
 
 <br>
 <img src="./img/somervilleSeal.png" alt="Kippt">
