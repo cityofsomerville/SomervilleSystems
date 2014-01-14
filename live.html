@@ -93,29 +93,26 @@ They load to the specified containers -->
 	    }
         }
     });
-  
-<!-- Public Safety -->
-   
+
+<!-- Public Safety All Crime -->
     var chart1 = new Highcharts.Chart({
         chart: {
-            renderTo: 'PublicSafetyChartContainer',
+            renderTo: 'AllCrimeChartContainer',
 	    type: 'line'
         },
 	title: {
-                text: 'Crime Rate'
+                text: 'Crime in Somerville'
         },
 	     subtitle: {
-                text: 'Source: fbi.gov'
+                text: 'Source: NIBRS & Somerville Police Department'
         },
 	    
         xAxis: {
-                categories: ['1985','1986', '1987', '1988', '1989', '1990', '1991', '1992',
-                    '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000',
-		    '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010']
+                categories: ['2008', '2009', '2010', '2011', '2012', '2013 (estimated)']
         },
 	yAxis: {
                 title: {
-                    text: 'Crimes per 100,000 Residents'
+                    text: 'Number of Offenses'
                 },
                 plotLines: [{
                     value: 0,
@@ -125,18 +122,103 @@ They load to the specified containers -->
         },
 
         series: [{
-	    name: 'Property Crimes',
-            data: [4439.5,3661.2,3731.8,3394.6,3855,3529.7,3221.8,2887.8,3188.9,3426.1,3686,3304,3648.1,2695.8,
-		   2426.2,2430.4,2533.2,2831.5,2331.5,2403.6,2218.5,2591.1,3036.8,3125.2,2602.8,2649.4]
+	    name: 'All Offenses',
+            data: [2619, 2252, 2255, 2019, 2011, 1729]
 	      }, {
-	    name: 'Violent Crimes',
-            data: [343.8,382.8,367.9,422.9,589.9,636.4,726.8,775.2,734.8,735.4,712.7,710.6,959.7,374.6,228.4,
-		   213,303.2,443.7,336.4,339,347.4,427,389.7,410.7,415.4,324.7]
+	    name: 'Violent Offenses',
+            data: [283, 282, 227, 259, 259, 180]
+	      }, {
+	    name: 'Property Offenses',
+            data: [2336, 1970, 2028, 1760, 1752, 1549]
+        }]
+    });
+
+<!-- Public Safety Violent Crime -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'ViolentCrimeChartContainer',
+	    type: 'line'
+        },
+	title: {
+                text: 'Violent Crime'
+        },
+	     subtitle: {
+                text: 'Source: NIBRS & Somerville Police Department'
+        },
+	    
+        xAxis: {
+                categories: ['2008', '2009', '2010', '2011', '2012', '2013 (estimated)']
+        },
+	yAxis: {
+		min: 0,
+                title: {
+                    text: 'Number of Offenses'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+        },
+
+        series: [{
+	    name: 'Murder',
+            data: [2, 3, 0, 1, 0, 0]
+	      }, {
+	    name: 'Rape',
+            data: [20, 7, 15, 17, 24, 19]
+	      }, {
+	    name: 'Robbery',
+            data: [112, 104, 77, 90, 84, 51]
+	      }, {
+	    name: 'Aggravated Assault',
+            data: [149, 168, 135, 151, 151, 110]
+        }]
+    });
+    
+<!-- Public Safety Property Crime -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'PropertyCrimeChartContainer',
+	    type: 'line'
+        },
+	title: {
+                text: 'Property Crime'
+        },
+	     subtitle: {
+                text: 'Source: NIBRS & Somerville Police Department'
+        },
+	    
+        xAxis: {
+                categories: ['2008', '2009', '2010', '2011', '2012', '2013 (estimated)']
+        },
+	yAxis: {
+                title: {
+                    text: 'Number of Offenses'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+        },
+
+        series: [{
+	    name: 'Burglary',
+            data: [453, 493, 514, 416, 349, 431]
+	      }, {
+	    name: 'Theft from Motor Vehicle',
+            data: [801, 488, 625, 392, 470, 323]
+	      }, {
+	    name: 'Other Larceny',
+            data: [832, 826, 711, 801, 800, 694]
+	      }, {
+	    name: 'Theft of Motor Vehicle',
+            data: [250, 163, 178, 151, 133, 101]
         }]
     });
     
 <!-- Property Tax -->
-   
     var chart1 = new Highcharts.Chart({
         chart: {
             renderTo: 'PropertyTaxChartContainer',
@@ -182,7 +264,6 @@ They load to the specified containers -->
     });
 
 <!-- Revenue -->
-   
     var chart1 = new Highcharts.Chart({
         chart: {
             renderTo: 'RevChartContainer',
@@ -216,7 +297,6 @@ They load to the specified containers -->
     });
     
 <!-- Expenditures -->
-   
     var chart1 = new Highcharts.Chart({
         chart: {
             renderTo: 'ExChartContainer',
@@ -376,7 +456,6 @@ They load to the specified containers -->
     });
 
 <!-- Happiness -->
-   
     var chart1 = new Highcharts.Chart({
         chart: {
             renderTo: 'HappyChartContainer',
@@ -419,8 +498,7 @@ They load to the specified containers -->
     });
 
 <!-- Happiness2 -->
-   
-    var chart1 = new Highcharts.Chart({
+     var chart1 = new Highcharts.Chart({
         chart: {
             renderTo: 'Happy2ChartContainer',
 	    type: 'column'
@@ -482,7 +560,6 @@ They load to the specified containers -->
 </script>
 
 <!-- Happiness -->
-
 <div class="container">
     <div class="marketing">
 	<div class="row-fluid">
@@ -490,7 +567,7 @@ They load to the specified containers -->
 	  <p>Somerville made headlines when it became the first city in the country to measure wellbeing through
 	  a citywide survey. These charts show data from the 2013 survey, which demonstrated that city residents have a high
 	  degree of satisfaction, both with their personal lives and with Somerville as a place to live. The lowest average
-	  rating was given to the cost of housing, while the highest was reserved for the availability of social and community
+	  rating was given to the cost of housing, while the highest was reserved for the City's social and community
 	  events. </p>
 	    <div class="row">
 		<div class="span6">
@@ -525,13 +602,23 @@ They load to the specified containers -->
     <div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">Public Safety</h1>
-	    <p>Crime is generally down in the City of Somerville, as this first chart indicates.
-	    The heat maps below that show three of the most important types of crime, from a typical resident&#146;s perspective:
-	    street robberies, burglaries, and car breaks. These and other crimes tend to occur more often in the eastern part
-	    of the City, a fact of which the Somerville Police is well aware.</p>    
-	    <div id="PublicSafetyChartContainer" style="width:100%; height:400px;"></div>
-	    <br></br>
-	    <!--  Carousel - consult the Twitter Bootstrap docs at
+	    <div class="row">
+		<div class="span4">
+		    <div id="AllCrimeChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+		<div class="span4">
+		    <div id="ViolentCrimeChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+		<div class="span4">
+		    <div id="PropertyCrimeChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</div>
+
+<br></br>
+<!--  Carousel - consult the Twitter Bootstrap docs at
       http://twitter.github.com/bootstrap/javascript.html#carousel -->
 <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
   <div class="carousel-inner">
@@ -559,16 +646,11 @@ They load to the specified containers -->
     <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
     <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 </div><!-- /.carousel -->
-	</div>
-    </div>
-</div>
 
 
 <!-- 311 Map -->
-
 <div class="container">
     <div class="marketing">
-    
 	<div class="row-fluid">
 	  <h1 class="section header">Quality of Life 311 Calls</h1>
 	    <p>This is a random sample of the top quality-of-life calls from the year 2013: reports of rats, graffiti and noisy neighbors.
@@ -583,14 +665,13 @@ They load to the specified containers -->
 </div>
 
 <!-- City Operations -->
-
 <div class="container">
     <div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">City Operations</h1>
 	  <p>Over 80 percent of calls to 311 are answered within 20 seconds. Many of these calls result in the creation of a work
 	  order for the Department of Public Works, which completes over 80 percent of its work orders on time. There is variation
-	  over the year, though, such as when heavy snow pushed the on-time completion rate in February down to 51 percent.</p>
+	  over the year, though, such as when heavy snow pushed the on-time completion rate in February 2013 down to 51 percent.</p>
 	    <div class="row">
 		<div class="span6">
 		    <div id="311CallsChartContainer" style="width:100%; height:400px;"></div>
