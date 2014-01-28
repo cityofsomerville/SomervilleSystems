@@ -66,7 +66,7 @@
 
 <div class="jumbotron masthead">
   <div class="container">
-    <p>Mayor Curtatone's Key Systems Indicators</p>  
+    <p>The City of Somerville's Key Systems Indicators</p>  
     
   </div>
 </div>
@@ -225,15 +225,15 @@ They load to the specified containers -->
 	    type: 'column'
         },
 	title: {
-                text: 'Property Taxes, 2012'
+                text: 'Property Taxes, FY2014'
             },
 	     subtitle: {
                 text: 'Source: City of Somerville'
             },
 	    
         xAxis: {
-                categories: ['Cambridge','Brookline','Somerville','Boston','Saugus','Watertown','Malden','Chelsea','Medford',
-			     'Winchester','Melrose','Belmont','Everett','Arlington','Revere','Lynn']
+                categories: ['Cambridge','Brookline','Somerville','Boston','Saugus','Watertown','Malden','Medford',
+			     'Winchester','Everett','Chelsea','Melrose','Belmont','Arlington','Revere','Lynn']
             },
 	yAxis: {
                 title: {
@@ -256,10 +256,9 @@ They load to the specified containers -->
 
         series: [{
 	    name: 'Property Tax',
-            data: [1709,2706,{
-                y: 3482,
-                color: '#263c53'
-            },3532,4512,4636,4793,4935,4944,5108,5212,5332,5433,5444,6224,6772]
+            data: [1545,2561,{
+                y: 3178,
+                color: '#263c53'},3268,4644,4706,4801,4900,5064,5187,5193,5312,5400,5516,6220,6852]
 	      }]
     });
 
@@ -602,6 +601,7 @@ They load to the specified containers -->
     <div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">Public Safety</h1>
+        <p>Crime in Somerville has dropped by roughly one third since 2008. This decline can be attributed to national trends (e.g., newer cars are more difficult to steal), the City's education and economic development initiatives, and the Police Department's efforts to use data-driven strategies to identify problems and deploy resources.</p>
 	    <div class="row">
 		<div class="span4">
 		    <div id="AllCrimeChartContainer" style="width:100%; height:400px;"></div>
