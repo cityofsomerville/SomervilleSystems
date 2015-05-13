@@ -325,78 +325,9 @@ They load to the specified containers -->
 	}]
     });
 
-<!-- DPW work orders -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-	    renderTo: 'WorkOrderChartContainer',
-	    type: 'column'
-        },
-	title: {
-            text: 'On-Time Completion of DPW Work Orders, 2013'
-        },
-	subtitle: {
-	    text: 'Source: City of Somerville'
-	},
-        tooltip: {
-            formatter: function() {
-                return this.x + '<br/>' + '<b>' + this.series.name + ': ' + this.y + '%' + '</b>';
-	    }
-        },   
-        xAxis: {
-	    categories: ['On Time','24 Hours Late','48 Hours Late','72 Hours Late', 'More than 72 Hours Late']
-        },
-	yAxis: {
-            title: {
-                    text: 'Percent Completed'
-            },
-            labels: {
-		format: '{value}%'
-	    },
-	    plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-            }]
-        },
-	plotOptions: {
-	    series: {
-	        pointWidth: 15
-	    }
-	},
-        series: [{
-	    name: 'January',
-            data: [82.2,3.7,1.1,1.7,9.2]
-	    }, {
-	    name: 'February',
-            data: [50.9,7.2,5.0,1.2,33.7]
-	    }, {
-	    name: 'March',
-            data: [90.1,3.4,0.6,0.7,4.9]
-	    }, {
-	    name: 'April',
-            data: [91.7,2.5,0.6,0.6,4.0]
-	    }, {
-	    name: 'May',
-            data: [90.2,2.0,0.8,0.6,5.5]
-	    }, {
-	    name: 'June',
-            data: [83.5,3.3,1.5,0.8,10.4]
-	    }, {
-	    name: 'July',
-            data: [85.7,2.3,1.5,1.2,8.9]
-	    }, {
-	    name: 'August',
-            data: [85.1,3.2,1.4,0.8,8.7]
-	    }, {
-	    name: 'September',
-            data: [88.6,2.4,0.8,0.6,7.1]
-	    }, {
-	    name: 'October',
-            data: [86.2,1.7,0.8,0.5,10.0]
-        }]
-    });
 
- <!-- DPW work orders TEST -->
+
+ <!-- DPW work orders -->
     var chart1 = new Highcharts.Chart({
         chart: {
         renderTo: 'AnnualWorkOrderChartContainer',
@@ -743,8 +674,7 @@ They load to the specified containers -->
 		</div>
 	    </div>
 <br></br>
-        <div id="WorkOrderChartContainer" style="width:100%; height:400px;"></div>
-<br></br>
+        
         <div id="AnnualWorkOrderChartContainer" style="width:100%; height:400px;"></div>
 	</div>
     </div>
@@ -807,26 +737,7 @@ They load to the specified containers -->
 </div>
 
 
-<!-- Test-->
-<div class="container">
-    <div class="marketing">
-    <div class="row-fluid">
-      <h1 class="section header">Fiscal Management Test</h1>
-        <p>Somerville has some of the lowest property taxes in the metropolitan area when the residential exemption is factored in.
-        The City has had to rely more on taxes as state aid has delined, but still maintains a generous exemption for residents.
-        The largest categories of expenditures are the schools, public safety and works, and the pensions and benefits of employees.</p>
-        <div id="PropertyTaxChartContainer" style="width:100%; height:400px;"></div> 
-    </div>
 
-<br></br>
-
-    <div class="row-fluid"> 
-        <div class="span6">
-            <script type='text/javascript' src='https://public.tableausoftware.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;'><noscript><a href='#'><img alt='Inf Adj Dash ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CityofSomervilleHistoricalBudgetActualsInflation-Adjusted&#47;InfAdjDash&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableausoftware.com%2F' /> <param name='site_root' value='' /><param name='name' value='CityofSomervilleHistoricalBudgetActualsInflation-Adjusted&#47;InfAdjDash' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CityofSomervilleHistoricalBudgetActualsInflation-Adjusted&#47;InfAdjDash&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /></object></div>
-        </div>
-    </div>
-    </div>
-</div>
 
 <!-- Transportation Map -->
 <div class="container">
