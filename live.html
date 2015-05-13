@@ -396,6 +396,72 @@ They load to the specified containers -->
         }]
     });
 
+ <!-- DPW work orders TEST -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+        renderTo: 'AnnualWorkOrderChartContainer',
+        type: 'column'
+        },
+    title: {
+            text: 'On-Time Completion of DPW Work Orders'
+        },
+    subtitle: {
+        text: 'Source: City of Somerville'
+    },
+        tooltip: {
+            formatter: function() {
+                return this.x + '<br/>' + '<b>' + this.series.name + ': ' + this.y + '%' + '</b>';
+        }
+        },   
+        xAxis: {
+        categories: ['On Time','24 Hours Late','48 Hours Late','72 Hours Late', 'More than 72 Hours Late']
+        },
+    yAxis: {
+            title: {
+                    text: 'Percent Completed'
+            },
+            labels: {
+        format: '{value}%'
+        },
+        plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+            }]
+        },
+    plotOptions: {
+        series: {
+            pointWidth: 15
+        }
+    },
+        series: [{
+        name: '2008',
+            data: [85.5,0.9,0.6,0.6,11.9]
+        }, {
+        name: '2009',
+            data: [82.7,2.3,0.8,0.8,12.7]
+        }, {
+        name: '2010',
+            data: [83.0,1.9,1.1,0.6,12.7]
+        }, {
+        name: '2011',
+            data: [79.3,2.6,1.3,0.9,15.0]
+        }, {
+        name: '2012',
+            data: [87.6,2.1,0.7,0.6,8.4]
+        }, {
+        name: '2013',
+            data: [83.1,3.0,1.3,0.9,10.7]
+        }, {
+        name: '2014',
+            data: [79.8,2.4,1.1,1.1,14.3] 
+        }]
+    });
+
+
+
+
+
 <!-- DPW work orders (pie) -->
     var chart1 = new Highcharts.Chart({
         chart: {
@@ -677,7 +743,9 @@ They load to the specified containers -->
 		</div>
 	    </div>
 <br></br>
-	    <div id="WorkOrderChartContainer" style="width:100%; height:400px;"></div>
+        <div id="WorkOrderChartContainer" style="width:100%; height:400px;"></div>
+<br></br>
+        <div id="AnnualWorkOrderChartContainer" style="width:100%; height:400px;"></div>
 	</div>
     </div>
 </div>
@@ -703,6 +771,28 @@ They load to the specified containers -->
 		<div id="ExChartContainer" style="width:100%; height:400px;"></div>
 	    </div>
 	</div>
+    </div>
+</div>
+
+
+<!-- Test-->
+<div class="container">
+    <div class="marketing">
+    <div class="row-fluid">
+      <h1 class="section header">Fiscal Management Test</h1>
+        <p>Somerville has some of the lowest property taxes in the metropolitan area when the residential exemption is factored in.
+        The City has had to rely more on taxes as state aid has delined, but still maintains a generous exemption for residents.
+        The largest categories of expenditures are the schools, public safety and works, and the pensions and benefits of employees.</p>
+        <div id="PropertyTaxChartContainer" style="width:100%; height:400px;"></div> 
+    </div>
+
+<br></br>
+
+    <div class="row-fluid"> 
+        <div class="span6">
+            <script type='text/javascript' src='https://public.tableausoftware.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 869px;'><noscript><a href='#'><img alt='Inf Adj Dash ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CityofSomervilleHistoricalBudgetActualsInflation-Adjusted&#47;InfAdjDash&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='869' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableausoftware.com%2F' /> <param name='site_root' value='' /><param name='name' value='CityofSomervilleHistoricalBudgetActualsInflation-Adjusted&#47;InfAdjDash' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ci&#47;CityofSomervilleHistoricalBudgetActualsInflation-Adjusted&#47;InfAdjDash&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /></object></div>
+        </div>
+    </div>
     </div>
 </div>
 
