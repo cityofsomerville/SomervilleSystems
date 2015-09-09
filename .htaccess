@@ -1,0 +1,2 @@
+# Provide Specific Index Page (Set the default handler)
+DirectoryIndex index.html
