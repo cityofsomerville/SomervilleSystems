@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<!-- created by Daniel Hadley from twitter bootstrap -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Somerville Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Highcharts scripts -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script src="js/highcharts.js"></script>
+
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      
+    <!-- Google Analytics -->
+
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-13225056-2', 'auto');
+  ga('send', 'pageview');
+	  </script>
+    
+</head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+    
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">Home</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="live.html">Live</a>
+              </li>
+              <li class="">
+                <a href="work.html">Work</a>
+              </li>
+              <li class="">
+                <a href="play.html">Play</a>
+              </li>
+              <li class="">
+                <a href="family.html">Raise a Family</a>
+              </li>
+              <li class="">
+                <a href="http://www.somervillema.gov/">City Home</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="jumbotron masthead">
+  <div class="container">
+    <p>The City of Somerville's Key Systems Indicators</p>  
+    
+  </div>
+</div>
+
+
+<!-- The Charts are all here so that I can style them in a similar way.
+They load to the specified containers -->
+
+<script>
+    $(function() {
+    Highcharts.setOptions({
+        chart: {
+            backgroundColor: 'rgba(230, 230, 230, .9)',
+            borderWidth: 1,
+            plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+            plotShadow: true,
+            plotBorderWidth: 1,
+	    style: {
+            fontFamily: 'Helvetica'
+	    }
+        }
+    });
+
+    $(document).ready(function() {
+     $('.content').load('test1.html');
+    });
+
+<!-- Public Safety Violent Crime -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'ViolentCrimeChartContainer',
+	    type: 'line'
+        },
+	title: {
+                text: 'Violent Crime'
+        },
+	     subtitle: {
+                text: 'Source: NIBRS & Somerville Police Department'
+        },
+	    
+        xAxis: {
+                categories: ['2008', '2009', '2010', '2011', '2012', '2013', '2014']
+        },
+	yAxis: {
+		min: 0,
+                title: {
+                    text: 'Number of Offenses'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+        },
+
+        series: [{
+	    name: 'Murder',
+            data: [2, 3, 0, 1, 0, 0, 1]
+	      }, {
+	    name: 'Rape',
+            data: [20, 8, 14, 17, 22, 18, 10]
+	      }, {
+	    name: 'Robbery',
+            data: [112, 104, 79, 89, 84, 51, 58]
+	      }, {
+	    name: 'Aggravated Assault',
+            data: [150, 167, 136, 151, 152, 111, 137]
+        }]
+    });
+    
+<!-- Public Safety Property Crime -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'PropertyCrimeChartContainer',
+	    type: 'line'
+        },
+	title: {
+                text: 'Property Crime'
+        },
+	     subtitle: {
+                text: 'Source: NIBRS & Somerville Police Department'
+        },
+	    
+        xAxis: {
+                categories: ['2008', '2009', '2010', '2011', '2012', '2013', '2014']
+        },
+	yAxis: {
+                title: {
+                    text: 'Number of Offenses'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+        },
+
+        series: [{
+	    name: 'Burglary',
+            data: [461, 494, 514, 416, 349, 431, 192]
+	      }, {
+	    name: 'Theft from Motor Vehicle',
+            data: [801, 490, 625, 392, 470, 323, 315]
+	      }, {
+	    name: 'Other Larceny',
+            data: [829, 823, 711, 799, 800, 696, 634]
+	      }, {
+	    name: 'Theft of Motor Vehicle',
+            data: [250, 163, 178, 151, 133, 101, 112]
+        }]
+    });
+    
+<!-- Property Tax -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'PropertyTaxChartContainer',
+	    type: 'column'
+        },
+	title: {
+                text: 'Property Taxes, FY2014'
+            },
+	     subtitle: {
+                text: 'Source: City of Somerville'
+            },
+	    
+        xAxis: {
+                categories: ['Cambridge','Brookline','Somerville','Boston','Saugus','Watertown','Malden','Medford',
+			     'Winchester','Everett','Chelsea','Melrose','Belmont','Arlington','Revere','Lynn']
+            },
+	yAxis: {
+                title: {
+                    text: 'Tax on $400,000 Property with Residential Exemption ($)'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>${point.y:,.0f}</b>'
+        },
+	
+	legend: {
+	    enabled: false
+	},
+
+        series: [{
+	    name: 'Property Tax',
+            data: [1545,2561,{
+                y: 3156,
+                color: '#263c53'},3268,4644,4706,4801,4900,5064,5187,5193,5312,5400,5516,6220,6852]
+	      }]
+    });
+
+<!-- Revenue -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'RevChartContainer',
+	    type: 'pie'
+        },
+	title: {
+                text: 'Revenue, Fiscal Year 2014'
+            },
+	     subtitle: {
+                text: 'Source: City of Somerville'
+            },
+	    
+	    
+	tooltip: {
+            pointFormat: '<b>${point.y:,.0f}</b>'
+        },
+
+        series: [{
+	    name: 'Revenue',
+            data: [
+                ['Taxes',   123320008.4],
+                ['State Aid',       46979050.8],
+                ['Other',    9787302.25],
+                ['Fines and Forfeits',     7829841.8],
+                ['Licenses and Permits',   5872381.35],
+		['Fees', 1174476.27],
+		['Penalities and Interest', 978730.225],
+		['Misc Recurring', 391492.09]
+		]
+	}]
+    });
+    
+<!-- Expenditures -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'ExChartContainer',
+	    type: 'pie'
+        },
+	title: {
+                text: 'Expenditures, Fiscal Year 2014'
+            },
+	     subtitle: {
+                text: 'Source: City of Somerville'
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>${point.y:,.0f}</b>'
+        },
+
+        series: [{
+	    name: 'Expenditures',
+            data: [
+                ['School Department',   56766353],
+                ['Public Safety',       37191748],
+                ['Pension and Fringe',    35234288],
+                ['Public Works',     23489525],
+                ['General Government',   15659684],
+		['State Assessments', 11744763],
+		['Debt Service', 9787302],
+		['Culture and Recreation', 2740445],
+		['Other', 1761714],
+		['Overlay Reserve', 1565968]
+		]
+	}]
+    });
+
+
+
+ <!-- DPW work orders -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+        renderTo: 'AnnualWorkOrderChartContainer',
+        type: 'column'
+        },
+    title: {
+            text: 'On-Time Completion of DPW Work Orders'
+        },
+    subtitle: {
+        text: 'Source: City of Somerville'
+    },
+        tooltip: {
+            formatter: function() {
+                return this.x + '<br/>' + '<b>' + this.series.name + ': ' + this.y + '%' + '</b>';
+        }
+        },   
+        xAxis: {
+        categories: ['On Time','24 Hours Late','48 Hours Late','72 Hours Late', 'More than 72 Hours Late']
+        },
+    yAxis: {
+            title: {
+                    text: 'Percent Completed'
+            },
+            labels: {
+        format: '{value}%'
+        },
+        plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+            }]
+        },
+    plotOptions: {
+        series: {
+            pointWidth: 15
+        }
+    },
+        series: [{
+        name: '2008',
+            data: [85.5,0.9,0.6,0.6,11.9]
+        }, {
+        name: '2009',
+            data: [82.7,2.3,0.8,0.8,12.7]
+        }, {
+        name: '2010',
+            data: [83.0,1.9,1.1,0.6,12.7]
+        }, {
+        name: '2011',
+            data: [79.3,2.6,1.3,0.9,15.0]
+        }, {
+        name: '2012',
+            data: [87.6,2.1,0.7,0.6,8.4]
+        }, {
+        name: '2013',
+            data: [83.1,3.0,1.3,0.9,10.7]
+        }, {
+        name: '2014',
+            data: [79.8,2.4,1.1,1.1,14.3] 
+        }]
+    });
+
+
+
+
+
+<!-- DPW work orders (pie) -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'WorkOrder2ChartContainer',
+	    type: 'pie'
+        },
+	title: {
+                text: 'On-Time Completion of DPW Work Orders, 2013 (through October)'
+            },
+	     subtitle: {
+                text: 'Source: City of Somerville'
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>{point.y:,.0f}%</b>'
+        },
+
+        series: [{
+	    name: 'Work Orders',
+            data: [
+                ['On Time',83.3],
+                ['24 Hours Late',3.1],
+                ['48 Hours Late',1.4],
+                ['72 Hours Late',10.4]
+		]
+	}]
+    });
+
+<!-- 311 calls -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: '311CallsChartContainer',
+	    type: 'pie'
+        },
+	title: {
+                text: '311 Calls, 2013 (through November)'
+            },
+	     subtitle: {
+                text: 'Source: City of Somerville'
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>{point.y:,.0f}%</b>'
+        },
+
+        series: [{
+	    name: 'Percent of 311 calls',
+            data: [
+                ['Answered within 20 seconds',84.74],
+                ['Answered after 20 seconds/abandoned',15.26]
+	    ]
+	}]
+    });
+
+<!-- Happiness -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'HappyChartContainer',
+	    type: 'column'
+        },
+	title: {
+                text: 'Resident Satisfaction (Out of Ten)'
+            },
+	     subtitle: {
+                text: 'Source: SomerStat'
+            },
+	    
+        xAxis: {
+                categories: ["Happiness", "Life Satisfaction", "City Satisfaction", "Neighborhood Satisfaction",
+                    "Safety at Night", "Neighborhood Aesthetics", "Neighborhood Parks"]
+            },
+	yAxis: {
+                title: {
+                    text: 'Satisfaction'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>{point.y:,.1f}</b>'
+        },
+	
+	legend: {
+	    enabled: false
+	},
+
+        series: [{
+	    name: 'Satisfaction',
+            data: [7.6, 7.75, 7.67, 7.65, 7.54, 6.93, 7.35]
+	      }]
+    });
+
+<!-- Happiness2 -->
+     var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'Happy2ChartContainer',
+	    type: 'column'
+        },
+	title: {
+                text: 'Resident Satisfaction (Out of Five)'
+            },
+	     subtitle: {
+                text: 'Source: SomerStat'
+            },
+	    
+        xAxis: {
+                categories: ["City Aesthetics", "Cost of Housing", "Public Schools", "Police",
+                    "Maintenance of Streets", "Community Events"]
+            },
+	yAxis: {
+                title: {
+                    text: 'Satisfaction'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+	    
+	tooltip: {
+            pointFormat: '<b>{point.y:,.1f}</b>'
+        },
+	
+	legend: {
+	    enabled: false
+	},
+
+        series: [{
+	    name: 'Satisfaction',
+            data: [3.46, 2.8, 3.47, 3.88, 3.36, 4.02]
+	      }]
+    });
+    
+<!-- This is an empty chart- a place holder if we want to use more than one chart but style them in the same way -->
+    var chart2 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container2',
+            type: 'column'
+        },
+
+        xAxis: {
+            type: 'datetime'
+        },
+
+        series: [{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+            pointStart: Date.UTC(2010, 0, 1),
+            pointInterval: 3600 * 1000 // one hour
+        }]
+    });
+});
+</script>
+
+<!-- Happiness -->
+<div class="container">
+    <div class="marketing">
+	<div class="row-fluid">
+	  <h1 class="section header">Happiness Survey</h1>
+	  <p>Somerville made headlines when it became the first city in the country to measure wellbeing through
+	  a citywide survey. These charts show data from the 2013 survey, which demonstrated that city residents have a high
+	  degree of satisfaction, both with their personal lives and with Somerville as a place to live. The lowest average
+	  rating was given to the cost of housing, while the highest was reserved for the City's social and community
+	  events. </p>
+	    <div class="row">
+		<div class="span6">
+		    <div id="HappyChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+		<div class="span6">
+		    <div id="Happy2ChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</div>
+
+<!-- Satisfaction Map -->
+<div class="container">
+    <div class="marketing">
+	<div class="row-fluid">
+	  <h1 class="section header">Neighborhood Satisfaction</h1>
+	    <p>Residents in Davis Square and Union Square rate their neighborhood satisfaction very high.
+	    East Somerville is still high, but relatively lower than other parts of the city.</p>
+	    <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
+               <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="http://a.tiles.mapbox.com/v3/resistat.SomervilleNeighborhoodSatisfaction2/mm/zoompan,geocoder,legend,share.html?secure=1#14/42.3952/-71.1000">
+                </iframe>
+            </div>
+	</div>
+    </div>
+</div>
+
+<!-- Public Safety -->
+<div class="container">
+    <div class="marketing">
+	<div class="row-fluid">
+	  <h1 class="section header">Public Safety</h1>
+        <p>Crime in Somerville has dropped by roughly one third since 2008. This decline can be attributed to national trends (e.g., newer cars are more difficult to steal), the City's education and economic development initiatives, and the Police Department's efforts to use data-driven strategies to identify problems and deploy resources.</p>
+	    <div class="row">
+		<div class="span4">
+		    <div id="AllCrimeChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+		<div class="span4">
+		    <div id="ViolentCrimeChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+		<div class="span4">
+		    <div id="PropertyCrimeChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+	    </div>
+	</div>
+    </div>
+</div>
+
+<br></br>
+<!--  Carousel - consult the Twitter Bootstrap docs at
+      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <img class="center" src="./img/StreetRobberies.png" alt="" />
+      <div class="carousel-caption">
+        <p>Street Robberies</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="center" src="./img/AllBurglary.png" alt="" />
+      <div class="carousel-caption">
+        <p>All Burglary</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="center" src="./img/CarBreaks.png" alt="" />
+      <div class="carousel-caption">
+        <p>Car Breaks</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
+
+
+<!-- 311 Map -->
+<div class="container">
+    <div class="marketing">
+	<div class="row-fluid">
+	  <h1 class="section header">Quality of Life 311 Calls</h1>
+	    <p>This is a random sample of the top quality-of-life calls from the year 2013: reports of rats, graffiti and noisy neighbors.
+	    It shows where these types of calls tend to cluster, e.g., noise calls in the vicinity of Tufts.</p>
+	    <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
+               <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://a.tiles.mapbox.com/v3/resistat.SomervilleQoL2/mm/zoompan,geocoder,legend,share.html?secure=1#14/42.3952/-71.1000">
+                </iframe>
+            </div>
+	</div>
+    </div>
+</div>
+
+<!-- City Operations -->
+<div class="container">
+    <div class="marketing">
+	<div class="row-fluid">
+	  <h1 class="section header">City Operations</h1>
+	  <p>Over 80 percent of calls to 311 are answered within 20 seconds. Many of these calls result in the creation of a work
+	  order for the Department of Public Works, which completes over 80 percent of its work orders on time. There is variation
+	  over the year, though, such as when heavy snow pushed the on-time completion rate in February 2013 down to 51 percent.</p>
+	    <div class="row">
+		<div class="span6">
+		    <div id="311CallsChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+		<div class="span6">
+		    <div id="WorkOrder2ChartContainer" style="width:100%; height:400px;"></div>
+		</div>
+	    </div>
+<br></br>
+        
+        <div id="AnnualWorkOrderChartContainer" style="width:100%; height:400px;"></div>
+	</div>
+    </div>
+</div>
+
+<!-- Fiscal Management -->
+<div class="container">
+    <div class="marketing">
+	<div class="row-fluid">
+	  <h1 class="section header">Fiscal Management</h1>
+	    <p>Somerville has some of the lowest property taxes in the metropolitan area when the residential exemption is factored in.
+	    The City has had to rely more on taxes as state aid has declined, but still maintains a generous exemption for residents.
+	    The largest categories of expenditures are the schools, public safety and works, and the pensions and benefits of employees.</p>
+	    <div id="PropertyTaxChartContainer" style="width:100%; height:400px;"></div> 
+	</div>
+
+<br></br>
+
+	<div class="row-fluid"> 
+	    <div class="span6">
+		<div id="RevChartContainer" style="width:100%; height:400px;"></div>
+	    </div>
+	    <div class="span6">
+		<div id="ExChartContainer" style="width:100%; height:400px;"></div>
+	    </div>
+	</div>
+
+<br></br>
+<!-- Tableau Visual -->
+    <p>Below is an historical view of Somerville's actual expenditures and revenue by category and adjusted for inflation.  
+    The Percent Difference chart displays year over year increases or decreases in funding for particular categories as a percentage of the prior year.
+    Hover over a category to reveal exact amounts for each fiscal year and use the slider bar to change what years are displayed.  Selecting a category will highlight it and reveal its corresponding trend line.
+
+    Notable trends include the increased reliance on Property Tax for revenue over the past decade as well as an incredible 28% cost savings for Employee Benefits between FY12 and FY13 achieved through switching to Massachusetts Group Insurance Commission.
+    </p>
+    <center>
+    <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+        <div class='tableauPlaceholder' style='width: 1004px; height: 869px;'>
+            <noscript>
+                <a href='#'><img alt='Inf Adj Dash ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FY&#47;FY05toFY15RevenueandExpenseCategories&#47;InfAdjDash&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' width='1004' height='869' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='site_root' value='' />
+                <param name='name' value='FY05toFY15RevenueandExpenseCategories&#47;InfAdjDash' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FY&#47;FY05toFY15RevenueandExpenseCategories&#47;InfAdjDash&#47;1.png' /> <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='showVizHome' value='no' />
+                <param name='showTabs' value='y' />
+                <param name='bootstrapWhenNotified' value='true' />
+            </object>
+        </div>
+    </div>
+    </center>
+</div>
+
+
+
+
+<!-- Transportation Map -->
+<div class="container">
+
+  <div class="marketing">
+    
+    <div class="row-fluid">
+        <h1 class="section header">Transportation</h1>
+      <div class="row">
+        <div class="span4">
+            <div class="tasks-header bg-color dark-blue rounded-top">
+                <div class="box-padding narrow-horizontal clearfix">
+                    <h4 class="light no-margin">Summary</h4>
+                </div>
+            </div>
+            <div class="bg-color dark-blue columns clearfix">
+		<div class="col_50 lines lines-light aligncenter">
+                    <h5 class="no-margin normal">Roadway in Somerville</h5>
+		    <h2 class="normal inline">93 Miles</h2>
+		</div>
+		<div class="col_50 lines lines-light aligncenter">
+                    <h5 class="no-margin normal">Reconstructed since 2004</h5>
+		    <h2 class="normal inline">35 Miles</h2>
+		</div>
+	    </div>
+            <div class="bg-color greenfade">
+		<div class="box-padding aligncenter">
+		    <h5 class="no-margin normal">SomerVision goal</h5>
+			<h1 class="no-margin normal">50%</h1>
+			<h5 class="no-margin normal">Of New Trips via Transit, Bike, or Walking</h5>
+		</div>
+	    </div>
+	    	<a href="http://www.somervillema.gov/sites/default/files/SomerVisionComprehensivePlanWithAppendicesAdoptedApril-19-2012.pdf" target="_blank" id="code" type="submit" class="btn btn-large btn-block">More Info</a>
+        </div>
+        <div class="span8">
+            <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
+               <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps/ms?msa=0&amp;msid=211435730713785105131.000492ea712f7e25c9ddf&amp;ie=UTF8&amp;t=p&amp;z=13&amp;output=embed">
+                </iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Seattle,+WA&amp;aq=0&amp;oq=seattle&amp;sll=37.822293,-85.76824&amp;sspn=6.628688,16.907959&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;z=11&amp;ll=47.60621,-122.332071" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+            </div>
+            <p>Proposed Green Line Extension</p>
+       </div>
+        
+        </div>
+     </div>
+
+  </div>
+
+</div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Somerville Systems : D. Hadley & E. Monea | <a href="https://github.com/DanielHadley/SomervilleSystems">Code.</a> </p>
+<p><a href="mailto:dhadley@somervillema.gov">Contact us</a> with questions, requests, and suggestions.</p>
+
+<br>
+<img src="./img/somervilleSeal.png" alt="Kippt">
+       
+        
+        
+      
+
+</div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+    
+
+  
+
+</body></html>
