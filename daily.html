@@ -1,6 +1,68 @@
 <!DOCTYPE html>
 <!-- created by Daniel Hadley from twitter bootstrap -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head>
+<style type="text/css">
+.knitr .inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.rimage .left {
+  text-align: left;
+}
+.rimage .right {
+  text-align: right;
+}
+.rimage .center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>Somerville Systems</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,32 +146,170 @@
 </div>
 
 
+<!-- The Charts are all here so that I can style them in a similar way.
+They load to the specified containers -->
 
-<!-- 311 -->
-<div class="container">
-    <div class="marketing">
-  <div class="row-fluid">
-    <h1 class="section header">311</h1>
-    <p>This chart displays data on the top 311 calls from the previous day. </p>
-      <div class="row">
-    <div class="span12">
-        <img class="center" src="./img/daily/LastTwentyFour311.png" alt="" />
-    </div>
-      </div>
-  </div>
-    </div>
-</div>
+<script>
+    $(function() {
+    Highcharts.setOptions({
+        chart: {
+            backgroundColor: 'rgba(230, 230, 230, .9)',
+            borderWidth: 1,
+            plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+            plotShadow: true,
+            plotBorderWidth: 1,
+	    style: {
+            fontFamily: 'Helvetica'
+	    }
+        }
+    });
+
+<!-- Constituent Services -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'AllConstituentServicesContainer',
+        type: 'column'
+        },
+    title: {
+                text: 'Top 311 Calls Yesterday, 09-15-2015'
+            },
+         subtitle: {
+                text: 'Source: 311'
+            },
+        
+        xAxis: {
+                categories: ["DPW information/feedback", "How to appeal a parking ticket inquiry", "ISD-Health", "Temporary no parking sign posting", "Disposal of yard waste/xmas tree inquiry", "Trash questions", "ISD-Buildings", "T&P information/feedback", "Clerk-Personal documents/permit inquiry/claim forms", "Illegal parking", "Clerk-Public services/non-criminal citations", "Ticket info. (balance, how many, citation #, etc.)", "TV/monitor pick up request", "Obtain a parking permit inquiry", "School building maintenance & repairs"]
+            },
+    yAxis: {
+                title: {
+                    text: 'Calls'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+    
+    legend: {
+        enabled: false
+    },
+
+        series: [{
+        name: 'Calls',
+            data: [8, 8, 8, 8, 9, 9, 10, 10, 11, 11, 13, 17, 17, 27, 41]
+          }]
+    });
 
 
-<!-- Citizenserve -->
+<!-- Google Analytics -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'GoogleAnalyticsContainer',
+        type: 'column'
+        },
+    title: {
+                text: 'Top Website Views Yesterday, 09-15-2015'
+            },
+         subtitle: {
+                text: 'Source: Google Analytics'
+            },
+        
+        xAxis: {
+                categories: ["Open Bids |", "Residents |", "Information for New Residents |", "Planning and Zoning |", "Employee Address Lookup |", "Board of Aldermen |", "Elections |", "DPW - Trash Disposal & Recycling Procedures |", "Inspectional Services Division |", "Calendar of Events |", "Make Payments Online |", "Assessing |", "Somerville City Job Postings |", "Address Information Lookup |", "Street Sweeping Schedule |"]
+            },
+    yAxis: {
+                title: {
+                    text: 'Views'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+    
+    legend: {
+        enabled: false
+    },
+
+        series: [{
+        name: 'Views',
+            data: [61, 63, 65, 66, 68, 83, 145, 155, 158, 160, 163, 231, 258, 303, 380]
+          }]
+    });
+
+
+  <!-- Inspectional Services Building Permits -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'ISDBuildingContainer',
+        type: 'column'
+        },
+    title: {
+                text: 'Top Building Permits From Yesterday Yesterday, 09-15-2015'
+            },
+         subtitle: {
+                text: 'Source: Citizenserve'
+            },
+        
+        xAxis: {
+                categories: ["", "Commercial Other", "Commercial Repair", "Residential - Existing", "Residential Alteration", "Commercial Alteration", "Residential Repair", "Commercial", "Residential"]
+            },
+    yAxis: {
+                title: {
+                    text: 'Calls'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+    
+    legend: {
+        enabled: false
+    },
+
+        series: [{
+        name: 'Calls',
+            data: [1, 1, 1, 2, 2, 3, 3, 5, 18]
+          }]
+    });
+
+    
+    
+<!-- This is an empty chart- a place holder if we want to use more than one chart but style them in the same way -->
+    var chart2 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container2',
+            type: 'column'
+        },
+
+        xAxis: {
+            type: 'datetime'
+        },
+
+        series: [{
+            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+            pointStart: Date.UTC(2010, 0, 1),
+            pointInterval: 3600 * 1000 // one hour
+        }]
+    });
+});
+</script>
+
+
+
+<!-- Constituent Services -->
 <div class="container">
     <div class="marketing">
 	<div class="row-fluid">
-	  <h1 class="section header">Building Permits</h1>
-	  <p>This chart displays data on common building permits from the most recent day for which data is available. </p>
+	  <h1 class="section header">311 Calls</h1>
+	  <p>Yesterday, 09-15-2015, the Somerville 311 line received 461 calls from constituents.</p>
 	    <div class="row">
 		<div class="span12">
-		    <img class="center" src="./img/daily/LastTwentyFourPermits.png" alt="" />
+		    <div id="AllConstituentServicesContainer" style="width:100%; height:400px;"></div>
 		</div>
 	    </div>
 	</div>
@@ -120,18 +320,35 @@
 <!-- Google Analytics -->
 <div class="container">
     <div class="marketing">
-  <div class="row-fluid">
-    <h1 class="section header">Web Analytics</h1>
-    <p>This chart displays data on the top website views from the previous day. </p>
-      <div class="row">
-    <div class="span12">
-        <img class="center" src="./img/daily/LastTwentyFourWeb.png" alt="" />
+    <div class="row-fluid">
+      <h1 class="section header">Website Analytics</h1>
+      <p><a href="http://www.somervillema.gov/"> The City's official website </a> received 7308 pageviews yesterday.</p>
+        <div class="row">
+        <div class="span12">
+            <div id="GoogleAnalyticsContainer" style="width:100%; height:400px;"></div>
+        </div>
+        </div>
     </div>
-      </div>
-  </div>
     </div>
 </div>
-        
+
+
+<!-- Inspectional Services Building Permits -->
+<div class="container">
+    <div class="marketing">
+    <div class="row-fluid">
+      <h1 class="section header">Building Permits</h1>
+      <p>Below are data on the top permits from yesterday. Please note: there will not be data for weekends.</p>
+        <div class="row">
+        <div class="span12">
+            <div id="ISDBuildingContainer" style="width:100%; height:400px;"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
 
 
     <!-- Footer
