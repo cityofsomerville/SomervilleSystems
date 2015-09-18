@@ -344,6 +344,12 @@ They load to the specified containers -->
                   minZoom: 9
                 }).addTo(map);
 
+              // load GeoJSON from an external file
+              $.getJSON("/geo/UniqueCS.geojson",function(data){
+                // add GeoJSON layer to the map once the file is loaded
+                L.geoJson(data).addTo(map);
+              });
+
             </script>
         </div>
         </div>
