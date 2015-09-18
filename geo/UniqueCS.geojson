@@ -1,0 +1,155 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09032,42.37845]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09047,42.37819]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09067,42.37988]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08892,42.37438]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08904,42.37490]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08969,42.37427]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08989,42.37429]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09074,42.37442]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09111,42.38009]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09775,42.39527]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.11542,42.38799]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09837,42.39305]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.10436,42.38086]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09082,42.38698]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.12079,42.39539]
+      }
+    }
+  ]
+}
