@@ -316,24 +316,17 @@ They load to the specified containers -->
 		    <div id="AllConstituentServicesContainer" style="width:100%; height:400px;"></div>
 		</div>
 	    </div>
-	</div>
-    </div>
-</div>
 
+      <br></br>
 
-<!-- Map Test http://maptimeboston.github.io/leaflet-intro/ -->
-<div class="container">
-    <div class="marketing">
-    <div class="row-fluid">
-      <h1 class="section header">Map Test</h1>
-      <p>Below are data on the top calls from yesterday.</p>
+     <p>This chart usually contians many of the same call types - which is why we created the map below to track any work orders that are not typically found in the list of top issues. Lately we have seen a slight uptick in calls for <b> Arborist/maintenance request </b>. This map shows calls of that type for the last week.</p>
         <div class="row">
         <div class="span12">
             <div id="map" style="height: 400px"></div>
             <script>
 
                 // initialize the map
-              var map = L.map('map').setView([42.38, -71.09], 13);
+              var map = L.map('map').setView([42.3875, -71.1000], 13);
 
               // load a tile layer
               L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
@@ -343,7 +336,7 @@ They load to the specified containers -->
                   minZoom: 9
                 }).addTo(map);
 
-              // load GeoJSON from an external file
+              // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
               var district_boundary = new L.geoJson();
               district_boundary.addTo(map);
 
@@ -359,9 +352,10 @@ They load to the specified containers -->
             </script>
         </div>
         </div>
-    </div>
+	</div>
     </div>
 </div>
+
 
 
 <!-- Google Analytics -->
@@ -385,7 +379,7 @@ They load to the specified containers -->
     <div class="marketing">
     <div class="row-fluid">
       <h1 class="section header">Building Permits</h1>
-      <p>Below are data on the top permits from yesterday. Please note: there will not be data for weekends.</p>
+      <p>Below are data on the top permits from yesterday.</p>
         <div class="row">
         <div class="span12">
             <div id="ISDBuildingContainer" style="width:100%; height:400px;"></div>
