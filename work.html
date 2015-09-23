@@ -651,7 +651,7 @@ They load to the specified containers -->
     <div class="row">
         <div class="span12">
             <p>This map shows the condition of Somerville's streets as of 2014, the most recent period for which reliable data is available. Despite dwindling funding from the State, the City is commited to maintaining its infrastructure </p>
-            
+
             <div id="map" style="height: 400px"></div>
             <script>
 
@@ -666,18 +666,32 @@ They load to the specified containers -->
                   minZoom: 9
                 }).addTo(map);
 
+              
               // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
-              var district_boundary = new L.geoJson();
-              district_boundary.addTo(map);
+
+              // Function to make popup
+              function onEachFeature(feature, layer) {
+                    if (feature.properties && feature.properties.STREETNAME) {
+                        layer.bindPopup(feature.properties.STREETNAME);
+                    }
+                }
+
+              // Define a style  
+              var myStyle = {
+                //"color": "#ff7800",
+                "weight": 3,
+                "opacity": .65
+                };
 
               $.ajax({
               dataType: "json",
               url: "./geo/PavementConditionMap.geojson",
-              success: function(data) {
-                  $(data.features).each(function(key, data) {
-                      district_boundary.addData(data);
-                  });
-              }
+              success: function (response) {
+                    geojsonLayer = L.geoJson(response, {
+                        style: myStyle,
+                        onEachFeature: onEachFeature
+                    }).addTo(map);
+                }
               }).error(function() {});
             </script>
         </div>
