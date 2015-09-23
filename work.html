@@ -20,6 +20,11 @@
     <!-- Highcharts scripts -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
       <script src="js/highcharts.js"></script>
+
+    <!-- Leaflet scripts -->
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+      <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
       
     <!-- Google Analytics -->
 
@@ -641,7 +646,44 @@ They load to the specified containers -->
 	    </div>
 	</div>
 
-<br></br>
+          <br></br>
+
+     <p>This map shows the condition of Somerville's streets as of 2014, the most recent period for which reliable data is available. Despite dwindling funding from the State, the City is commited to maintaining its infrastructure </p>
+        <div class="row">
+        <div class="span12">
+            <div id="map" style="height: 400px"></div>
+            <script>
+
+                // initialize the map
+              var map = L.map('map').setView([42.3875, -71.1000], 13);
+
+              // load a tile layer
+              L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+                {
+                  attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                  maxZoom: 17,
+                  minZoom: 9
+                }).addTo(map);
+
+              // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
+              var district_boundary = new L.geoJson();
+              district_boundary.addTo(map);
+
+              $.ajax({
+              dataType: "json",
+              url: "./geo/PavementConditionMap.geojson",
+              success: function(data) {
+                  $(data.features).each(function(key, data) {
+                      district_boundary.addData(data);
+                  });
+              }
+              }).error(function() {});
+            </script>
+        </div>
+        </div>
+
+        <br></br>
+
 	<div class="row-fluid">
 	  <p>Somerville commuters are far less likely to drive and far more likely to walk, bike, or take public transporation than their
 	  counterparts in Massachusetts and the U.S. In fact, Somerville has the 10th highest concentration of transit commuters among municipalities in the U.S.</p>
