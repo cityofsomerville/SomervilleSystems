@@ -176,14 +176,14 @@ They load to the specified containers -->
         type: 'column'
         },
     title: {
-                text: 'Top 311 Calls Yesterday, 09-22-2015'
+                text: 'Top 311 Calls Yesterday, 09-23-2015'
             },
          subtitle: {
                 text: 'Source: 311'
             },
         
         xAxis: {
-                categories: ["City office hours or directions", "ISD-Buildings", "ISD-Health", "Arborist/maintenance request", "Illegal parking", "Street light issue", "T&P information/feedback", "TEST Trial/Sample Service Request", "Temporary no parking sign posting", "School building maintenance & repairs", "Trash questions", "How to appeal a parking ticket inquiry", "TV/monitor pick up request", "Ticket info. (balance, how many, citation #, etc.)", "Obtain a parking permit inquiry"]
+                categories: ["City building maintenance & repairs", "Disposal of yard waste/xmas tree inquiry", "Illegal parking", "City school department call", "Street light issue", "T&P information/feedback", "Trash questions", "Ticket info. (balance, how many, citation #, etc.)", "TV/monitor pick up request", "Assistance paying a parking ticket", "ISD-Buildings", "Temporary no parking sign posting", "How to appeal a parking ticket inquiry", "School building maintenance & repairs", "Obtain a parking permit inquiry"]
             },
     yAxis: {
                 title: {
@@ -202,7 +202,7 @@ They load to the specified containers -->
 
         series: [{
         name: 'Calls',
-            data: [7, 7, 7, 8, 8, 8, 8, 8, 8, 9, 10, 11, 13, 13, 30]
+            data: [6, 7, 7, 8, 8, 8, 8, 9, 10, 11, 11, 13, 14, 14, 29]
           }]
     });
 
@@ -214,14 +214,14 @@ They load to the specified containers -->
         type: 'column'
         },
     title: {
-                text: 'Top Website Views Yesterday, 09-22-2015'
+                text: 'Top Website Views Yesterday, 09-23-2015'
             },
          subtitle: {
                 text: 'Source: Google Analytics'
             },
         
         xAxis: {
-                categories: ["Residents |", "Planning and Zoning |", "Winter Hill: Better Block Community Walk and Talk |", "Employee Address Lookup |", "Voter Registration Information |", "Commercial Real Estate |", "Board of Aldermen |", "Address Information Lookup |", "Calendar of Events |", "Make Payments Online |", "Inspectional Services Division |", "DPW - Trash Disposal & Recycling Procedures |", "Assessing |", "Somerville City Job Postings |", "Street Sweeping Schedule |"]
+                categories: ["Mayor |", "Residents |", "Planning and Zoning |", "Address Information Lookup |", "Forms Library |", "Board of Aldermen |", "Employee Address Lookup |", "Open Bids |", "Calendar of Events |", "Inspectional Services Division |", "DPW - Trash Disposal & Recycling Procedures |", "Make Payments Online |", "Somerville City Job Postings |", "Assessing |", "Street Sweeping Schedule |"]
             },
     yAxis: {
                 title: {
@@ -240,7 +240,7 @@ They load to the specified containers -->
 
         series: [{
         name: 'Views',
-            data: [59, 62, 63, 69, 71, 74, 87, 91, 144, 144, 149, 152, 264, 297, 479]
+            data: [50, 54, 60, 61, 62, 67, 73, 86, 119, 134, 147, 160, 219, 240, 288]
           }]
     });
 
@@ -252,14 +252,14 @@ They load to the specified containers -->
         type: 'column'
         },
     title: {
-                text: 'Top Building Permits From Yesterday Yesterday, 09-22-2015'
+                text: 'Top Building Permits From Yesterday Yesterday, 09-23-2015'
             },
          subtitle: {
                 text: 'Source: Citizenserve'
             },
         
         xAxis: {
-                categories: ["Commercial Other", "Commercial Repair", "Dumpster Permit", "Commercial", "Residential Alteration", "Residential Repair", "Residential"]
+                categories: ["Commercial - Existing", "Commercial Other", "Residential Addition", "Residential", "Residential Repair", "Residential - Existing"]
             },
     yAxis: {
                 title: {
@@ -278,7 +278,7 @@ They load to the specified containers -->
 
         series: [{
         name: 'Calls',
-            data: [1, 1, 1, 3, 3, 3, 15]
+            data: [1, 1, 1, 7, 8, 23]
           }]
     });
 
@@ -310,7 +310,7 @@ They load to the specified containers -->
     <div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">311 Calls</h1>
-	  <p>Yesterday, 09-22-2015, the Somerville 311 line received 351 calls from constituents.</p>
+	  <p>Yesterday, 09-23-2015, the Somerville 311 line received 354 calls from constituents.</p>
 	    <div class="row">
 		<div class="span12">
 		    <div id="AllConstituentServicesContainer" style="width:100%; height:400px;"></div>
@@ -319,14 +319,67 @@ They load to the specified containers -->
 
       <br></br>
 
-     <p>This chart usually contians many of the same call types - which is why we created the map below to track any work orders that are not typically found in the list of top issues. Lately we have seen a slight uptick in calls for <b> Arborist/maintenance request </b>. This map shows calls of that type for the last week.</p>
+        <p>This chart usually contians many of the same call types - which is why we created the map below to track any work orders that are not typically found in the list of top issues. Lately we have seen a slight uptick in calls for <b> Report missed recycling pick up </b>. This map shows calls of that type for the last week.</p>
         <div class="row">
         <div class="span12">
-            <div id="map" style="height: 400px"></div>
+            <div id="uniquecs-map" style="height: 400px"></div>
             <script>
 
-                // initialize the map
-              var map = L.map('map').setView([42.3875, -71.1000], 13);
+              // initialize the map
+              var umap = L.map('uniquecs-map').setView([42.3947, -71.10548], 13);
+
+              // load a tile layer
+              L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+                {
+                  attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                  maxZoom: 17,
+                  minZoom: 9
+                }).addTo(umap);
+
+              // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
+              // Function to make popup
+              function onEachFeatureU(feature, layer) {
+                    if (feature.properties && feature.properties.Date) {
+                        layer.bindPopup(feature.properties.Date);
+                    }
+                }
+
+              function pointToLayerU (feature, latlng) {
+                  return new L.CircleMarker(latlng, {
+                      radius: 10,
+                      fillColor: "#2f7ed8",
+                      color: "#000",
+                      weight: 1,
+                      opacity: .75,
+                      fillOpacity: 0.4
+                    })
+                }
+
+              $.ajax({
+              dataType: "json",
+              url: "./geo/UniqueCS.geojson",
+              success: function (response) {
+                    geojsonLayer = L.geoJson(response, {
+                      pointToLayer: pointToLayerU,
+                      onEachFeature : onEachFeatureU
+                    }).addTo(umap);
+                }
+              }).error(function() {});
+
+            </script>
+        </div>
+        </div>
+
+        <br></br>
+
+        <p>We also like to keep careful track of quality of life calls. Below are calls about <FONT COLOR="#900000">graffiti</FONT>, <FONT COLOR="#8bbc22">rats</FONT>, and <FONT COLOR="#1aadce">trash</FONT> from the trailing 7 days.</p>
+        <div class="row">
+        <div class="span12">
+            <div id="qol-map" style="height: 400px"></div>
+            <script>
+
+              // initialize the map
+              var map = L.map('qol-map').setView([42.3947, -71.10548], 13);
 
               // load a tile layer
               L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
@@ -337,21 +390,47 @@ They load to the specified containers -->
                 }).addTo(map);
 
               // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
-              var district_boundary = new L.geoJson();
-              district_boundary.addTo(map);
+
+              // Function to make popup
+              function onEachFeature(feature, layer) {
+                    if (feature.properties && feature.properties.typeName) {
+                        layer.bindPopup(feature.properties.typeName);
+                    }
+                }
+
+              function filling(x) {
+                return x == 'Trash/debris on sidewalk report' ? "#1aadce" :
+                       x == 'Rats' ? "#8bbc22" :
+                       x == 'Graffiti' ? "#900000" :
+                       "#808080";
+              }         
+
+              function pointToLayer (feature, latlng) {
+                  return new L.CircleMarker(latlng, {
+                      radius: 10,
+                      fillColor: filling(feature.properties["typeName"]),
+                      color: "#000",
+                      weight: 1,
+                      opacity: .75,
+                      fillOpacity: 0.4
+                    })
+                }
 
               $.ajax({
               dataType: "json",
-              url: "./geo/UniqueCS.geojson",
-              success: function(data) {
-                  $(data.features).each(function(key, data) {
-                      district_boundary.addData(data);
-                  });
-              }
+              url: "./geo/QualityOfLifeCS.geojson",
+              success: function (response) {
+                    geojsonLayer = L.geoJson(response, {
+                      pointToLayer: pointToLayer,
+                      onEachFeature : onEachFeature
+                    }).addTo(map);
+                }
               }).error(function() {});
+
             </script>
         </div>
         </div>
+
 	</div>
     </div>
 </div>
@@ -363,7 +442,7 @@ They load to the specified containers -->
     <div class="marketing">
     <div class="row-fluid">
       <h1 class="section header">Website Analytics</h1>
-      <p><a href="http://www.somervillema.gov/"> The City's official website </a> received 6857 pageviews yesterday.</p>
+      <p><a href="http://www.somervillema.gov/"> The City's official website </a> received 6311 pageviews yesterday.</p>
         <div class="row">
         <div class="span12">
             <div id="GoogleAnalyticsContainer" style="width:100%; height:400px;"></div>

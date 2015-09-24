@@ -11,7 +11,7 @@ library(leafletR)
 d <- readOGR(dsn="../../PCI_Code/2015_Shapefile", layer="BL_SEGMENTS_2015")
 
 # Was having trouble with some characters from other columns. These two seem to be fine
-d <- d[,c("OCI", "STREETNAME")]
+d <- d[,c("OCI", "STREETNAME", "PavementWi")]
 
 toGeoJSON(data = d, name = "PavementConditionMap", "../geo/")
 

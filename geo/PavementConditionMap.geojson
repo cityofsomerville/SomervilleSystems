@@ -6,6 +6,7 @@
       "properties": {
         "OCI": "56.8",
         "STREETNAME": "CLEVELAND ST",
+        "PavementWi": "26.5",
         "ID": "0"
       },
       "geometry": {
@@ -18,6 +19,7 @@
       "properties": {
         "OCI": "49.9",
         "STREETNAME": "CONCORD AVE",
+        "PavementWi": "26.5",
         "ID": "1"
       },
       "geometry": {
@@ -30,6 +32,7 @@
       "properties": {
         "OCI": "20.62",
         "STREETNAME": "MEACHAM RD",
+        "PavementWi": "26.5",
         "ID": "2"
       },
       "geometry": {
@@ -42,6 +45,7 @@
       "properties": {
         "OCI": "39.22",
         "STREETNAME": "MEDFORD ST",
+        "PavementWi": "33",
         "ID": "3"
       },
       "geometry": {
@@ -54,6 +58,7 @@
       "properties": {
         "OCI": "52.14",
         "STREETNAME": "MOUNT VERNON ST",
+        "PavementWi": "26.5",
         "ID": "4"
       },
       "geometry": {
@@ -66,6 +71,7 @@
       "properties": {
         "OCI": "36.64",
         "STREETNAME": "BEACON ST",
+        "PavementWi": "42.5",
         "ID": "5"
       },
       "geometry": {
@@ -78,6 +84,7 @@
       "properties": {
         "OCI": "99.34",
         "STREETNAME": "ESSEX ST",
+        "PavementWi": "25.5",
         "ID": "6"
       },
       "geometry": {
@@ -90,6 +97,7 @@
       "properties": {
         "OCI": "97.16",
         "STREETNAME": "FAIRLEE ST",
+        "PavementWi": "19.5",
         "ID": "7"
       },
       "geometry": {
@@ -102,6 +110,7 @@
       "properties": {
         "OCI": "99.69",
         "STREETNAME": "HAMMOND ST",
+        "PavementWi": "26.5",
         "ID": "8"
       },
       "geometry": {
@@ -114,6 +123,7 @@
       "properties": {
         "OCI": "94.43",
         "STREETNAME": "ASSEMBLY SQ DR",
+        "PavementWi": "62",
         "ID": "9"
       },
       "geometry": {
@@ -126,6 +136,7 @@
       "properties": {
         "OCI": "49.52",
         "STREETNAME": "HOLYOKE RD",
+        "PavementWi": "26.5",
         "ID": "10"
       },
       "geometry": {
@@ -138,6 +149,7 @@
       "properties": {
         "OCI": "81.8",
         "STREETNAME": "HOUGHTON ST",
+        "PavementWi": "27.5",
         "ID": "11"
       },
       "geometry": {
@@ -150,6 +162,7 @@
       "properties": {
         "OCI": "56.94",
         "STREETNAME": "LANDERS ST",
+        "PavementWi": "27",
         "ID": "12"
       },
       "geometry": {
@@ -162,6 +175,7 @@
       "properties": {
         "OCI": "56.64",
         "STREETNAME": "LEE ST",
+        "PavementWi": "26",
         "ID": "13"
       },
       "geometry": {
@@ -174,6 +188,7 @@
       "properties": {
         "OCI": "60.08",
         "STREETNAME": "DIMICK ST",
+        "PavementWi": "27",
         "ID": "14"
       },
       "geometry": {
@@ -186,6 +201,7 @@
       "properties": {
         "OCI": "67.25",
         "STREETNAME": "EARLE ST",
+        "PavementWi": "26",
         "ID": "15"
       },
       "geometry": {
@@ -198,6 +214,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "CHARNWOOD RD",
+        "PavementWi": "26",
         "ID": "16"
       },
       "geometry": {
@@ -210,6 +227,7 @@
       "properties": {
         "OCI": "87.28",
         "STREETNAME": "CHESTNUT ST",
+        "PavementWi": "40",
         "ID": "17"
       },
       "geometry": {
@@ -222,6 +240,7 @@
       "properties": {
         "OCI": "94.13",
         "STREETNAME": "MADISON ST",
+        "PavementWi": "26",
         "ID": "18"
       },
       "geometry": {
@@ -234,6 +253,7 @@
       "properties": {
         "OCI": "85.04",
         "STREETNAME": "MANSFIELD ST",
+        "PavementWi": "26.5",
         "ID": "19"
       },
       "geometry": {
@@ -246,6 +266,7 @@
       "properties": {
         "OCI": "80.9",
         "STREETNAME": "MORELAND ST",
+        "PavementWi": "26.5",
         "ID": "20"
       },
       "geometry": {
@@ -258,6 +279,7 @@
       "properties": {
         "OCI": "75.76",
         "STREETNAME": "MORTON ST",
+        "PavementWi": "26.5",
         "ID": "21"
       },
       "geometry": {
@@ -270,6 +292,7 @@
       "properties": {
         "OCI": "66.81",
         "STREETNAME": "ELM ST",
+        "PavementWi": "38",
         "ID": "22"
       },
       "geometry": {
@@ -282,6 +305,7 @@
       "properties": {
         "OCI": "75.6",
         "STREETNAME": "FRANKLIN ST",
+        "PavementWi": "25.5",
         "ID": "23"
       },
       "geometry": {
@@ -294,6 +318,7 @@
       "properties": {
         "OCI": "42.64",
         "STREETNAME": "GRANITE ST",
+        "PavementWi": "26.5",
         "ID": "24"
       },
       "geometry": {
@@ -306,6 +331,7 @@
       "properties": {
         "OCI": "48.72",
         "STREETNAME": "ASHLAND ST",
+        "PavementWi": "20",
         "ID": "25"
       },
       "geometry": {
@@ -318,6 +344,7 @@
       "properties": {
         "OCI": "49.2",
         "STREETNAME": "HIGHLAND AVE",
+        "PavementWi": "39.5",
         "ID": "26"
       },
       "geometry": {
@@ -330,6 +357,7 @@
       "properties": {
         "OCI": "51.6",
         "STREETNAME": "HILL ST",
+        "PavementWi": "26.5",
         "ID": "27"
       },
       "geometry": {
@@ -342,6 +370,7 @@
       "properties": {
         "OCI": "94.73",
         "STREETNAME": "JOSEPHINE AVE",
+        "PavementWi": "30",
         "ID": "28"
       },
       "geometry": {
@@ -354,6 +383,7 @@
       "properties": {
         "OCI": "83.4",
         "STREETNAME": "KIDDER AVE",
+        "PavementWi": "26",
         "ID": "29"
       },
       "geometry": {
@@ -366,6 +396,7 @@
       "properties": {
         "OCI": "63.69",
         "STREETNAME": "DANE ST",
+        "PavementWi": "27",
         "ID": "30"
       },
       "geometry": {
@@ -378,6 +409,7 @@
       "properties": {
         "OCI": "82.2",
         "STREETNAME": "ALLEN ST",
+        "PavementWi": "15",
         "ID": "31"
       },
       "geometry": {
@@ -390,6 +422,7 @@
       "properties": {
         "OCI": "42.76",
         "STREETNAME": "BROADWAY",
+        "PavementWi": "48",
         "ID": "32"
       },
       "geometry": {
@@ -402,6 +435,7 @@
       "properties": {
         "OCI": "40.64",
         "STREETNAME": "BROADWAY",
+        "PavementWi": "59.5",
         "ID": "33"
       },
       "geometry": {
@@ -414,6 +448,7 @@
       "properties": {
         "OCI": "83.65",
         "STREETNAME": "MERRIAM ST",
+        "PavementWi": "24",
         "ID": "34"
       },
       "geometry": {
@@ -426,6 +461,7 @@
       "properties": {
         "OCI": "64.46",
         "STREETNAME": "MINNESOTA AVE",
+        "PavementWi": "25",
         "ID": "35"
       },
       "geometry": {
@@ -438,6 +474,7 @@
       "properties": {
         "OCI": "30.82",
         "STREETNAME": "NEW WASHINGTON ST",
+        "PavementWi": "45",
         "ID": "36"
       },
       "geometry": {
@@ -450,6 +487,7 @@
       "properties": {
         "OCI": "43.84",
         "STREETNAME": "FLORENCE ST",
+        "PavementWi": "26.5",
         "ID": "37"
       },
       "geometry": {
@@ -462,6 +500,7 @@
       "properties": {
         "OCI": "94.04",
         "STREETNAME": "FOUNTAIN AVE",
+        "PavementWi": "20",
         "ID": "38"
       },
       "geometry": {
@@ -474,6 +513,7 @@
       "properties": {
         "OCI": "17.59",
         "STREETNAME": "GILES PARK",
+        "PavementWi": "23",
         "ID": "39"
       },
       "geometry": {
@@ -486,6 +526,7 @@
       "properties": {
         "OCI": "59.84",
         "STREETNAME": "GORDON ST",
+        "PavementWi": "26.5",
         "ID": "40"
       },
       "geometry": {
@@ -498,6 +539,7 @@
       "properties": {
         "OCI": "59.76",
         "STREETNAME": "HEATH ST",
+        "PavementWi": "30",
         "ID": "41"
       },
       "geometry": {
@@ -510,6 +552,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "HIGH ST",
+        "PavementWi": "26.5",
         "ID": "42"
       },
       "geometry": {
@@ -522,6 +565,7 @@
       "properties": {
         "OCI": "95.88",
         "STREETNAME": "IRVING ST",
+        "PavementWi": "26.5",
         "ID": "43"
       },
       "geometry": {
@@ -534,6 +578,7 @@
       "properties": {
         "OCI": "57.52",
         "STREETNAME": "JAQUES ST",
+        "PavementWi": "26.5",
         "ID": "44"
       },
       "geometry": {
@@ -546,6 +591,7 @@
       "properties": {
         "OCI": "99.6",
         "STREETNAME": "LINCOLN PKWY",
+        "PavementWi": "26.5",
         "ID": "45"
       },
       "geometry": {
@@ -558,6 +604,7 @@
       "properties": {
         "OCI": "34.08",
         "STREETNAME": "LINE ST",
+        "PavementWi": "22.5",
         "ID": "46"
       },
       "geometry": {
@@ -570,6 +617,7 @@
       "properties": {
         "OCI": "55.71",
         "STREETNAME": "CROSS ST",
+        "PavementWi": "33.5",
         "ID": "47"
       },
       "geometry": {
@@ -582,6 +630,7 @@
       "properties": {
         "OCI": "62.24",
         "STREETNAME": "CUTTER AVE",
+        "PavementWi": "26",
         "ID": "48"
       },
       "geometry": {
@@ -594,6 +643,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "COLUMBUS AVE",
+        "PavementWi": "26.5",
         "ID": "49"
       },
       "geometry": {
@@ -606,6 +656,7 @@
       "properties": {
         "OCI": "99.53",
         "STREETNAME": "CONWELL ST",
+        "PavementWi": "23",
         "ID": "50"
       },
       "geometry": {
@@ -618,6 +669,7 @@
       "properties": {
         "OCI": "39.22",
         "STREETNAME": "MEDFORD ST",
+        "PavementWi": "35",
         "ID": "51"
       },
       "geometry": {
@@ -630,6 +682,7 @@
       "properties": {
         "OCI": "32.14",
         "STREETNAME": "MEDFORD ST",
+        "PavementWi": "38",
         "ID": "52"
       },
       "geometry": {
@@ -642,6 +695,7 @@
       "properties": {
         "OCI": "36.64",
         "STREETNAME": "BEACON ST",
+        "PavementWi": "42.5",
         "ID": "53"
       },
       "geometry": {
@@ -654,6 +708,7 @@
       "properties": {
         "OCI": "53.2",
         "STREETNAME": "MYRTLE ST",
+        "PavementWi": "25.5",
         "ID": "54"
       },
       "geometry": {
@@ -666,6 +721,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "FAIRFAX ST",
+        "PavementWi": "26",
         "ID": "55"
       },
       "geometry": {
@@ -678,6 +734,7 @@
       "properties": {
         "OCI": "31.6",
         "STREETNAME": "FENWICK ST",
+        "PavementWi": "26",
         "ID": "56"
       },
       "geometry": {
@@ -690,6 +747,7 @@
       "properties": {
         "OCI": "32.32",
         "STREETNAME": "HARDAN RD",
+        "PavementWi": "26",
         "ID": "57"
       },
       "geometry": {
@@ -702,6 +760,7 @@
       "properties": {
         "OCI": "33.76",
         "STREETNAME": "HARVARD ST",
+        "PavementWi": "26",
         "ID": "58"
       },
       "geometry": {
@@ -714,6 +773,7 @@
       "properties": {
         "OCI": "46.02",
         "STREETNAME": "HORACE ST",
+        "PavementWi": "20",
         "ID": "59"
       },
       "geometry": {
@@ -726,6 +786,7 @@
       "properties": {
         "OCI": "59.84",
         "STREETNAME": "HUNTING ST",
+        "PavementWi": "20",
         "ID": "60"
       },
       "geometry": {
@@ -738,6 +799,7 @@
       "properties": {
         "OCI": "15.94",
         "STREETNAME": "LAUREL TERR",
+        "PavementWi": "16",
         "ID": "61"
       },
       "geometry": {
@@ -750,6 +812,7 @@
       "properties": {
         "OCI": "64.1",
         "STREETNAME": "LESLEY AVE",
+        "PavementWi": "26.5",
         "ID": "62"
       },
       "geometry": {
@@ -762,6 +825,7 @@
       "properties": {
         "OCI": "73",
         "STREETNAME": "DURHAM ST",
+        "PavementWi": "26.5",
         "ID": "63"
       },
       "geometry": {
@@ -774,6 +838,7 @@
       "properties": {
         "OCI": "59.36",
         "STREETNAME": "EDGAR CT",
+        "PavementWi": "26",
         "ID": "64"
       },
       "geometry": {
@@ -786,6 +851,7 @@
       "properties": {
         "OCI": "99.83",
         "STREETNAME": "ALBION TERR",
+        "PavementWi": "15.5",
         "ID": "65"
       },
       "geometry": {
@@ -798,6 +864,7 @@
       "properties": {
         "OCI": "52.8",
         "STREETNAME": "CLARK ST",
+        "PavementWi": "23.5",
         "ID": "66"
       },
       "geometry": {
@@ -810,6 +877,7 @@
       "properties": {
         "OCI": "62.6",
         "STREETNAME": "BARTON ST",
+        "PavementWi": "26.5",
         "ID": "67"
       },
       "geometry": {
@@ -822,6 +890,7 @@
       "properties": {
         "OCI": "33.64",
         "STREETNAME": "MASON ST",
+        "PavementWi": "26.5",
         "ID": "68"
       },
       "geometry": {
@@ -834,6 +903,7 @@
       "properties": {
         "OCI": "39.64",
         "STREETNAME": "MORRISON AVE",
+        "PavementWi": "26.5",
         "ID": "69"
       },
       "geometry": {
@@ -846,6 +916,7 @@
       "properties": {
         "OCI": "39.22",
         "STREETNAME": "MOUNT VERNON ST",
+        "PavementWi": "26",
         "ID": "70"
       },
       "geometry": {
@@ -859,6 +930,7 @@
       "properties": {
         "OCI": "77.88",
         "STREETNAME": "ELM ST",
+        "PavementWi": "40",
         "ID": "71"
       },
       "geometry": {
@@ -871,6 +943,7 @@
       "properties": {
         "OCI": "86.32",
         "STREETNAME": "ENDICOTT AVE",
+        "PavementWi": "26.5",
         "ID": "72"
       },
       "geometry": {
@@ -883,6 +956,7 @@
       "properties": {
         "OCI": "88.76",
         "STREETNAME": "GARRISON AVE",
+        "PavementWi": "26.5",
         "ID": "73"
       },
       "geometry": {
@@ -895,6 +969,7 @@
       "properties": {
         "OCI": "41.68",
         "STREETNAME": "GROVE ST",
+        "PavementWi": "26.5",
         "ID": "74"
       },
       "geometry": {
@@ -907,6 +982,7 @@
       "properties": {
         "OCI": "87.88",
         "STREETNAME": "HAMLET ST",
+        "PavementWi": "20",
         "ID": "75"
       },
       "geometry": {
@@ -919,6 +995,7 @@
       "properties": {
         "OCI": "99.61",
         "STREETNAME": "AUBURN AVE",
+        "PavementWi": "19",
         "ID": "76"
       },
       "geometry": {
@@ -931,6 +1008,7 @@
       "properties": {
         "OCI": "55.36",
         "STREETNAME": "HOLLAND ST",
+        "PavementWi": "38",
         "ID": "77"
       },
       "geometry": {
@@ -943,6 +1021,7 @@
       "properties": {
         "OCI": "39.64",
         "STREETNAME": "KIDDER AVE",
+        "PavementWi": "26",
         "ID": "78"
       },
       "geometry": {
@@ -955,6 +1034,7 @@
       "properties": {
         "OCI": "20.84",
         "STREETNAME": "LAKE ST",
+        "PavementWi": "26.5",
         "ID": "79"
       },
       "geometry": {
@@ -967,6 +1047,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "DELAWARE ST",
+        "PavementWi": "26",
         "ID": "80"
       },
       "geometry": {
@@ -979,6 +1060,7 @@
       "properties": {
         "OCI": "44.56",
         "STREETNAME": "DICKSON ST",
+        "PavementWi": "26.5",
         "ID": "81"
       },
       "geometry": {
@@ -991,6 +1073,7 @@
       "properties": {
         "OCI": "40.64",
         "STREETNAME": "BROADWAY",
+        "PavementWi": "68",
         "ID": "82"
       },
       "geometry": {
@@ -1003,6 +1086,7 @@
       "properties": {
         "OCI": "56.64",
         "STREETNAME": "CHAPEL ST",
+        "PavementWi": "26.5",
         "ID": "83"
       },
       "geometry": {
@@ -1015,6 +1099,7 @@
       "properties": {
         "OCI": "39.64",
         "STREETNAME": "LOWELL ST",
+        "PavementWi": "26.5",
         "ID": "84"
       },
       "geometry": {
@@ -1027,6 +1112,7 @@
       "properties": {
         "OCI": "42.34",
         "STREETNAME": "MINER ST",
+        "PavementWi": "26",
         "ID": "85"
       },
       "geometry": {
@@ -1039,6 +1125,7 @@
       "properties": {
         "OCI": "53.36",
         "STREETNAME": "MOORE ST",
+        "PavementWi": "26.5",
         "ID": "86"
       },
       "geometry": {
@@ -1051,6 +1138,7 @@
       "properties": {
         "OCI": "48.16",
         "STREETNAME": "FOSKET ST",
+        "PavementWi": "26",
         "ID": "87"
       },
       "geometry": {
@@ -1063,6 +1151,7 @@
       "properties": {
         "OCI": "39.22",
         "STREETNAME": "FRANKLIN ST",
+        "PavementWi": "26.5",
         "ID": "88"
       },
       "geometry": {
@@ -1075,6 +1164,7 @@
       "properties": {
         "OCI": "58.88",
         "STREETNAME": "GLENWOOD RD",
+        "PavementWi": "27",
         "ID": "89"
       },
       "geometry": {
@@ -1087,6 +1177,7 @@
       "properties": {
         "OCI": "37.5",
         "STREETNAME": "GRANDVIEW AVE",
+        "PavementWi": "26.5",
         "ID": "90"
       },
       "geometry": {
@@ -1099,6 +1190,7 @@
       "properties": {
         "OCI": "95.96",
         "STREETNAME": "HERBERT ST",
+        "PavementWi": "26.5",
         "ID": "91"
       },
       "geometry": {
@@ -1111,6 +1203,7 @@
       "properties": {
         "OCI": "50.25",
         "STREETNAME": "HIGHLAND AVE",
+        "PavementWi": "39.5",
         "ID": "92"
       },
       "geometry": {
@@ -1123,6 +1216,7 @@
       "properties": {
         "OCI": "60.96",
         "STREETNAME": "JAMES ST",
+        "PavementWi": "26.5",
         "ID": "93"
       },
       "geometry": {
@@ -1135,6 +1229,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "JOSEPHINE AVE",
+        "PavementWi": "29.5",
         "ID": "94"
       },
       "geometry": {
@@ -1147,6 +1242,7 @@
       "properties": {
         "OCI": "84",
         "STREETNAME": "LINDEN ST",
+        "PavementWi": "22",
         "ID": "95"
       },
       "geometry": {
@@ -1159,6 +1255,7 @@
       "properties": {
         "OCI": "65.42",
         "STREETNAME": "LOVELL ST",
+        "PavementWi": "26",
         "ID": "96"
       },
       "geometry": {
@@ -1171,6 +1268,7 @@
       "properties": {
         "OCI": "89.56",
         "STREETNAME": "CURTIS ST",
+        "PavementWi": "26",
         "ID": "97"
       },
       "geometry": {
@@ -1183,6 +1281,7 @@
       "properties": {
         "OCI": "30.85",
         "STREETNAME": "DANE ST",
+        "PavementWi": "27",
         "ID": "98"
       },
       "geometry": {
@@ -1195,6 +1294,7 @@
       "properties": {
         "OCI": "44.86",
         "STREETNAME": "BROADWAY",
+        "PavementWi": "48",
         "ID": "99"
       },
       "geometry": {
@@ -1207,6 +1307,7 @@
       "properties": {
         "OCI": "59.76",
         "STREETNAME": "CONNECTICUT AVE",
+        "PavementWi": "24.5",
         "ID": "100"
       },
       "geometry": {
@@ -1219,6 +1320,7 @@
       "properties": {
         "OCI": "81.85",
         "STREETNAME": "CRAIGIE ST",
+        "PavementWi": "33.5",
         "ID": "101"
       },
       "geometry": {
@@ -1232,6 +1334,7 @@
       "properties": {
         "OCI": "32.14",
         "STREETNAME": "MEDFORD ST",
+        "PavementWi": "38",
         "ID": "102"
       },
       "geometry": {
@@ -1244,6 +1347,7 @@
       "properties": {
         "OCI": "94.55",
         "STREETNAME": "MELVIN ST",
+        "PavementWi": "26.5",
         "ID": "103"
       },
       "geometry": {
@@ -1256,6 +1360,7 @@
       "properties": {
         "OCI": "9.17",
         "STREETNAME": "MUSEUM ST",
+        "PavementWi": "25",
         "ID": "104"
       },
       "geometry": {
@@ -1268,6 +1373,7 @@
       "properties": {
         "OCI": "66.2",
         "STREETNAME": "NEW HAMPSHIRE AVE",
+        "PavementWi": "25",
         "ID": "105"
       },
       "geometry": {
@@ -1280,6 +1386,7 @@
       "properties": {
         "OCI": "97.1",
         "STREETNAME": "FARRAGUT AVE",
+        "PavementWi": "26.5",
         "ID": "106"
       },
       "geometry": {
@@ -1292,6 +1399,7 @@
       "properties": {
         "OCI": "99.6",
         "STREETNAME": "ARLINGTON ST",
+        "PavementWi": "25.5",
         "ID": "107"
       },
       "geometry": {
@@ -1304,6 +1412,7 @@
       "properties": {
         "OCI": "99.54",
         "STREETNAME": "GIBBENS ST",
+        "PavementWi": "26.5",
         "ID": "108"
       },
       "geometry": {
@@ -1316,6 +1425,7 @@
       "properties": {
         "OCI": "41.22",
         "STREETNAME": "HARRISON ST",
+        "PavementWi": "26.5",
         "ID": "109"
       },
       "geometry": {
@@ -1328,6 +1438,7 @@
       "properties": {
         "OCI": "53.12",
         "STREETNAME": "ATHERTON ST",
+        "PavementWi": "26",
         "ID": "110"
       },
       "geometry": {
@@ -1340,6 +1451,7 @@
       "properties": {
         "OCI": "30.19",
         "STREETNAME": "HUDSON ST",
+        "PavementWi": "26.5",
         "ID": "111"
       },
       "geometry": {
@@ -1352,6 +1464,7 @@
       "properties": {
         "OCI": "36.05",
         "STREETNAME": "INDIANA AVE",
+        "PavementWi": "24.5",
         "ID": "112"
       },
       "geometry": {
@@ -1364,6 +1477,7 @@
       "properties": {
         "OCI": "86.88",
         "STREETNAME": "LEONARD ST",
+        "PavementWi": "26",
         "ID": "113"
       },
       "geometry": {
@@ -1376,6 +1490,7 @@
       "properties": {
         "OCI": "39.75",
         "STREETNAME": "LINCOLN AVE",
+        "PavementWi": "19.5",
         "ID": "114"
       },
       "geometry": {
@@ -1388,6 +1503,7 @@
       "properties": {
         "OCI": "40.72",
         "STREETNAME": "CROCKER ST",
+        "PavementWi": "26.5",
         "ID": "115"
       },
       "geometry": {
@@ -1400,6 +1516,7 @@
       "properties": {
         "OCI": "72.76",
         "STREETNAME": "EDGAR AVE",
+        "PavementWi": "33",
         "ID": "116"
       },
       "geometry": {
@@ -1412,6 +1529,7 @@
       "properties": {
         "OCI": "64.88",
         "STREETNAME": "ELECTRIC AVE",
+        "PavementWi": "26.5",
         "ID": "117"
       },
       "geometry": {
@@ -1424,6 +1542,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "CLARENDON AVE",
+        "PavementWi": "26.5",
         "ID": "118"
       },
       "geometry": {
@@ -1436,6 +1555,7 @@
       "properties": {
         "OCI": "15.71",
         "STREETNAME": "COLUMBIA ST",
+        "PavementWi": "27",
         "ID": "119"
       },
       "geometry": {
@@ -1448,6 +1568,7 @@
       "properties": {
         "OCI": "84.72",
         "STREETNAME": "MARSHALL ST",
+        "PavementWi": "24",
         "ID": "120"
       },
       "geometry": {
@@ -1460,6 +1581,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "MEAD ST",
+        "PavementWi": "26",
         "ID": "121"
       },
       "geometry": {
@@ -1472,6 +1594,7 @@
       "properties": {
         "OCI": "41.38",
         "STREETNAME": "MOUNT PLEASANT ST",
+        "PavementWi": "23",
         "ID": "122"
       },
       "geometry": {
@@ -1484,6 +1607,7 @@
       "properties": {
         "OCI": "36.64",
         "STREETNAME": "BEACON ST",
+        "PavementWi": "44.5",
         "ID": "123"
       },
       "geometry": {
@@ -1496,6 +1620,7 @@
       "properties": {
         "OCI": "42.88",
         "STREETNAME": "AMES ST",
+        "PavementWi": "26",
         "ID": "124"
       },
       "geometry": {
@@ -1508,6 +1633,7 @@
       "properties": {
         "OCI": "43.36",
         "STREETNAME": "EVERGREEN AVE",
+        "PavementWi": "26",
         "ID": "125"
       },
       "geometry": {
@@ -1520,6 +1646,7 @@
       "properties": {
         "OCI": "92.84",
         "STREETNAME": "HAMILTON RD",
+        "PavementWi": "26",
         "ID": "126"
       },
       "geometry": {
@@ -1532,6 +1659,7 @@
       "properties": {
         "OCI": "60.32",
         "STREETNAME": "HANSON ST",
+        "PavementWi": "23",
         "ID": "127"
       },
       "geometry": {
@@ -1544,6 +1672,7 @@
       "properties": {
         "OCI": "62.3",
         "STREETNAME": "CENTURY ST",
+        "PavementWi": "26.5",
         "ID": "128"
       },
       "geometry": {
@@ -1556,6 +1685,7 @@
       "properties": {
         "OCI": "79.9",
         "STREETNAME": "HINCKLEY ST",
+        "PavementWi": "20",
         "ID": "129"
       },
       "geometry": {
@@ -1568,6 +1698,7 @@
       "properties": {
         "OCI": "68.42",
         "STREETNAME": "HOOKER AVE",
+        "PavementWi": "26",
         "ID": "130"
       },
       "geometry": {
@@ -1580,6 +1711,7 @@
       "properties": {
         "OCI": "76.4",
         "STREETNAME": "KNOWLTON ST",
+        "PavementWi": "26.5",
         "ID": "131"
       },
       "geometry": {
@@ -1593,6 +1725,7 @@
       "properties": {
         "OCI": "39.35",
         "STREETNAME": "LAUREL ST",
+        "PavementWi": "26.5",
         "ID": "132"
       },
       "geometry": {
@@ -1605,6 +1738,7 @@
       "properties": {
         "OCI": "34.56",
         "STREETNAME": "DICKINSON ST",
+        "PavementWi": "26.5",
         "ID": "133"
       },
       "geometry": {
@@ -1617,6 +1751,7 @@
       "properties": {
         "OCI": "80.25",
         "STREETNAME": "ALPINE ST",
+        "PavementWi": "23",
         "ID": "134"
       },
       "geometry": {
@@ -1629,6 +1764,7 @@
       "properties": {
         "OCI": "42.34",
         "STREETNAME": "CHANDLER ST",
+        "PavementWi": "26.5",
         "ID": "135"
       },
       "geometry": {
@@ -1641,6 +1777,7 @@
       "properties": {
         "OCI": "99.97",
         "STREETNAME": "CHESTER ST",
+        "PavementWi": "26",
         "ID": "136"
       },
       "geometry": {
@@ -1653,6 +1790,7 @@
       "properties": {
         "OCI": "39.64",
         "STREETNAME": "LOWELL ST",
+        "PavementWi": "24",
         "ID": "137"
       },
       "geometry": {
@@ -1665,6 +1803,7 @@
       "properties": {
         "OCI": "45.28",
         "STREETNAME": "MALLET ST",
+        "PavementWi": "26",
         "ID": "138"
       },
       "geometry": {
@@ -1677,6 +1816,7 @@
       "properties": {
         "OCI": "71.85",
         "STREETNAME": "MONTROSE ST",
+        "PavementWi": "26",
         "ID": "139"
       },
       "geometry": {
@@ -1689,6 +1829,7 @@
       "properties": {
         "OCI": "87.94",
         "STREETNAME": "MORRISON AVE",
+        "PavementWi": "33",
         "ID": "140"
       },
       "geometry": {
@@ -1701,6 +1842,7 @@
       "properties": {
         "OCI": "52.4",
         "STREETNAME": "ELLSWORTH ST",
+        "PavementWi": "26",
         "ID": "141"
       },
       "geometry": {
@@ -1713,6 +1855,7 @@
       "properties": {
         "OCI": "37.1",
         "STREETNAME": "FRANKLIN AVE",
+        "PavementWi": "14",
         "ID": "142"
       },
       "geometry": {
@@ -1725,6 +1868,7 @@
       "properties": {
         "OCI": "49.84",
         "STREETNAME": "GARFIELD AVE",
+        "PavementWi": "26.5",
         "ID": "143"
       },
       "geometry": {
@@ -1737,6 +1881,7 @@
       "properties": {
         "OCI": "90.12",
         "STREETNAME": "ASH AVE",
+        "PavementWi": "26.5",
         "ID": "144"
       },
       "geometry": {
@@ -1750,6 +1895,7 @@
       "properties": {
         "OCI": "83.65",
         "STREETNAME": "GREENVILLE ST",
+        "PavementWi": "26.5",
         "ID": "145"
       },
       "geometry": {
@@ -1762,6 +1908,7 @@
       "properties": {
         "OCI": "41.78",
         "STREETNAME": "HIGHLAND AVE",
+        "PavementWi": "39.5",
         "ID": "146"
       },
       "geometry": {
@@ -1774,6 +1921,7 @@
       "properties": {
         "OCI": "16.48",
         "STREETNAME": "HIGHSCHOOL ENTRANCE",
+        "PavementWi": "22",
         "ID": "147"
       },
       "geometry": {
@@ -1786,6 +1934,7 @@
       "properties": {
         "OCI": "50.96",
         "STREETNAME": "JOSEPH ST",
+        "PavementWi": "26.5",
         "ID": "148"
       },
       "geometry": {
@@ -1798,6 +1947,7 @@
       "properties": {
         "OCI": "49.44",
         "STREETNAME": "KENWOOD ST",
+        "PavementWi": "26.5",
         "ID": "149"
       },
       "geometry": {
@@ -1810,6 +1960,7 @@
       "properties": {
         "OCI": "45.28",
         "STREETNAME": "LORING ST",
+        "PavementWi": "26",
         "ID": "150"
       },
       "geometry": {
@@ -1822,6 +1973,7 @@
       "properties": {
         "OCI": "26.12",
         "STREETNAME": "DANE AVE",
+        "PavementWi": "20",
         "ID": "151"
       },
       "geometry": {
@@ -1834,6 +1986,7 @@
       "properties": {
         "OCI": "22.7",
         "STREETNAME": "DEARBORN RD",
+        "PavementWi": "33.5",
         "ID": "152"
       },
       "geometry": {
@@ -1846,6 +1999,7 @@
       "properties": {
         "OCI": "68.16",
         "STREETNAME": "BROADWAY",
+        "PavementWi": "43",
         "ID": "153"
       },
       "geometry": {
@@ -1858,6 +2012,7 @@
       "properties": {
         "OCI": "40.64",
         "STREETNAME": "BROADWAY",
+        "PavementWi": "60.5",
         "ID": "154"
       },
       "geometry": {
@@ -1870,6 +2025,7 @@
       "properties": {
         "OCI": "39.65",
         "STREETNAME": "COTTAGE AVE",
+        "PavementWi": "26.5",
         "ID": "155"
       },
       "geometry": {
@@ -1882,6 +2038,7 @@
       "properties": {
         "OCI": "77.92",
         "STREETNAME": "MELVILLE RD",
+        "PavementWi": "27",
         "ID": "156"
       },
       "geometry": {
@@ -1894,6 +2051,7 @@
       "properties": {
         "OCI": "62.24",
         "STREETNAME": "MILTON ST",
+        "PavementWi": "26.5",
         "ID": "157"
       },
       "geometry": {
@@ -1906,6 +2064,7 @@
       "properties": {
         "OCI": "46.74",
         "STREETNAME": "NASHUA ST",
+        "PavementWi": "23",
         "ID": "158"
       },
       "geometry": {
@@ -1918,6 +2077,7 @@
       "properties": {
         "OCI": "89.77",
         "STREETNAME": "FLINT ST",
+        "PavementWi": "25",
         "ID": "159"
       },
       "geometry": {
@@ -1930,6 +2090,7 @@
       "properties": {
         "OCI": "15.51",
         "STREETNAME": "FORSTER ST",
+        "PavementWi": "18",
         "ID": "160"
       },
       "geometry": {
@@ -1942,6 +2103,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "GEORGE ST",
+        "PavementWi": "20",
         "ID": "161"
       },
       "geometry": {
@@ -1954,6 +2116,7 @@
       "properties": {
         "OCI": "84.8",
         "STREETNAME": "GLENDALE AVE",
+        "PavementWi": "26.5",
         "ID": "162"
       },
       "geometry": {
@@ -1966,6 +2129,7 @@
       "properties": {
         "OCI": "71.78",
         "STREETNAME": "HAWTHORNE ST",
+        "PavementWi": "20",
         "ID": "163"
       },
       "geometry": {
@@ -1978,6 +2142,7 @@
       "properties": {
         "OCI": "72.85",
         "STREETNAME": "HENDERSON ST",
+        "PavementWi": "14.5",
         "ID": "164"
       },
       "geometry": {
@@ -1990,6 +2155,7 @@
       "properties": {
         "OCI": "99.39",
         "STREETNAME": "AUTUMN ST",
+        "PavementWi": "14",
         "ID": "165"
       },
       "geometry": {
@@ -2002,6 +2168,7 @@
       "properties": {
         "OCI": "40.04",
         "STREETNAME": "JACKSON RD",
+        "PavementWi": "26.5",
         "ID": "166"
       },
       "geometry": {
@@ -2014,6 +2181,7 @@
       "properties": {
         "OCI": "37.65",
         "STREETNAME": "LIBERTY AVE",
+        "PavementWi": "26.5",
         "ID": "167"
       },
       "geometry": {
@@ -2026,6 +2194,7 @@
       "properties": {
         "OCI": "14.8",
         "STREETNAME": "BANKS ST",
+        "PavementWi": "26",
         "ID": "168"
       },
       "geometry": {
@@ -2038,6 +2207,7 @@
       "properties": {
         "OCI": "15.73",
         "STREETNAME": "CREST HILL RD",
+        "PavementWi": "27",
         "ID": "169"
       },
       "geometry": {
@@ -2050,6 +2220,7 @@
       "properties": {
         "OCI": "40.9",
         "STREETNAME": "CUMMINGS ST",
+        "PavementWi": "26",
         "ID": "170"
       },
       "geometry": {
@@ -2062,6 +2233,7 @@
       "properties": {
         "OCI": "73.88",
         "STREETNAME": "ALSTON ST",
+        "PavementWi": "26",
         "ID": "171"
       },
       "geometry": {
@@ -2074,6 +2246,7 @@
       "properties": {
         "OCI": "33.84",
         "STREETNAME": "ALDERSEY ST",
+        "PavementWi": "26.5",
         "ID": "172"
       },
       "geometry": {
@@ -2086,6 +2259,7 @@
       "properties": {
         "OCI": "46.72",
         "STREETNAME": "CONCORD SQ",
+        "PavementWi": "25.5",
         "ID": "173"
       },
       "geometry": {
@@ -2098,6 +2272,7 @@
       "properties": {
         "OCI": "47.68",
         "STREETNAME": "BAY STATE AVE",
+        "PavementWi": "26.5",
         "ID": "174"
       },
       "geometry": {
@@ -2110,6 +2285,7 @@
       "properties": {
         "OCI": "72.66",
         "STREETNAME": "MEDFORD ST",
+        "PavementWi": "33",
         "ID": "175"
       },
       "geometry": {
@@ -2122,6 +2298,7 @@
       "properties": {
         "OCI": "36.64",
         "STREETNAME": "BEACON ST",
+        "PavementWi": "44.5",
         "ID": "176"
       },
       "geometry": {
@@ -2134,6 +2311,7 @@
       "properties": {
         "OCI": "36.64",
         "STREETNAME": "BEACON ST",
+        "PavementWi": "44.5",
         "ID": "177"
       },
       "geometry": {
@@ -2146,6 +2324,7 @@
       "properties": {
         "OCI": "30.58",
         "STREETNAME": "EVERETT AVE",
+        "PavementWi": "26.5",
         "ID": "178"
       },
       "geometry": {
@@ -2158,6 +2337,7 @@
       "properties": {
         "OCI": "79.2",
         "STREETNAME": "APPLETON ST",
+        "PavementWi": "25",
         "ID": "179"
       },
       "geometry": {
@@ -2170,6 +2350,7 @@
       "properties": {
         "OCI": "92.6",
         "STREETNAME": "HANCOCK ST",
+        "PavementWi": "33",
         "ID": "180"
       },
       "geometry": {
@@ -2182,6 +2363,7 @@
       "properties": {
         "OCI": "8.81",
         "STREETNAME": "HAROLD ST",
+        "PavementWi": "26.5",
         "ID": "181"
       },
       "geometry": {
@@ -2194,6 +2376,7 @@
       "properties": {
         "OCI": "66.75",
         "STREETNAME": "HOMER SQ",
+        "PavementWi": "18",
         "ID": "182"
       },
       "geometry": {
@@ -2206,6 +2389,7 @@
       "properties": {
         "OCI": "70.73",
         "STREETNAME": "HOWE ST",
+        "PavementWi": "26",
         "ID": "183"
       },
       "geometry": {
@@ -2218,6 +2402,7 @@
       "properties": {
         "OCI": "16.73",
         "STREETNAME": "LANGMAID AVE",
+        "PavementWi": "20",
         "ID": "184"
       },
       "geometry": {
@@ -2230,6 +2415,7 @@
       "properties": {
         "OCI": "28.6",
         "STREETNAME": "LEON ST",
+        "PavementWi": "26.5",
         "ID": "185"
       },
       "geometry": {
@@ -2242,6 +2428,7 @@
       "properties": {
         "OCI": "39.38",
         "STREETNAME": "DOVER ST",
+        "PavementWi": "26.5",
         "ID": "186"
       },
       "geometry": {
@@ -2254,6 +2441,7 @@
       "properties": {
         "OCI": "94.82",
         "STREETNAME": "EASTMAN RD",
+        "PavementWi": "26.5",
         "ID": "187"
       },
       "geometry": {
@@ -2266,6 +2454,7 @@
       "properties": {
         "OCI": "28.12",
         "STREETNAME": "CHESTER AVE",
+        "PavementWi": "15",
         "ID": "188"
       },
       "geometry": {
@@ -2278,6 +2467,7 @@
       "properties": {
         "OCI": "58.96",
         "STREETNAME": "CLAREMON ST",
+        "PavementWi": "26.5",
         "ID": "189"
       },
       "geometry": {
@@ -2290,6 +2480,7 @@
       "properties": {
         "OCI": "94.07",
         "STREETNAME": "MAINE AVE",
+        "PavementWi": "25",
         "ID": "190"
       },
       "geometry": {
@@ -2302,6 +2493,7 @@
       "properties": {
         "OCI": "63.02",
         "STREETNAME": "MARION ST",
+        "PavementWi": "26.5",
         "ID": "191"
       },
       "geometry": {
@@ -2314,6 +2506,7 @@
       "properties": {
         "OCI": "17.58",
         "STREETNAME": "ACADIA PARK",
+        "PavementWi": "26.5",
         "ID": "192"
       },
       "geometry": {
@@ -2326,6 +2519,7 @@
       "properties": {
         "OCI": "39.8",
         "STREETNAME": "MOUNTAIN AVE",
+        "PavementWi": "14.5",
         "ID": "193"
       },
       "geometry": {
@@ -2338,6 +2532,7 @@
       "properties": {
         "OCI": "86.28",
         "STREETNAME": "ELLIOT ST",
+        "PavementWi": "26",
         "ID": "194"
       },
       "geometry": {
@@ -2350,6 +2545,7 @@
       "properties": {
         "OCI": "56.72",
         "STREETNAME": "ELSTON ST",
+        "PavementWi": "26.5",
         "ID": "195"
       },
       "geometry": {
@@ -2362,6 +2558,7 @@
       "properties": {
         "OCI": "45.64",
         "STREETNAME": "FREMONT ST",
+        "PavementWi": "26.5",
         "ID": "196"
       },
       "geometry": {
@@ -2374,6 +2571,7 @@
       "properties": {
         "OCI": "42.76",
         "STREETNAME": "GREENE ST",
+        "PavementWi": "26.5",
         "ID": "197"
       },
       "geometry": {
@@ -2386,6 +2584,7 @@
       "properties": {
         "OCI": "18.5",
         "STREETNAME": "HALL ST",
+        "PavementWi": "20",
         "ID": "198"
       },
       "geometry": {
@@ -2398,6 +2597,7 @@
       "properties": {
         "OCI": "99.69",
         "STREETNAME": "ALBION ST",
+        "PavementWi": "26.5",
         "ID": "199"
       },
       "geometry": {
@@ -2410,6 +2610,7 @@
       "properties": {
         "OCI": "46.68",
         "STREETNAME": "HIGHLAND RD",
+        "PavementWi": "30.5",
         "ID": "200"
       },
       "geometry": {
@@ -2422,6 +2623,7 @@
       "properties": {
         "OCI": "89.52",
         "STREETNAME": "HILLSDALE RD",
+        "PavementWi": "26.5",
         "ID": "201"
       },
       "geometry": {
@@ -2434,6 +2636,7 @@
       "properties": {
         "OCI": "48.16",
         "STREETNAME": "AVON ST",
+        "PavementWi": "26.5",
         "ID": "202"
       },
       "geometry": {
@@ -2446,6 +2649,7 @@
       "properties": {
         "OCI": "44.32",
         "STREETNAME": "KNAPP ST",
+        "PavementWi": "27",
         "ID": "203"
       },
       "geometry": {
@@ -2458,6 +2662,7 @@
       "properties": {
         "OCI": "20.02",
         "STREETNAME": "DAY ST",
+        "PavementWi": "26.5",
         "ID": "204"
       },
       "geometry": {
@@ -2470,6 +2675,7 @@
       "properties": {
         "OCI": "52.88",
         "STREETNAME": "DERBY ST",
+        "PavementWi": "26.5",
         "ID": "205"
       },
       "geometry": {
@@ -2482,6 +2688,7 @@
       "properties": {
         "OCI": "39.4",
         "STREETNAME": "BROADWAY",
+        "PavementWi": "56",
         "ID": "206"
       },
       "geometry": {
@@ -2494,6 +2701,7 @@
       "properties": {
         "OCI": "36.88",
         "STREETNAME": "WASHINGTON ST (E)",
+        "PavementWi": "40.5",
         "ID": "207"
       },
       "geometry": {
@@ -2506,6 +2714,7 @@
       "properties": {
         "OCI": "39.8",
         "STREETNAME": "LOWDEN AVE",
+        "PavementWi": "26.5",
         "ID": "208"
       },
       "geometry": {
@@ -2518,6 +2727,7 @@
       "properties": {
         "OCI": "44.92",
         "STREETNAME": "MILLER ST",
+        "PavementWi": "20",
         "ID": "209"
       },
       "geometry": {
@@ -2530,6 +2740,7 @@
       "properties": {
         "OCI": "59.6",
         "STREETNAME": "MONTGOMERY AVE",
+        "PavementWi": "26.5",
         "ID": "210"
       },
       "geometry": {
@@ -2542,6 +2753,7 @@
       "properties": {
         "OCI": "22.14",
         "STREETNAME": "FOREST ST",
+        "PavementWi": "26.5",
         "ID": "211"
       },
       "geometry": {
@@ -2554,6 +2766,7 @@
       "properties": {
         "OCI": "99.33",
         "STREETNAME": "FRANCIS ST",
+        "PavementWi": "19",
         "ID": "212"
       },
       "geometry": {
@@ -2566,6 +2779,7 @@
       "properties": {
         "OCI": "87.92",
         "STREETNAME": "GLEN ST",
+        "PavementWi": "26.5",
         "ID": "213"
       },
       "geometry": {
@@ -2578,6 +2792,7 @@
       "properties": {
         "OCI": "77.52",
         "STREETNAME": "GOVERNOR WINTHROP RD",
+        "PavementWi": "26.5",
         "ID": "214"
       },
       "geometry": {
@@ -2590,6 +2805,7 @@
       "properties": {
         "OCI": "43.81",
         "STREETNAME": "HIGHLAND AVE",
+        "PavementWi": "39.5",
         "ID": "215"
       },
       "geometry": {
@@ -2602,6 +2818,7 @@
       "properties": {
         "OCI": "99.41",
         "STREETNAME": "IVALOO ST",
+        "PavementWi": "26.5",
         "ID": "216"
       },
       "geometry": {
@@ -2614,6 +2831,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "JASPER ST",
+        "PavementWi": "26.5",
         "ID": "217"
       },
       "geometry": {
@@ -2626,6 +2844,7 @@
       "properties": {
         "OCI": "41.22",
         "STREETNAME": "LINDEN AVE",
+        "PavementWi": "30",
         "ID": "218"
       },
       "geometry": {
@@ -2638,6 +2857,7 @@
       "properties": {
         "OCI": "90.16",
         "STREETNAME": "ALFRED A LOMBARDI  WY",
+        "PavementWi": "52",
         "ID": "219"
       },
       "geometry": {
@@ -2650,6 +2870,7 @@
       "properties": {
         "OCI": "19.91",
         "STREETNAME": "CROWN ST",
+        "PavementWi": "19.5",
         "ID": "220"
       },
       "geometry": {
@@ -2662,6 +2883,7 @@
       "properties": {
         "OCI": "52.96",
         "STREETNAME": "DANA ST",
+        "PavementWi": "26.5",
         "ID": "221"
       },
       "geometry": {
@@ -2674,6 +2896,7 @@
       "properties": {
         "OCI": "78.4",
         "STREETNAME": "CLIFTON ST",
+        "PavementWi": "26",
         "ID": "222"
       },
       "geometry": {
@@ -2686,6 +2909,7 @@
       "properties": {
         "OCI": "48.85",
         "STREETNAME": "CONCORD AVE",
+        "PavementWi": "23.5",
         "ID": "223"
       },
       "geometry": {
@@ -2698,6 +2922,7 @@
       "properties": {
         "OCI": "38.9",
         "STREETNAME": "COONEY ST",
+        "PavementWi": "20",
         "ID": "224"
       },
       "geometry": {
@@ -2710,6 +2935,7 @@
       "properties": {
         "OCI": "67.35",
         "STREETNAME": "MEDFORD ST",
+        "PavementWi": "28",
         "ID": "225"
       },
       "geometry": {
@@ -2722,6 +2948,7 @@
       "properties": {
         "OCI": "98.52",
         "STREETNAME": "MEDFORD ST",
+        "PavementWi": "38.5",
         "ID": "226"
       },
       "geometry": {
@@ -2734,6 +2961,7 @@
       "properties": {
         "OCI": "36.64",
         "STREETNAME": "BEACON ST",
+        "PavementWi": "44",
         "ID": "227"
       },
       "geometry": {
@@ -2746,6 +2974,7 @@
       "properties": {
         "OCI": "55.28",
         "STREETNAME": "MACARTHUR ST",
+        "PavementWi": "26.5",
         "ID": "228"
       },
       "geometry": {
@@ -2758,6 +2987,7 @@
       "properties": {
         "OCI": "30",
         "STREETNAME": "FAIRMOUNT AVE",
+        "PavementWi": "26.5",
         "ID": "229"
       },
       "geometry": {
@@ -2770,6 +3000,7 @@
       "properties": {
         "OCI": "99.6",
         "STREETNAME": "FLINT AVE",
+        "PavementWi": "27",
         "ID": "230"
       },
       "geometry": {
@@ -2782,6 +3013,7 @@
       "properties": {
         "OCI": "63.2",
         "STREETNAME": "HARDING ST",
+        "PavementWi": "20.5",
         "ID": "231"
       },
       "geometry": {
@@ -2794,6 +3026,7 @@
       "properties": {
         "OCI": "36.55",
         "STREETNAME": "HAWKINS ST",
+        "PavementWi": "26.5",
         "ID": "232"
       },
       "geometry": {
@@ -2806,6 +3039,7 @@
       "properties": {
         "OCI": "73.39",
         "STREETNAME": "HOWARD ST",
+        "PavementWi": "26.5",
         "ID": "233"
       },
       "geometry": {
@@ -2818,6 +3052,7 @@
       "properties": {
         "OCI": "56.96",
         "STREETNAME": "ILLINOIS AVE",
+        "PavementWi": "24.5",
         "ID": "234"
       },
       "geometry": {
@@ -2830,6 +3065,7 @@
       "properties": {
         "OCI": "34.36",
         "STREETNAME": "LELAND ST",
+        "PavementWi": "26.5",
         "ID": "235"
       },
       "geometry": {
@@ -2842,6 +3078,7 @@
       "properties": {
         "OCI": "95.2",
         "STREETNAME": "LEXINGTON AVE",
+        "PavementWi": "30.5",
         "ID": "236"
       },
       "geometry": {
@@ -2854,6 +3091,7 @@
       "properties": {
         "OCI": "38.75",
         "STREETNAME": "CRESCENT ST",
+        "PavementWi": "17",
         "ID": "237"
       },
       "geometry": {
@@ -2866,6 +3104,7 @@
       "properties": {
         "OCI": "21.54",
         "STREETNAME": "EAST ALBION ST",
+        "PavementWi": "22",
         "ID": "238"
       },
       "geometry": {
@@ -2878,6 +3117,7 @@
       "properties": {
         "OCI": "30.19",
         "STREETNAME": "EDMANDS ST",
+        "PavementWi": "16",
         "ID": "239"
       },
       "geometry": {
@@ -2890,6 +3130,7 @@
       "properties": {
         "OCI": "30.1",
         "STREETNAME": "CHURCH ST",
+        "PavementWi": "27",
         "ID": "240"
       },
       "geometry": {
@@ -2902,6 +3143,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "CLYDE ST",
+        "PavementWi": "20",
         "ID": "241"
       },
       "geometry": {
@@ -2914,6 +3156,7 @@
       "properties": {
         "OCI": "59.46",
         "STREETNAME": "MAPLE AVE",
+        "PavementWi": "26.5",
         "ID": "242"
       },
       "geometry": {
@@ -2926,6 +3169,7 @@
       "properties": {
         "OCI": "82.8",
         "STREETNAME": "MEACHAM ST",
+        "PavementWi": "26.5",
         "ID": "243"
       },
       "geometry": {
@@ -2938,6 +3182,7 @@
       "properties": {
         "OCI": "46.8",
         "STREETNAME": "MOSSLAND ST",
+        "PavementWi": "26.5",
         "ID": "244"
       },
       "geometry": {
@@ -2950,6 +3195,7 @@
       "properties": {
         "OCI": "34.4",
         "STREETNAME": "MUNROE ST",
+        "PavementWi": "30",
         "ID": "245"
       },
       "geometry": {
@@ -2962,6 +3208,7 @@
       "properties": {
         "OCI": "54.88",
         "STREETNAME": "ELMWOOD ST",
+        "PavementWi": "26.5",
         "ID": "246"
       },
       "geometry": {
@@ -2974,6 +3221,7 @@
       "properties": {
         "OCI": "79.25",
         "STREETNAME": "EUSTIS ST",
+        "PavementWi": "20.5",
         "ID": "247"
       },
       "geometry": {
@@ -2986,6 +3234,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "HALL AVE",
+        "PavementWi": "26.5",
         "ID": "248"
       },
       "geometry": {
@@ -2998,6 +3247,7 @@
       "properties": {
         "OCI": "93.83",
         "STREETNAME": "HANCOCK ST",
+        "PavementWi": "26.5",
         "ID": "249"
       },
       "geometry": {
@@ -3010,6 +3260,7 @@
       "properties": {
         "OCI": "59.4",
         "STREETNAME": "HILLSIDE PK",
+        "PavementWi": "26.5",
         "ID": "250"
       },
       "geometry": {
@@ -3022,6 +3273,7 @@
       "properties": {
         "OCI": "94.07",
         "STREETNAME": "AUSTIN ST",
+        "PavementWi": "26.5",
         "ID": "251"
       },
       "geometry": {
@@ -3034,6 +3286,7 @@
       "properties": {
         "OCI": "86.04",
         "STREETNAME": "KINGSTON ST",
+        "PavementWi": "26.5",
         "ID": "252"
       },
       "geometry": {
@@ -3046,6 +3299,7 @@
       "properties": {
         "OCI": "42.52",
         "STREETNAME": "BAILEY RD",
+        "PavementWi": "26",
         "ID": "253"
       },
       "geometry": {
@@ -3058,6 +3312,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "DELL ST",
+        "PavementWi": "26.5",
         "ID": "254"
       },
       "geometry": {
@@ -3070,6 +3325,7 @@
       "properties": {
         "OCI": "19.42",
         "STREETNAME": "DOUGLAS AVE",
+        "PavementWi": "19.5",
         "ID": "255"
       },
       "geometry": {
@@ -3082,6 +3338,7 @@
       "properties": {
         "OCI": "40.64",
         "STREETNAME": "BROADWAY",
+        "PavementWi": "59.5",
         "ID": "256"
       },
       "geometry": {
@@ -3094,6 +3351,7 @@
       "properties": {
         "OCI": "31.57",
         "STREETNAME": "CHERRY ST",
+        "PavementWi": "27",
         "ID": "257"
       },
       "geometry": {
@@ -3106,6 +3364,7 @@
       "properties": {
         "OCI": "58.96",
         "STREETNAME": "BARTLETT ST",
+        "PavementWi": "26",
         "ID": "258"
       },
       "geometry": {
@@ -3118,6 +3377,7 @@
       "properties": {
         "OCI": "39.64",
         "STREETNAME": "MAIN ST",
+        "PavementWi": "35",
         "ID": "259"
       },
       "geometry": {
@@ -3130,6 +3390,7 @@
       "properties": {
         "OCI": "73.32",
         "STREETNAME": "MONMOUTH ST",
+        "PavementWi": "26.5",
         "ID": "260"
       },
       "geometry": {
@@ -3142,6 +3403,7 @@
       "properties": {
         "OCI": "99.69",
         "STREETNAME": "MORGAN ST",
+        "PavementWi": "26.5",
         "ID": "261"
       },
       "geometry": {
@@ -3154,6 +3416,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "FRANCESCA AVE",
+        "PavementWi": "26.5",
         "ID": "262"
       },
       "geometry": {
@@ -3166,6 +3429,7 @@
       "properties": {
         "OCI": "90.45",
         "STREETNAME": "FREMONT AVE",
+        "PavementWi": "19.5",
         "ID": "263"
       },
       "geometry": {
@@ -3178,6 +3442,7 @@
       "properties": {
         "OCI": "51.6",
         "STREETNAME": "GORHAM ST",
+        "PavementWi": "26.5",
         "ID": "264"
       },
       "geometry": {
@@ -3190,6 +3455,7 @@
       "properties": {
         "OCI": "44.8",
         "STREETNAME": "GRANT ST",
+        "PavementWi": "26",
         "ID": "265"
       },
       "geometry": {
@@ -3202,6 +3468,7 @@
       "properties": {
         "OCI": "41.22",
         "STREETNAME": "HIGHLAND AVE",
+        "PavementWi": "39.5",
         "ID": "266"
       },
       "geometry": {
@@ -3214,6 +3481,7 @@
       "properties": {
         "OCI": "31.93",
         "STREETNAME": "HIGHLAND AVE",
+        "PavementWi": "40",
         "ID": "267"
       },
       "geometry": {
@@ -3226,6 +3494,7 @@
       "properties": {
         "OCI": "35.8",
         "STREETNAME": "JAQUES ST",
+        "PavementWi": "30",
         "ID": "268"
       },
       "geometry": {
@@ -3238,6 +3507,7 @@
       "properties": {
         "OCI": "86.72",
         "STREETNAME": "JOY ST",
+        "PavementWi": "42.5",
         "ID": "269"
       },
       "geometry": {
@@ -3250,6 +3520,7 @@
       "properties": {
         "OCI": "32.24",
         "STREETNAME": "LINWOOD ST",
+        "PavementWi": "40",
         "ID": "270"
       },
       "geometry": {
@@ -3262,6 +3533,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "CUTTER ST",
+        "PavementWi": "26",
         "ID": "271"
       },
       "geometry": {
@@ -3274,6 +3546,7 @@
       "properties": {
         "OCI": "35.7",
         "STREETNAME": "DARTMOUTH ST",
+        "PavementWi": "26.5",
         "ID": "272"
       },
       "geometry": {
@@ -3286,6 +3559,7 @@
       "properties": {
         "OCI": "43.67",
         "STREETNAME": "BROADWAY",
+        "PavementWi": "48",
         "ID": "273"
       },
       "geometry": {
@@ -3298,6 +3572,7 @@
       "properties": {
         "OCI": "91.43",
         "STREETNAME": "ALDRICH ST",
+        "PavementWi": "26",
         "ID": "274"
       },
       "geometry": {
@@ -3310,6 +3585,7 @@
       "properties": {
         "OCI": "32.14",
         "STREETNAME": "MEDFORD ST",
+        "PavementWi": "38",
         "ID": "275"
       },
       "geometry": {
@@ -3322,6 +3598,7 @@
       "properties": {
         "OCI": "68.07",
         "STREETNAME": "MICHIGAN AVE",
+        "PavementWi": "25",
         "ID": "276"
       },
       "geometry": {
@@ -3334,6 +3611,7 @@
       "properties": {
         "OCI": "42.1",
         "STREETNAME": "MYRTLE ST",
+        "PavementWi": "25",
         "ID": "277"
       },
       "geometry": {
@@ -3346,6 +3624,7 @@
       "properties": {
         "OCI": "61.76",
         "STREETNAME": "FISK AVE",
+        "PavementWi": "14.5",
         "ID": "278"
       },
       "geometry": {
@@ -3358,6 +3637,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "FLORENCE ST",
+        "PavementWi": "24.5",
         "ID": "279"
       },
       "geometry": {
@@ -3370,6 +3650,7 @@
       "properties": {
         "OCI": "56.16",
         "STREETNAME": "GILMAN TER",
+        "PavementWi": "27",
         "ID": "280"
       },
       "geometry": {
@@ -3382,6 +3663,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "HATHORN ST",
+        "PavementWi": "26.5",
         "ID": "281"
       },
       "geometry": {
@@ -3394,6 +3676,7 @@
       "properties": {
         "OCI": "40.42",
         "STREETNAME": "IBBETSON ST",
+        "PavementWi": "26.5",
         "ID": "282"
       },
       "geometry": {
@@ -3406,6 +3689,7 @@
       "properties": {
         "OCI": "45.94",
         "STREETNAME": "IRVINGTON RD",
+        "PavementWi": "26.5",
         "ID": "283"
       },
       "geometry": {
@@ -3418,6 +3702,7 @@
       "properties": {
         "OCI": "18.52",
         "STREETNAME": "LEWIS ST",
+        "PavementWi": "26.5",
         "ID": "284"
       },
       "geometry": {
@@ -3430,6 +3715,7 @@
       "properties": {
         "OCI": "75.6",
         "STREETNAME": "LINCOLN ST",
+        "PavementWi": "26",
         "ID": "285"
       },
       "geometry": {
@@ -3442,6 +3728,7 @@
       "properties": {
         "OCI": "33.64",
         "STREETNAME": "CROSS ST EAST",
+        "PavementWi": "27",
         "ID": "286"
       },
       "geometry": {
@@ -3454,6 +3741,7 @@
       "properties": {
         "OCI": "56.88",
         "STREETNAME": "EDGAR TERR",
+        "PavementWi": "26",
         "ID": "287"
       },
       "geometry": {
@@ -3466,6 +3754,7 @@
       "properties": {
         "OCI": "70.14",
         "STREETNAME": "SUMMER ST",
+        "PavementWi": "30",
         "ID": "288"
       },
       "geometry": {
@@ -3478,6 +3767,7 @@
       "properties": {
         "OCI": "68.16",
         "STREETNAME": "SUMMER ST",
+        "PavementWi": "30",
         "ID": "289"
       },
       "geometry": {
@@ -3490,6 +3780,7 @@
       "properties": {
         "OCI": "86.77",
         "STREETNAME": "SUMMER ST",
+        "PavementWi": "31",
         "ID": "290"
       },
       "geometry": {
@@ -3502,6 +3793,7 @@
       "properties": {
         "OCI": "89.33",
         "STREETNAME": "STONE PL",
+        "PavementWi": "20",
         "ID": "291"
       },
       "geometry": {
@@ -3514,6 +3806,7 @@
       "properties": {
         "OCI": "57.6",
         "STREETNAME": "TENNYSON ST",
+        "PavementWi": "26.5",
         "ID": "292"
       },
       "geometry": {
@@ -3526,6 +3819,7 @@
       "properties": {
         "OCI": "43.72",
         "STREETNAME": "TOWER ST",
+        "PavementWi": "26.5",
         "ID": "293"
       },
       "geometry": {
@@ -3538,6 +3832,7 @@
       "properties": {
         "OCI": "85.8",
         "STREETNAME": "WESTWOOD RD",
+        "PavementWi": "26.5",
         "ID": "294"
       },
       "geometry": {
@@ -3550,6 +3845,7 @@
       "properties": {
         "OCI": "45.28",
         "STREETNAME": "WHITFIELD RD",
+        "PavementWi": "26.5",
         "ID": "295"
       },
       "geometry": {
@@ -3562,6 +3858,7 @@
       "properties": {
         "OCI": "37.6",
         "STREETNAME": "MIDDLESEX AVE",
+        "PavementWi": "60.5",
         "ID": "296"
       },
       "geometry": {
@@ -3574,6 +3871,7 @@
       "properties": {
         "OCI": "36.1",
         "STREETNAME": "OXFORD ST",
+        "PavementWi": "24",
         "ID": "297"
       },
       "geometry": {
@@ -3586,6 +3884,7 @@
       "properties": {
         "OCI": "92.26",
         "STREETNAME": "CENTRAL ST",
+        "PavementWi": "21.5",
         "ID": "298"
       },
       "geometry": {
@@ -3598,6 +3897,7 @@
       "properties": {
         "OCI": "37.05",
         "STREETNAME": "PLEASANT AVE",
+        "PavementWi": "25.5",
         "ID": "299"
       },
       "geometry": {
@@ -3610,6 +3910,7 @@
       "properties": {
         "OCI": "43.54",
         "STREETNAME": "PINCKNEY ST",
+        "PavementWi": "26",
         "ID": "300"
       },
       "geometry": {
@@ -3622,6 +3923,7 @@
       "properties": {
         "OCI": "45.46",
         "STREETNAME": "PROPERZI WAY (N)",
+        "PavementWi": "26.5",
         "ID": "301"
       },
       "geometry": {
@@ -3634,6 +3936,7 @@
       "properties": {
         "OCI": "89.54",
         "STREETNAME": "THORNDIKE ST (S)",
+        "PavementWi": "26.5",
         "ID": "302"
       },
       "geometry": {
@@ -3646,6 +3949,7 @@
       "properties": {
         "OCI": "86.68",
         "STREETNAME": "STONE AVE",
+        "PavementWi": "26.5",
         "ID": "303"
       },
       "geometry": {
@@ -3658,6 +3962,7 @@
       "properties": {
         "OCI": "16.7",
         "STREETNAME": "STICKNEY AVE",
+        "PavementWi": "26.5",
         "ID": "304"
       },
       "geometry": {
@@ -3670,6 +3975,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "STERLING ST",
+        "PavementWi": "26.5",
         "ID": "305"
       },
       "geometry": {
@@ -3682,6 +3988,7 @@
       "properties": {
         "OCI": "38.55",
         "STREETNAME": "SAINT JAMES AVE",
+        "PavementWi": "26.5",
         "ID": "306"
       },
       "geometry": {
@@ -3694,6 +4001,7 @@
       "properties": {
         "OCI": "45.94",
         "STREETNAME": "SUNSET RD",
+        "PavementWi": "26.5",
         "ID": "307"
       },
       "geometry": {
@@ -3706,6 +4014,7 @@
       "properties": {
         "OCI": "41.38",
         "STREETNAME": "TEELE AVE",
+        "PavementWi": "26.5",
         "ID": "308"
       },
       "geometry": {
@@ -3718,6 +4027,7 @@
       "properties": {
         "OCI": "73.84",
         "STREETNAME": "WALTER TER",
+        "PavementWi": "26",
         "ID": "309"
       },
       "geometry": {
@@ -3730,6 +4040,7 @@
       "properties": {
         "OCI": "40.72",
         "STREETNAME": "WEBSTER AVE",
+        "PavementWi": "34",
         "ID": "310"
       },
       "geometry": {
@@ -3742,6 +4053,7 @@
       "properties": {
         "OCI": "37.3",
         "STREETNAME": "WESLEY ST",
+        "PavementWi": "26.5",
         "ID": "311"
       },
       "geometry": {
@@ -3754,6 +4066,7 @@
       "properties": {
         "OCI": "65",
         "STREETNAME": "BOND ST",
+        "PavementWi": "26",
         "ID": "312"
       },
       "geometry": {
@@ -3766,6 +4079,7 @@
       "properties": {
         "OCI": "39.64",
         "STREETNAME": "BOSTON AVE (S)",
+        "PavementWi": "26.5",
         "ID": "313"
       },
       "geometry": {
@@ -3778,6 +4092,7 @@
       "properties": {
         "OCI": "18.2",
         "STREETNAME": "CONWELL AVE",
+        "PavementWi": "27",
         "ID": "314"
       },
       "geometry": {
@@ -3790,6 +4105,7 @@
       "properties": {
         "OCI": "31.04",
         "STREETNAME": "PERRY ST",
+        "PavementWi": "27",
         "ID": "315"
       },
       "geometry": {
@@ -3802,6 +4118,7 @@
       "properties": {
         "OCI": "63.34",
         "STREETNAME": "PERKINS ST",
+        "PavementWi": "25",
         "ID": "316"
       },
       "geometry": {
@@ -3814,6 +4131,7 @@
       "properties": {
         "OCI": "64.95",
         "STREETNAME": "COLLEGE AVE",
+        "PavementWi": "40",
         "ID": "317"
       },
       "geometry": {
@@ -3827,6 +4145,7 @@
       "properties": {
         "OCI": "58.96",
         "STREETNAME": "CAMPBELL PARK",
+        "PavementWi": "26.5",
         "ID": "318"
       },
       "geometry": {
@@ -3839,6 +4158,7 @@
       "properties": {
         "OCI": "74.02",
         "STREETNAME": "SPRINGFIELD ST",
+        "PavementWi": "27",
         "ID": "319"
       },
       "geometry": {
@@ -3851,6 +4171,7 @@
       "properties": {
         "OCI": "38.6",
         "STREETNAME": "SPRING ST",
+        "PavementWi": "25.5",
         "ID": "320"
       },
       "geometry": {
@@ -3863,6 +4184,7 @@
       "properties": {
         "OCI": "24.8",
         "STREETNAME": "SPRINGHILL TERR",
+        "PavementWi": "14.5",
         "ID": "321"
       },
       "geometry": {
@@ -3875,6 +4197,7 @@
       "properties": {
         "OCI": "47.04",
         "STREETNAME": "BIGELOW ST",
+        "PavementWi": "33",
         "ID": "322"
       },
       "geometry": {
@@ -3887,6 +4210,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "WALLACE ST",
+        "PavementWi": "26",
         "ID": "323"
       },
       "geometry": {
@@ -3899,6 +4223,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "WARWICK ST",
+        "PavementWi": "26",
         "ID": "324"
       },
       "geometry": {
@@ -3911,6 +4236,7 @@
       "properties": {
         "OCI": "63.32",
         "STREETNAME": "WILTON ST",
+        "PavementWi": "24",
         "ID": "325"
       },
       "geometry": {
@@ -3923,6 +4249,7 @@
       "properties": {
         "OCI": "38.2",
         "STREETNAME": "WINSLOW AVE",
+        "PavementWi": "27",
         "ID": "326"
       },
       "geometry": {
@@ -3935,6 +4262,7 @@
       "properties": {
         "OCI": "99.79",
         "STREETNAME": "BROADWAY (W)",
+        "PavementWi": "35",
         "ID": "327"
       },
       "geometry": {
@@ -3947,6 +4275,7 @@
       "properties": {
         "OCI": "37.64",
         "STREETNAME": "BROADWAY (W)",
+        "PavementWi": "32",
         "ID": "328"
       },
       "geometry": {
@@ -3959,6 +4288,7 @@
       "properties": {
         "OCI": "30.67",
         "STREETNAME": "BROMFIELD RD",
+        "PavementWi": "26.5",
         "ID": "329"
       },
       "geometry": {
@@ -3971,6 +4301,7 @@
       "properties": {
         "OCI": "54.88",
         "STREETNAME": "BURNHAM ST",
+        "PavementWi": "26",
         "ID": "330"
       },
       "geometry": {
@@ -3983,6 +4314,7 @@
       "properties": {
         "OCI": "58.56",
         "STREETNAME": "BEECH ST",
+        "PavementWi": "26.5",
         "ID": "331"
       },
       "geometry": {
@@ -3995,6 +4327,7 @@
       "properties": {
         "OCI": "37.65",
         "STREETNAME": "PENNSYLVANIA AVE",
+        "PavementWi": "26.5",
         "ID": "332"
       },
       "geometry": {
@@ -4007,6 +4340,7 @@
       "properties": {
         "OCI": "67.22",
         "STREETNAME": "BRISTOL RD",
+        "PavementWi": "26",
         "ID": "333"
       },
       "geometry": {
@@ -4019,6 +4353,7 @@
       "properties": {
         "OCI": "56.56",
         "STREETNAME": "BUTLER DR",
+        "PavementWi": "26.5",
         "ID": "334"
       },
       "geometry": {
@@ -4031,6 +4366,7 @@
       "properties": {
         "OCI": "97.06",
         "STREETNAME": "SPENCER AVE",
+        "PavementWi": "27",
         "ID": "335"
       },
       "geometry": {
@@ -4043,6 +4379,7 @@
       "properties": {
         "OCI": "37.32",
         "STREETNAME": "SOUTH ST",
+        "PavementWi": "33.5",
         "ID": "336"
       },
       "geometry": {
@@ -4055,6 +4392,7 @@
       "properties": {
         "OCI": "57.72",
         "STREETNAME": "SOUTH ST",
+        "PavementWi": "20",
         "ID": "337"
       },
       "geometry": {
@@ -4067,6 +4405,7 @@
       "properties": {
         "OCI": "85.8",
         "STREETNAME": "SOMERVILLE AVE",
+        "PavementWi": "49",
         "ID": "338"
       },
       "geometry": {
@@ -4079,6 +4418,7 @@
       "properties": {
         "OCI": "15.29",
         "STREETNAME": "THURSTON ST",
+        "PavementWi": "26",
         "ID": "339"
       },
       "geometry": {
@@ -4091,6 +4431,7 @@
       "properties": {
         "OCI": "75.72",
         "STREETNAME": "TYLER ST",
+        "PavementWi": "26",
         "ID": "340"
       },
       "geometry": {
@@ -4103,6 +4444,7 @@
       "properties": {
         "OCI": "61.84",
         "STREETNAME": "WHITE ST",
+        "PavementWi": "20.5",
         "ID": "341"
       },
       "geometry": {
@@ -4115,6 +4457,7 @@
       "properties": {
         "OCI": "32.52",
         "STREETNAME": "WILLOUGHBY ST",
+        "PavementWi": "26",
         "ID": "342"
       },
       "geometry": {
@@ -4127,6 +4470,7 @@
       "properties": {
         "OCI": "41.8",
         "STREETNAME": "OTIS ST (W)",
+        "PavementWi": "26.5",
         "ID": "343"
       },
       "geometry": {
@@ -4139,6 +4483,7 @@
       "properties": {
         "OCI": "51.72",
         "STREETNAME": "POWDER HOUSE BLVD",
+        "PavementWi": "40",
         "ID": "344"
       },
       "geometry": {
@@ -4151,6 +4496,7 @@
       "properties": {
         "OCI": "39.22",
         "STREETNAME": "CEDAR ST",
+        "PavementWi": "26.5",
         "ID": "345"
       },
       "geometry": {
@@ -4163,6 +4509,7 @@
       "properties": {
         "OCI": "35.45",
         "STREETNAME": "PEMBROKE ST",
+        "PavementWi": "26",
         "ID": "347"
       },
       "geometry": {
@@ -4175,6 +4522,7 @@
       "properties": {
         "OCI": "65.9",
         "STREETNAME": "PEARSON RD",
+        "PavementWi": "26.5",
         "ID": "348"
       },
       "geometry": {
@@ -4187,6 +4535,7 @@
       "properties": {
         "OCI": "61.8",
         "STREETNAME": "THORNDIKE ST (N)",
+        "PavementWi": "26.5",
         "ID": "349"
       },
       "geometry": {
@@ -4199,6 +4548,7 @@
       "properties": {
         "OCI": "90.45",
         "STREETNAME": "BOWDOIN ST",
+        "PavementWi": "26",
         "ID": "350"
       },
       "geometry": {
@@ -4211,6 +4561,7 @@
       "properties": {
         "OCI": "31.24",
         "STREETNAME": "SOMERVILLE AVE",
+        "PavementWi": "52",
         "ID": "351"
       },
       "geometry": {
@@ -4223,6 +4574,7 @@
       "properties": {
         "OCI": "39.24",
         "STREETNAME": "SOMERVILLE AVE",
+        "PavementWi": "52",
         "ID": "352"
       },
       "geometry": {
@@ -4235,6 +4587,7 @@
       "properties": {
         "OCI": "35.98",
         "STREETNAME": "BENEDICT ST",
+        "PavementWi": "26.5",
         "ID": "353"
       },
       "geometry": {
@@ -4247,6 +4600,7 @@
       "properties": {
         "OCI": "44.26",
         "STREETNAME": "SMITH AVE",
+        "PavementWi": "15",
         "ID": "354"
       },
       "geometry": {
@@ -4259,6 +4613,7 @@
       "properties": {
         "OCI": "99.41",
         "STREETNAME": "TAYLOR ST",
+        "PavementWi": "26",
         "ID": "355"
       },
       "geometry": {
@@ -4271,6 +4626,7 @@
       "properties": {
         "OCI": "71.22",
         "STREETNAME": "TEN HILLS RD",
+        "PavementWi": "26",
         "ID": "356"
       },
       "geometry": {
@@ -4283,6 +4639,7 @@
       "properties": {
         "OCI": "65.66",
         "STREETNAME": "WARNER ST",
+        "PavementWi": "39.5",
         "ID": "357"
       },
       "geometry": {
@@ -4295,6 +4652,7 @@
       "properties": {
         "OCI": "99.6",
         "STREETNAME": "WESLEY PARK",
+        "PavementWi": "26.5",
         "ID": "358"
       },
       "geometry": {
@@ -4307,6 +4665,7 @@
       "properties": {
         "OCI": "96.24",
         "STREETNAME": "WESTMINSTER ST",
+        "PavementWi": "26",
         "ID": "359"
       },
       "geometry": {
@@ -4319,6 +4678,7 @@
       "properties": {
         "OCI": "81.15",
         "STREETNAME": "BONAIR ST (E)",
+        "PavementWi": "26.5",
         "ID": "360"
       },
       "geometry": {
@@ -4331,6 +4691,7 @@
       "properties": {
         "OCI": "94.85",
         "STREETNAME": "FOLEY ST",
+        "PavementWi": "48",
         "ID": "361"
       },
       "geometry": {
@@ -4343,6 +4704,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "PEARSON RD",
+        "PavementWi": "26.5",
         "ID": "362"
       },
       "geometry": {
@@ -4355,6 +4717,7 @@
       "properties": {
         "OCI": "95.02",
         "STREETNAME": "PEARSON AVE",
+        "PavementWi": "30",
         "ID": "363"
       },
       "geometry": {
@@ -4367,6 +4730,7 @@
       "properties": {
         "OCI": "35.25",
         "STREETNAME": "BOSTON ST",
+        "PavementWi": "26",
         "ID": "364"
       },
       "geometry": {
@@ -4379,6 +4743,7 @@
       "properties": {
         "OCI": "99.62",
         "STREETNAME": "KENT ST (S)",
+        "PavementWi": "18",
         "ID": "365"
       },
       "geometry": {
@@ -4391,6 +4756,7 @@
       "properties": {
         "OCI": "36.25",
         "STREETNAME": "SKEHAN ST",
+        "PavementWi": "17",
         "ID": "366"
       },
       "geometry": {
@@ -4403,6 +4769,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "SIMPSON AVE",
+        "PavementWi": "26.5",
         "ID": "367"
       },
       "geometry": {
@@ -4415,6 +4782,7 @@
       "properties": {
         "OCI": "58.48",
         "STREETNAME": "SEWALL ST",
+        "PavementWi": "27",
         "ID": "368"
       },
       "geometry": {
@@ -4427,6 +4795,7 @@
       "properties": {
         "OCI": "87.4",
         "STREETNAME": "SUNNYSIDE AVE",
+        "PavementWi": "23",
         "ID": "369"
       },
       "geometry": {
@@ -4439,6 +4808,7 @@
       "properties": {
         "OCI": "87.68",
         "STREETNAME": "WALKER ST",
+        "PavementWi": "26.5",
         "ID": "370"
       },
       "geometry": {
@@ -4451,6 +4821,7 @@
       "properties": {
         "OCI": "46.19",
         "STREETNAME": "WALNUT ST",
+        "PavementWi": "26",
         "ID": "371"
       },
       "geometry": {
@@ -4463,6 +4834,7 @@
       "properties": {
         "OCI": "41.22",
         "STREETNAME": "WARREN ST",
+        "PavementWi": "21",
         "ID": "372"
       },
       "geometry": {
@@ -4475,6 +4847,7 @@
       "properties": {
         "OCI": "42.82",
         "STREETNAME": "WATSON ST",
+        "PavementWi": "26",
         "ID": "373"
       },
       "geometry": {
@@ -4487,6 +4860,7 @@
       "properties": {
         "OCI": "53.2",
         "STREETNAME": "WINDSOR ST",
+        "PavementWi": "25.5",
         "ID": "374"
       },
       "geometry": {
@@ -4499,6 +4873,7 @@
       "properties": {
         "OCI": "88.76",
         "STREETNAME": "WOODSTOCK ST",
+        "PavementWi": "26",
         "ID": "375"
       },
       "geometry": {
@@ -4511,6 +4886,7 @@
       "properties": {
         "OCI": "37.64",
         "STREETNAME": "BROADWAY (W)",
+        "PavementWi": "33",
         "ID": "376"
       },
       "geometry": {
@@ -4523,6 +4899,7 @@
       "properties": {
         "OCI": "37.64",
         "STREETNAME": "BROADWAY (E)",
+        "PavementWi": "34",
         "ID": "377"
       },
       "geometry": {
@@ -4535,6 +4912,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "DOW ST",
+        "PavementWi": "26.5",
         "ID": "378"
       },
       "geometry": {
@@ -4547,6 +4925,7 @@
       "properties": {
         "OCI": "61.12",
         "STREETNAME": "CURTIS AVE",
+        "PavementWi": "26.5",
         "ID": "379"
       },
       "geometry": {
@@ -4559,6 +4938,7 @@
       "properties": {
         "OCI": "99.61",
         "STREETNAME": "PEARL ST PL",
+        "PavementWi": "14.5",
         "ID": "380"
       },
       "geometry": {
@@ -4571,6 +4951,7 @@
       "properties": {
         "OCI": "92.7",
         "STREETNAME": "PEARL ST",
+        "PavementWi": "34",
         "ID": "381"
       },
       "geometry": {
@@ -4583,6 +4964,7 @@
       "properties": {
         "OCI": "42.58",
         "STREETNAME": "BURNSIDE AVE",
+        "PavementWi": "26",
         "ID": "382"
       },
       "geometry": {
@@ -4595,6 +4977,7 @@
       "properties": {
         "OCI": "41.36",
         "STREETNAME": "CAMERON AVE",
+        "PavementWi": "40",
         "ID": "383"
       },
       "geometry": {
@@ -4607,6 +4990,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "SEVEN PINES AVE",
+        "PavementWi": "26.5",
         "ID": "384"
       },
       "geometry": {
@@ -4619,6 +5003,7 @@
       "properties": {
         "OCI": "90.72",
         "STREETNAME": "SCHOOL ST",
+        "PavementWi": "33",
         "ID": "385"
       },
       "geometry": {
@@ -4631,6 +5016,7 @@
       "properties": {
         "OCI": "44.65",
         "STREETNAME": "SCHOOL ST",
+        "PavementWi": "33",
         "ID": "386"
       },
       "geometry": {
@@ -4643,6 +5029,7 @@
       "properties": {
         "OCI": "45.63",
         "STREETNAME": "SCHOOL ST",
+        "PavementWi": "26.5",
         "ID": "387"
       },
       "geometry": {
@@ -4655,6 +5042,7 @@
       "properties": {
         "OCI": "16.84",
         "STREETNAME": "TUFTS ST",
+        "PavementWi": "27",
         "ID": "388"
       },
       "geometry": {
@@ -4667,6 +5055,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "VICTORIA ST",
+        "PavementWi": "26.5",
         "ID": "389"
       },
       "geometry": {
@@ -4679,6 +5068,7 @@
       "properties": {
         "OCI": "23.1",
         "STREETNAME": "WILLIAM ST",
+        "PavementWi": "26.5",
         "ID": "390"
       },
       "geometry": {
@@ -4691,6 +5081,7 @@
       "properties": {
         "OCI": "91.16",
         "STREETNAME": "WILSON AVE",
+        "PavementWi": "23",
         "ID": "391"
       },
       "geometry": {
@@ -4703,6 +5094,7 @@
       "properties": {
         "OCI": "35.88",
         "STREETNAME": "POWDER HOUSE BLVD",
+        "PavementWi": "40",
         "ID": "392"
       },
       "geometry": {
@@ -4715,6 +5107,7 @@
       "properties": {
         "OCI": "79.84",
         "STREETNAME": "BELMONT SQ",
+        "PavementWi": "20",
         "ID": "393"
       },
       "geometry": {
@@ -4727,6 +5120,7 @@
       "properties": {
         "OCI": "57.44",
         "STREETNAME": "SHORE DR",
+        "PavementWi": "26",
         "ID": "394"
       },
       "geometry": {
@@ -4739,6 +5133,7 @@
       "properties": {
         "OCI": "67.64",
         "STREETNAME": "HENRY AVE",
+        "PavementWi": "27",
         "ID": "395"
       },
       "geometry": {
@@ -4751,6 +5146,7 @@
       "properties": {
         "OCI": "54.59",
         "STREETNAME": "PEARL ST",
+        "PavementWi": "33.5",
         "ID": "396"
       },
       "geometry": {
@@ -4763,6 +5159,7 @@
       "properties": {
         "OCI": "34.92",
         "STREETNAME": "PEARL ST",
+        "PavementWi": "33.5",
         "ID": "397"
       },
       "geometry": {
@@ -4775,6 +5172,7 @@
       "properties": {
         "OCI": "37",
         "STREETNAME": "PEARL ST",
+        "PavementWi": "26",
         "ID": "398"
       },
       "geometry": {
@@ -4787,6 +5185,7 @@
       "properties": {
         "OCI": "94.07",
         "STREETNAME": "MAINE TERR",
+        "PavementWi": "22",
         "ID": "399"
       },
       "geometry": {
@@ -4799,6 +5198,7 @@
       "properties": {
         "OCI": "30.37",
         "STREETNAME": "BRASTOW AVE",
+        "PavementWi": "26.5",
         "ID": "400"
       },
       "geometry": {
@@ -4811,6 +5211,7 @@
       "properties": {
         "OCI": "44.38",
         "STREETNAME": "SARTWELL AVE",
+        "PavementWi": "24",
         "ID": "401"
       },
       "geometry": {
@@ -4823,6 +5224,7 @@
       "properties": {
         "OCI": "36.7",
         "STREETNAME": "SARGENT AVE",
+        "PavementWi": "26.5",
         "ID": "402"
       },
       "geometry": {
@@ -4835,6 +5237,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "SANBORN AVE",
+        "PavementWi": "26",
         "ID": "403"
       },
       "geometry": {
@@ -4847,6 +5250,7 @@
       "properties": {
         "OCI": "69.33",
         "STREETNAME": "SACRAMENTO ST",
+        "PavementWi": "20",
         "ID": "404"
       },
       "geometry": {
@@ -4859,6 +5263,7 @@
       "properties": {
         "OCI": "70.31",
         "STREETNAME": "TEN HILLS RD",
+        "PavementWi": "20",
         "ID": "405"
       },
       "geometry": {
@@ -4871,6 +5276,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "THURSTON ST",
+        "PavementWi": "26",
         "ID": "406"
       },
       "geometry": {
@@ -4883,6 +5289,7 @@
       "properties": {
         "OCI": "26",
         "STREETNAME": "SYCAMORE ST",
+        "PavementWi": "29",
         "ID": "407"
       },
       "geometry": {
@@ -4895,6 +5302,7 @@
       "properties": {
         "OCI": "94.7",
         "STREETNAME": "WEST ST",
+        "PavementWi": "19.5",
         "ID": "408"
       },
       "geometry": {
@@ -4907,6 +5315,7 @@
       "properties": {
         "OCI": "99.69",
         "STREETNAME": "WHEELER ST",
+        "PavementWi": "26",
         "ID": "409"
       },
       "geometry": {
@@ -4919,6 +5328,7 @@
       "properties": {
         "OCI": "49.38",
         "STREETNAME": "COBBLE HILL RD",
+        "PavementWi": "26",
         "ID": "410"
       },
       "geometry": {
@@ -4931,6 +5341,7 @@
       "properties": {
         "OCI": "74.79",
         "STREETNAME": "BONNER AVE",
+        "PavementWi": "27",
         "ID": "411"
       },
       "geometry": {
@@ -4943,6 +5354,7 @@
       "properties": {
         "OCI": "39.22",
         "STREETNAME": "CEDAR ST",
+        "PavementWi": "26.5",
         "ID": "412"
       },
       "geometry": {
@@ -4955,6 +5367,7 @@
       "properties": {
         "OCI": "33.85",
         "STREETNAME": "PEARL ST",
+        "PavementWi": "32",
         "ID": "413"
       },
       "geometry": {
@@ -4967,6 +5380,7 @@
       "properties": {
         "OCI": "41.44",
         "STREETNAME": "PAULINA ST",
+        "PavementWi": "26.5",
         "ID": "414"
       },
       "geometry": {
@@ -4979,6 +5393,7 @@
       "properties": {
         "OCI": "99.62",
         "STREETNAME": "KENT ST (N)",
+        "PavementWi": "34",
         "ID": "415"
       },
       "geometry": {
@@ -4991,6 +5406,7 @@
       "properties": {
         "OCI": "53.52",
         "STREETNAME": "RUSH ST (S)",
+        "PavementWi": "26",
         "ID": "416"
       },
       "geometry": {
@@ -5003,6 +5419,7 @@
       "properties": {
         "OCI": "67.22",
         "STREETNAME": "RUSSELL ST",
+        "PavementWi": "26.5",
         "ID": "417"
       },
       "geometry": {
@@ -5015,6 +5432,7 @@
       "properties": {
         "OCI": "59.46",
         "STREETNAME": "RUSSELL RD",
+        "PavementWi": "26.5",
         "ID": "418"
       },
       "geometry": {
@@ -5027,6 +5445,7 @@
       "properties": {
         "OCI": "86.44",
         "STREETNAME": "ROSSMORE ST",
+        "PavementWi": "27",
         "ID": "419"
       },
       "geometry": {
@@ -5039,6 +5458,7 @@
       "properties": {
         "OCI": "21.96",
         "STREETNAME": "ROSELAND ST",
+        "PavementWi": "24.5",
         "ID": "420"
       },
       "geometry": {
@@ -5051,6 +5471,7 @@
       "properties": {
         "OCI": "29.8",
         "STREETNAME": "SUMMIT ST",
+        "PavementWi": "26.5",
         "ID": "421"
       },
       "geometry": {
@@ -5063,6 +5484,7 @@
       "properties": {
         "OCI": "49.76",
         "STREETNAME": "BENTON RD",
+        "PavementWi": "26.5",
         "ID": "422"
       },
       "geometry": {
@@ -5075,6 +5497,7 @@
       "properties": {
         "OCI": "78.78",
         "STREETNAME": "WALNUT ST",
+        "PavementWi": "26",
         "ID": "423"
       },
       "geometry": {
@@ -5087,6 +5510,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "WARE ST",
+        "PavementWi": "26",
         "ID": "424"
       },
       "geometry": {
@@ -5099,6 +5523,7 @@
       "properties": {
         "OCI": "95.28",
         "STREETNAME": "WATERHOUSE ST",
+        "PavementWi": "26.5",
         "ID": "425"
       },
       "geometry": {
@@ -5111,6 +5536,7 @@
       "properties": {
         "OCI": "50.28",
         "STREETNAME": "WELLINGTON AVE",
+        "PavementWi": "26.5",
         "ID": "426"
       },
       "geometry": {
@@ -5123,6 +5549,7 @@
       "properties": {
         "OCI": "47.04",
         "STREETNAME": "WOODS AVE",
+        "PavementWi": "26.5",
         "ID": "427"
       },
       "geometry": {
@@ -5135,6 +5562,7 @@
       "properties": {
         "OCI": "83.1",
         "STREETNAME": "BONAIR ST (W)",
+        "PavementWi": "27",
         "ID": "428"
       },
       "geometry": {
@@ -5147,6 +5575,7 @@
       "properties": {
         "OCI": "37.64",
         "STREETNAME": "BROADWAY (E)",
+        "PavementWi": "35",
         "ID": "429"
       },
       "geometry": {
@@ -5159,6 +5588,7 @@
       "properties": {
         "OCI": "44.8",
         "STREETNAME": "COLLEGE HILL RD",
+        "PavementWi": "26.5",
         "ID": "430"
       },
       "geometry": {
@@ -5171,6 +5601,7 @@
       "properties": {
         "OCI": "41.2",
         "STREETNAME": "BEDFORD ST",
+        "PavementWi": "20",
         "ID": "431"
       },
       "geometry": {
@@ -5183,6 +5614,7 @@
       "properties": {
         "OCI": "56.96",
         "STREETNAME": "PARTRIDGE AVE",
+        "PavementWi": "24.5",
         "ID": "432"
       },
       "geometry": {
@@ -5195,6 +5627,7 @@
       "properties": {
         "OCI": "41.92",
         "STREETNAME": "CENTRAL RD",
+        "PavementWi": "26",
         "ID": "433"
       },
       "geometry": {
@@ -5207,6 +5640,7 @@
       "properties": {
         "OCI": "94.01",
         "STREETNAME": "CAMBRIA ST",
+        "PavementWi": "26.5",
         "ID": "434"
       },
       "geometry": {
@@ -5219,6 +5653,7 @@
       "properties": {
         "OCI": "43.48",
         "STREETNAME": "CEDAR AVE",
+        "PavementWi": "14.5",
         "ID": "435"
       },
       "geometry": {
@@ -5231,6 +5666,7 @@
       "properties": {
         "OCI": "87.28",
         "STREETNAME": "ROSE ST",
+        "PavementWi": "26",
         "ID": "436"
       },
       "geometry": {
@@ -5243,6 +5679,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "ROGERS AVE",
+        "PavementWi": "30",
         "ID": "437"
       },
       "geometry": {
@@ -5255,6 +5692,7 @@
       "properties": {
         "OCI": "26.44",
         "STREETNAME": "ROBINSON ST",
+        "PavementWi": "26",
         "ID": "438"
       },
       "geometry": {
@@ -5267,6 +5705,7 @@
       "properties": {
         "OCI": "60.24",
         "STREETNAME": "VERNON ST",
+        "PavementWi": "26.5",
         "ID": "439"
       },
       "geometry": {
@@ -5279,6 +5718,7 @@
       "properties": {
         "OCI": "49.12",
         "STREETNAME": "WALDO ST",
+        "PavementWi": "26",
         "ID": "440"
       },
       "geometry": {
@@ -5291,6 +5731,7 @@
       "properties": {
         "OCI": "35.6",
         "STREETNAME": "WARREN AVE",
+        "PavementWi": "26.5",
         "ID": "441"
       },
       "geometry": {
@@ -5303,6 +5744,7 @@
       "properties": {
         "OCI": "64.04",
         "STREETNAME": "WILLOW PL",
+        "PavementWi": "17",
         "ID": "442"
       },
       "geometry": {
@@ -5315,6 +5757,7 @@
       "properties": {
         "OCI": "72.9",
         "STREETNAME": "WINDSOR RD",
+        "PavementWi": "26",
         "ID": "443"
       },
       "geometry": {
@@ -5327,6 +5770,7 @@
       "properties": {
         "OCI": "64.7",
         "STREETNAME": "ABERDEEN RD",
+        "PavementWi": "26",
         "ID": "444"
       },
       "geometry": {
@@ -5339,6 +5783,7 @@
       "properties": {
         "OCI": "37.64",
         "STREETNAME": "BROADWAY (W)",
+        "PavementWi": "34",
         "ID": "445"
       },
       "geometry": {
@@ -5351,6 +5796,7 @@
       "properties": {
         "OCI": "59.36",
         "STREETNAME": "NORFOLK ST",
+        "PavementWi": "27",
         "ID": "446"
       },
       "geometry": {
@@ -5363,6 +5809,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "JAY ST",
+        "PavementWi": "26.5",
         "ID": "447"
       },
       "geometry": {
@@ -5375,6 +5822,7 @@
       "properties": {
         "OCI": "66.32",
         "STREETNAME": "PARKER ST",
+        "PavementWi": "23",
         "ID": "448"
       },
       "geometry": {
@@ -5387,6 +5835,7 @@
       "properties": {
         "OCI": "50.8",
         "STREETNAME": "PARKDALE ST",
+        "PavementWi": "26.5",
         "ID": "449"
       },
       "geometry": {
@@ -5399,6 +5848,7 @@
       "properties": {
         "OCI": "64.25",
         "STREETNAME": "PARK ST",
+        "PavementWi": "33",
         "ID": "450"
       },
       "geometry": {
@@ -5411,6 +5861,7 @@
       "properties": {
         "OCI": "45.94",
         "STREETNAME": "BRADLEY ST",
+        "PavementWi": "26.5",
         "ID": "451"
       },
       "geometry": {
@@ -5423,6 +5874,7 @@
       "properties": {
         "OCI": "66.2",
         "STREETNAME": "BUCKINGHAM ST",
+        "PavementWi": "26.5",
         "ID": "452"
       },
       "geometry": {
@@ -5435,6 +5887,7 @@
       "properties": {
         "OCI": "58.88",
         "STREETNAME": "BELMONT ST",
+        "PavementWi": "25",
         "ID": "453"
       },
       "geometry": {
@@ -5447,6 +5900,7 @@
       "properties": {
         "OCI": "59.04",
         "STREETNAME": "ADAMS ST",
+        "PavementWi": "26",
         "ID": "454"
       },
       "geometry": {
@@ -5459,6 +5913,7 @@
       "properties": {
         "OCI": "68.28",
         "STREETNAME": "RICHDALE AVE",
+        "PavementWi": "26.5",
         "ID": "455"
       },
       "geometry": {
@@ -5471,6 +5926,7 @@
       "properties": {
         "OCI": "70.24",
         "STREETNAME": "RICHARDSON ST",
+        "PavementWi": "23",
         "ID": "456"
       },
       "geometry": {
@@ -5483,6 +5939,7 @@
       "properties": {
         "OCI": "45.7",
         "STREETNAME": "BERKELEY ST",
+        "PavementWi": "26.5",
         "ID": "457"
       },
       "geometry": {
@@ -5495,6 +5952,7 @@
       "properties": {
         "OCI": "50.16",
         "STREETNAME": "TRULL ST",
+        "PavementWi": "26.5",
         "ID": "458"
       },
       "geometry": {
@@ -5507,6 +5965,7 @@
       "properties": {
         "OCI": "28.39",
         "STREETNAME": "WHEATLAND ST",
+        "PavementWi": "27",
         "ID": "459"
       },
       "geometry": {
@@ -5519,6 +5978,7 @@
       "properties": {
         "OCI": "70.73",
         "STREETNAME": "WIGGLESWORTH ST",
+        "PavementWi": "27",
         "ID": "460"
       },
       "geometry": {
@@ -5531,6 +5991,7 @@
       "properties": {
         "OCI": "66.14",
         "STREETNAME": "OTIS ST (E)",
+        "PavementWi": "26.5",
         "ID": "461"
       },
       "geometry": {
@@ -5543,6 +6004,7 @@
       "properties": {
         "OCI": "31.57",
         "STREETNAME": "POWDER HOUSE BLVD",
+        "PavementWi": "40",
         "ID": "462"
       },
       "geometry": {
@@ -5555,6 +6017,7 @@
       "properties": {
         "OCI": "47.45",
         "STREETNAME": "CEDAR ST",
+        "PavementWi": "26.5",
         "ID": "463"
       },
       "geometry": {
@@ -5567,6 +6030,7 @@
       "properties": {
         "OCI": "29.29",
         "STREETNAME": "SHORE DR",
+        "PavementWi": "26",
         "ID": "464"
       },
       "geometry": {
@@ -5579,6 +6043,7 @@
       "properties": {
         "OCI": "55.36",
         "STREETNAME": "PARK AVE",
+        "PavementWi": "26.5",
         "ID": "465"
       },
       "geometry": {
@@ -5591,6 +6056,7 @@
       "properties": {
         "OCI": "33.48",
         "STREETNAME": "PACKARD AVE",
+        "PavementWi": "40.5",
         "ID": "466"
       },
       "geometry": {
@@ -5603,6 +6069,7 @@
       "properties": {
         "OCI": "57.18",
         "STREETNAME": "RUSH ST (N)",
+        "PavementWi": "27",
         "ID": "467"
       },
       "geometry": {
@@ -5615,6 +6082,7 @@
       "properties": {
         "OCI": "24.8",
         "STREETNAME": "CYPRESS ST",
+        "PavementWi": "26.5",
         "ID": "468"
       },
       "geometry": {
@@ -5627,6 +6095,7 @@
       "properties": {
         "OCI": "41.86",
         "STREETNAME": "RHODE ISLAND AVE",
+        "PavementWi": "25",
         "ID": "469"
       },
       "geometry": {
@@ -5639,6 +6108,7 @@
       "properties": {
         "OCI": "39.15",
         "STREETNAME": "RAYMOND AVE",
+        "PavementWi": "26.5",
         "ID": "470"
       },
       "geometry": {
@@ -5651,6 +6121,7 @@
       "properties": {
         "OCI": "52.8",
         "STREETNAME": "RADCLIFFE RD",
+        "PavementWi": "24",
         "ID": "471"
       },
       "geometry": {
@@ -5663,6 +6134,7 @@
       "properties": {
         "OCI": "91.46",
         "STREETNAME": "BELMONT PL",
+        "PavementWi": "14.5",
         "ID": "472"
       },
       "geometry": {
@@ -5675,6 +6147,7 @@
       "properties": {
         "OCI": "85.48",
         "STREETNAME": "SYCAMORE ST",
+        "PavementWi": "26",
         "ID": "473"
       },
       "geometry": {
@@ -5687,6 +6160,7 @@
       "properties": {
         "OCI": "77.44",
         "STREETNAME": "SYDNEY ST",
+        "PavementWi": "27",
         "ID": "474"
       },
       "geometry": {
@@ -5699,6 +6173,7 @@
       "properties": {
         "OCI": "98.38",
         "STREETNAME": "TEMPLE ST",
+        "PavementWi": "44",
         "ID": "475"
       },
       "geometry": {
@@ -5711,6 +6186,7 @@
       "properties": {
         "OCI": "20.86",
         "STREETNAME": "WARD ST",
+        "PavementWi": "20",
         "ID": "476"
       },
       "geometry": {
@@ -5723,6 +6199,7 @@
       "properties": {
         "OCI": "41.22",
         "STREETNAME": "SYCAMORE ST",
+        "PavementWi": "29",
         "ID": "477"
       },
       "geometry": {
@@ -5735,6 +6212,7 @@
       "properties": {
         "OCI": "32.26",
         "STREETNAME": "WEBSTER ST",
+        "PavementWi": "24",
         "ID": "478"
       },
       "geometry": {
@@ -5747,6 +6225,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "WEST QUINCY ST",
+        "PavementWi": "26.5",
         "ID": "479"
       },
       "geometry": {
@@ -5759,6 +6238,7 @@
       "properties": {
         "OCI": "97.48",
         "STREETNAME": "YORKTOWN ST",
+        "PavementWi": "26.5",
         "ID": "480"
       },
       "geometry": {
@@ -5771,6 +6251,7 @@
       "properties": {
         "OCI": "63.76",
         "STREETNAME": "BOSTON AVE (N)",
+        "PavementWi": "40",
         "ID": "481"
       },
       "geometry": {
@@ -5783,6 +6264,7 @@
       "properties": {
         "OCI": "45.1",
         "STREETNAME": "OSSIPEE RD",
+        "PavementWi": "26",
         "ID": "482"
       },
       "geometry": {
@@ -5795,6 +6277,7 @@
       "properties": {
         "OCI": "96.58",
         "STREETNAME": "ORCHARD ST",
+        "PavementWi": "26.5",
         "ID": "483"
       },
       "geometry": {
@@ -5807,6 +6290,7 @@
       "properties": {
         "OCI": "99.79",
         "STREETNAME": "BROADWAY (E)",
+        "PavementWi": "34",
         "ID": "484"
       },
       "geometry": {
@@ -5819,6 +6303,7 @@
       "properties": {
         "OCI": "84.44",
         "STREETNAME": "GILMAN ST",
+        "PavementWi": "26.5",
         "ID": "485"
       },
       "geometry": {
@@ -5831,6 +6316,7 @@
       "properties": {
         "OCI": "99.59",
         "STREETNAME": "CARTER TERR",
+        "PavementWi": "26.5",
         "ID": "486"
       },
       "geometry": {
@@ -5843,6 +6329,7 @@
       "properties": {
         "OCI": "41.02",
         "STREETNAME": "QUINCY ST",
+        "PavementWi": "26.5",
         "ID": "487"
       },
       "geometry": {
@@ -5855,6 +6342,7 @@
       "properties": {
         "OCI": "33.04",
         "STREETNAME": "PUTNAM ST",
+        "PavementWi": "32.5",
         "ID": "488"
       },
       "geometry": {
@@ -5867,6 +6355,7 @@
       "properties": {
         "OCI": "96.04",
         "STREETNAME": "PUTNAM RD",
+        "PavementWi": "26.5",
         "ID": "489"
       },
       "geometry": {
@@ -5879,6 +6368,7 @@
       "properties": {
         "OCI": "42.82",
         "STREETNAME": "SUMMIT AVE",
+        "PavementWi": "30",
         "ID": "490"
       },
       "geometry": {
@@ -5891,6 +6381,7 @@
       "properties": {
         "OCI": "49.2",
         "STREETNAME": "WALDO AVE",
+        "PavementWi": "27",
         "ID": "491"
       },
       "geometry": {
@@ -5903,6 +6394,7 @@
       "properties": {
         "OCI": "98.26",
         "STREETNAME": "WALNUT ST",
+        "PavementWi": "25.5",
         "ID": "492"
       },
       "geometry": {
@@ -5915,6 +6407,7 @@
       "properties": {
         "OCI": "36.22",
         "STREETNAME": "WASHINGTON ST (W)",
+        "PavementWi": "49",
         "ID": "493"
       },
       "geometry": {
@@ -5927,6 +6420,7 @@
       "properties": {
         "OCI": "19.97",
         "STREETNAME": "BOLTON ST",
+        "PavementWi": "24.5",
         "ID": "494"
       },
       "geometry": {
@@ -5939,6 +6433,7 @@
       "properties": {
         "OCI": "83.2",
         "STREETNAME": "WISCONSIN AVE",
+        "PavementWi": "27",
         "ID": "495"
       },
       "geometry": {
@@ -5951,6 +6446,7 @@
       "properties": {
         "OCI": "37.64",
         "STREETNAME": "BROADWAY (W)",
+        "PavementWi": "35",
         "ID": "496"
       },
       "geometry": {
@@ -5963,6 +6459,7 @@
       "properties": {
         "OCI": "37.64",
         "STREETNAME": "BROADWAY (E)",
+        "PavementWi": "34",
         "ID": "497"
       },
       "geometry": {
@@ -5975,6 +6472,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "CORINTHIAN RD",
+        "PavementWi": "26.5",
         "ID": "498"
       },
       "geometry": {
@@ -5987,6 +6485,7 @@
       "properties": {
         "OCI": "50.16",
         "STREETNAME": "CHETWYND RD",
+        "PavementWi": "26.5",
         "ID": "499"
       },
       "geometry": {
@@ -5999,6 +6498,7 @@
       "properties": {
         "OCI": "51.84",
         "STREETNAME": "OLIVER ST",
+        "PavementWi": "26.5",
         "ID": "500"
       },
       "geometry": {
@@ -6011,6 +6511,7 @@
       "properties": {
         "OCI": "69.47",
         "STREETNAME": "OAKLAND AVE",
+        "PavementWi": "25.5",
         "ID": "501"
       },
       "geometry": {
@@ -6023,6 +6524,7 @@
       "properties": {
         "OCI": "62.9",
         "STREETNAME": "BROWNING RD",
+        "PavementWi": "26",
         "ID": "502"
       },
       "geometry": {
@@ -6035,6 +6537,7 @@
       "properties": {
         "OCI": "41.22",
         "STREETNAME": "CALVIN ST",
+        "PavementWi": "23",
         "ID": "503"
       },
       "geometry": {
@@ -6047,6 +6550,7 @@
       "properties": {
         "OCI": "91.84",
         "STREETNAME": "PURITAN RD",
+        "PavementWi": "26.5",
         "ID": "504"
       },
       "geometry": {
@@ -6059,6 +6563,7 @@
       "properties": {
         "OCI": "92.42",
         "STREETNAME": "PROSPECT ST",
+        "PavementWi": "33.5",
         "ID": "505"
       },
       "geometry": {
@@ -6071,6 +6576,7 @@
       "properties": {
         "OCI": "82.6",
         "STREETNAME": "PROSPECT ST",
+        "PavementWi": "36",
         "ID": "506"
       },
       "geometry": {
@@ -6083,6 +6589,7 @@
       "properties": {
         "OCI": "56.56",
         "STREETNAME": "PROSPECT HILL PKWY",
+        "PavementWi": "26",
         "ID": "507"
       },
       "geometry": {
@@ -6095,6 +6602,7 @@
       "properties": {
         "OCI": "38.65",
         "STREETNAME": "TREMONT ST",
+        "PavementWi": "26.5",
         "ID": "508"
       },
       "geometry": {
@@ -6107,6 +6615,7 @@
       "properties": {
         "OCI": "50.64",
         "STREETNAME": "VERMONT AVE",
+        "PavementWi": "25",
         "ID": "509"
       },
       "geometry": {
@@ -6119,6 +6628,7 @@
       "properties": {
         "OCI": "46.96",
         "STREETNAME": "WHITMAN ST",
+        "PavementWi": "26.5",
         "ID": "510"
       },
       "geometry": {
@@ -6131,6 +6641,7 @@
       "properties": {
         "OCI": "96.23",
         "STREETNAME": "WILLOW AVE",
+        "PavementWi": "33.5",
         "ID": "511"
       },
       "geometry": {
@@ -6143,6 +6654,7 @@
       "properties": {
         "OCI": "39.64",
         "STREETNAME": "POWDER HOUSE BLVD",
+        "PavementWi": "40",
         "ID": "512"
       },
       "geometry": {
@@ -6155,6 +6667,7 @@
       "properties": {
         "OCI": "67.89",
         "STREETNAME": "VINAL AVE",
+        "PavementWi": "29.5",
         "ID": "513"
       },
       "geometry": {
@@ -6167,6 +6680,7 @@
       "properties": {
         "OCI": "81.2",
         "STREETNAME": "CENTRAL ST",
+        "PavementWi": "26.5",
         "ID": "514"
       },
       "geometry": {
@@ -6179,6 +6693,7 @@
       "properties": {
         "OCI": "94.73",
         "STREETNAME": "NEW RD",
+        "PavementWi": "48",
         "ID": "515"
       },
       "geometry": {
@@ -6191,6 +6706,7 @@
       "properties": {
         "OCI": "30.67",
         "STREETNAME": "OAK ST",
+        "PavementWi": "20",
         "ID": "516"
       },
       "geometry": {
@@ -6203,6 +6719,7 @@
       "properties": {
         "OCI": "20.78",
         "STREETNAME": "OAK ST",
+        "PavementWi": "26.5",
         "ID": "517"
       },
       "geometry": {
@@ -6215,6 +6732,7 @@
       "properties": {
         "OCI": "73.67",
         "STREETNAME": "NORWOOD AVE",
+        "PavementWi": "26.5",
         "ID": "518"
       },
       "geometry": {
@@ -6227,6 +6745,7 @@
       "properties": {
         "OCI": "92.93",
         "STREETNAME": "BOW ST",
+        "PavementWi": "37",
         "ID": "519"
       },
       "geometry": {
@@ -6239,6 +6758,7 @@
       "properties": {
         "OCI": "68.85",
         "STREETNAME": "BRADFORD AVE",
+        "PavementWi": "27",
         "ID": "520"
       },
       "geometry": {
@@ -6251,6 +6771,7 @@
       "properties": {
         "OCI": "55.44",
         "STREETNAME": "PROSPECT HILL AVE",
+        "PavementWi": "26.5",
         "ID": "521"
       },
       "geometry": {
@@ -6263,6 +6784,7 @@
       "properties": {
         "OCI": "70.94",
         "STREETNAME": "PROFESSORS ROW",
+        "PavementWi": "28",
         "ID": "522"
       },
       "geometry": {
@@ -6275,6 +6797,7 @@
       "properties": {
         "OCI": "80.8",
         "STREETNAME": "PRINCETON ST",
+        "PavementWi": "26.5",
         "ID": "523"
       },
       "geometry": {
@@ -6287,6 +6810,7 @@
       "properties": {
         "OCI": "84.32",
         "STREETNAME": "PRICHARD AVE",
+        "PavementWi": "26.5",
         "ID": "524"
       },
       "geometry": {
@@ -6299,6 +6823,7 @@
       "properties": {
         "OCI": "47.28",
         "STREETNAME": "TEMPLE RD",
+        "PavementWi": "27",
         "ID": "525"
       },
       "geometry": {
@@ -6311,6 +6836,7 @@
       "properties": {
         "OCI": "24.8",
         "STREETNAME": "THORPE ST",
+        "PavementWi": "20.5",
         "ID": "526"
       },
       "geometry": {
@@ -6323,6 +6849,7 @@
       "properties": {
         "OCI": "41.64",
         "STREETNAME": "WEST ADAMS ST",
+        "PavementWi": "26.5",
         "ID": "527"
       },
       "geometry": {
@@ -6335,6 +6862,7 @@
       "properties": {
         "OCI": "22.28",
         "STREETNAME": "WHEATLAND ST",
+        "PavementWi": "27",
         "ID": "528"
       },
       "geometry": {
@@ -6347,6 +6875,7 @@
       "properties": {
         "OCI": "82.68",
         "STREETNAME": "BOSTON AVE (S)",
+        "PavementWi": "33",
         "ID": "529"
       },
       "geometry": {
@@ -6359,6 +6888,7 @@
       "properties": {
         "OCI": "34.52",
         "STREETNAME": "MIDDLESEX AVE",
+        "PavementWi": "60.5",
         "ID": "530"
       },
       "geometry": {
@@ -6371,6 +6901,7 @@
       "properties": {
         "OCI": "37.2",
         "STREETNAME": "NORTH ST",
+        "PavementWi": "26.5",
         "ID": "531"
       },
       "geometry": {
@@ -6383,6 +6914,7 @@
       "properties": {
         "OCI": "78.9",
         "STREETNAME": "NEWTON ST",
+        "PavementWi": "28",
         "ID": "532"
       },
       "geometry": {
@@ -6395,6 +6927,7 @@
       "properties": {
         "OCI": "65.44",
         "STREETNAME": "COLLEGE AVE",
+        "PavementWi": "40",
         "ID": "533"
       },
       "geometry": {
@@ -6407,6 +6940,7 @@
       "properties": {
         "OCI": "13.92",
         "STREETNAME": "PROPERZI WAY (S)",
+        "PavementWi": "20",
         "ID": "534"
       },
       "geometry": {
@@ -6419,6 +6953,7 @@
       "properties": {
         "OCI": "51.6",
         "STREETNAME": "PRESTON RD",
+        "PavementWi": "26",
         "ID": "535"
       },
       "geometry": {
@@ -6431,6 +6966,7 @@
       "properties": {
         "OCI": "48.16",
         "STREETNAME": "PRESCOTT ST",
+        "PavementWi": "33",
         "ID": "536"
       },
       "geometry": {
@@ -6443,6 +6979,7 @@
       "properties": {
         "OCI": "42.16",
         "STREETNAME": "POWDERHOUSE TER",
+        "PavementWi": "26.5",
         "ID": "537"
       },
       "geometry": {
@@ -6455,6 +6992,7 @@
       "properties": {
         "OCI": "13.41",
         "STREETNAME": "PORTER ST",
+        "PavementWi": "26",
         "ID": "538"
       },
       "geometry": {
@@ -6467,6 +7005,7 @@
       "properties": {
         "OCI": "66.09",
         "STREETNAME": "SUMMER ST",
+        "PavementWi": "30",
         "ID": "539"
       },
       "geometry": {
@@ -6479,6 +7018,7 @@
       "properties": {
         "OCI": "33.92",
         "STREETNAME": "SYCAMORE ST",
+        "PavementWi": "23.5",
         "ID": "540"
       },
       "geometry": {
@@ -6491,6 +7031,7 @@
       "properties": {
         "OCI": "55.2",
         "STREETNAME": "WALNUT RD",
+        "PavementWi": "26",
         "ID": "541"
       },
       "geometry": {
@@ -6503,6 +7044,7 @@
       "properties": {
         "OCI": "35.7",
         "STREETNAME": "BILLINGHAM ST",
+        "PavementWi": "26",
         "ID": "542"
       },
       "geometry": {
@@ -6515,6 +7057,7 @@
       "properties": {
         "OCI": "86.93",
         "STREETNAME": "WASHINGTON ST (W)",
+        "PavementWi": "58",
         "ID": "543"
       },
       "geometry": {
@@ -6527,6 +7070,7 @@
       "properties": {
         "OCI": "40.72",
         "STREETNAME": "WEBSTER AVE",
+        "PavementWi": "34",
         "ID": "544"
       },
       "geometry": {
@@ -6539,6 +7083,7 @@
       "properties": {
         "OCI": "99.43",
         "STREETNAME": "WINTER ST",
+        "PavementWi": "20",
         "ID": "545"
       },
       "geometry": {
@@ -6551,6 +7096,7 @@
       "properties": {
         "OCI": "99.69",
         "STREETNAME": "WYATT ST",
+        "PavementWi": "27",
         "ID": "546"
       },
       "geometry": {
@@ -6563,6 +7109,7 @@
       "properties": {
         "OCI": "37.64",
         "STREETNAME": "BROADWAY (E)",
+        "PavementWi": "36",
         "ID": "547"
       },
       "geometry": {
@@ -6575,6 +7122,7 @@
       "properties": {
         "OCI": "56.8",
         "STREETNAME": "BAILEY ST",
+        "PavementWi": "26.5",
         "ID": "548"
       },
       "geometry": {
@@ -6587,6 +7135,7 @@
       "properties": {
         "OCI": "63.25",
         "STREETNAME": "CAPEN ST",
+        "PavementWi": "23.5",
         "ID": "549"
       },
       "geometry": {
@@ -6599,6 +7148,7 @@
       "properties": {
         "OCI": "79.74",
         "STREETNAME": "NEWTON ST",
+        "PavementWi": "19.5",
         "ID": "550"
       },
       "geometry": {
@@ -6611,6 +7161,7 @@
       "properties": {
         "OCI": "55.68",
         "STREETNAME": "NEWBURY ST",
+        "PavementWi": "26.5",
         "ID": "551"
       },
       "geometry": {
@@ -6623,6 +7174,7 @@
       "properties": {
         "OCI": "99.79",
         "STREETNAME": "BROADWAY (E)",
+        "PavementWi": "34",
         "ID": "552"
       },
       "geometry": {
@@ -6635,6 +7187,7 @@
       "properties": {
         "OCI": "79.8",
         "STREETNAME": "CADY AVE",
+        "PavementWi": "26",
         "ID": "553"
       },
       "geometry": {
@@ -6647,6 +7200,7 @@
       "properties": {
         "OCI": "80.95",
         "STREETNAME": "CARLTON ST",
+        "PavementWi": "26.5",
         "ID": "554"
       },
       "geometry": {
@@ -6659,6 +7213,7 @@
       "properties": {
         "OCI": "41.26",
         "STREETNAME": "PORTER ST",
+        "PavementWi": "30",
         "ID": "555"
       },
       "geometry": {
@@ -6671,6 +7226,7 @@
       "properties": {
         "OCI": "87.4",
         "STREETNAME": "BELKNAP ST",
+        "PavementWi": "26.5",
         "ID": "556"
       },
       "geometry": {
@@ -6683,6 +7239,7 @@
       "properties": {
         "OCI": "31.04",
         "STREETNAME": "POPLAR ST",
+        "PavementWi": "42.5",
         "ID": "557"
       },
       "geometry": {
@@ -6695,6 +7252,7 @@
       "properties": {
         "OCI": "41.26",
         "STREETNAME": "UPLAND RD",
+        "PavementWi": "26.5",
         "ID": "558"
       },
       "geometry": {
@@ -6707,6 +7265,7 @@
       "properties": {
         "OCI": "99.4",
         "STREETNAME": "VIRGINIA ST",
+        "PavementWi": "26",
         "ID": "559"
       },
       "geometry": {
@@ -6719,6 +7278,7 @@
       "properties": {
         "OCI": "94.98",
         "STREETNAME": "WILLOW AVE",
+        "PavementWi": "33",
         "ID": "560"
       },
       "geometry": {
@@ -6731,6 +7291,7 @@
       "properties": {
         "OCI": "36.8",
         "STREETNAME": "WINDOM ST",
+        "PavementWi": "26.5",
         "ID": "561"
       },
       "geometry": {
@@ -6743,6 +7304,7 @@
       "properties": {
         "OCI": "4.65",
         "STREETNAME": "RUFO RD",
+        "PavementWi": "40",
         "ID": "562"
       },
       "geometry": {
@@ -6755,6 +7317,7 @@
       "properties": {
         "OCI": "99.79",
         "STREETNAME": "BROADWAY (W)",
+        "PavementWi": "40",
         "ID": "563"
       },
       "geometry": {
@@ -6767,6 +7330,7 @@
       "properties": {
         "OCI": "61.92",
         "STREETNAME": "MALVERN AVE",
+        "PavementWi": "26.5",
         "ID": "565"
       },
       "geometry": {
@@ -6779,6 +7343,7 @@
       "properties": {
         "OCI": "59.88",
         "STREETNAME": "NEWBERNE ST",
+        "PavementWi": "26",
         "ID": "566"
       },
       "geometry": {
@@ -6791,6 +7356,7 @@
       "properties": {
         "OCI": "42.16",
         "STREETNAME": "ADRIAN ST",
+        "PavementWi": "27",
         "ID": "567"
       },
       "geometry": {
@@ -6803,6 +7369,7 @@
       "properties": {
         "OCI": "67.64",
         "STREETNAME": "BROOK ST",
+        "PavementWi": "26",
         "ID": "568"
       },
       "geometry": {

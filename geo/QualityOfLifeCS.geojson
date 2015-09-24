@@ -1,0 +1,175 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Rats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08944,42.37496]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Trash/debris on sidewalk report"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.10364,42.37620]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Rats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09810,42.38003]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.12079,42.39539]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Rats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.10948,42.38171]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Rats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08951,42.38976]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Rats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09419,42.38517]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Trash/debris on sidewalk report"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.12565,42.40762]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Trash/debris on sidewalk report"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.12565,42.40762]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Trash/debris on sidewalk report"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.12565,42.40762]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Rats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08951,42.38976]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Trash/debris on sidewalk report"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09791,42.39834]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Rats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08625,42.38908]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Rats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08736,42.38946]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Rats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08718,42.38960]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Trash/debris on sidewalk report"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.12149,42.39716]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "typeName": "Graffiti"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.10687,42.38343]
+      }
+    }
+  ]
+}
