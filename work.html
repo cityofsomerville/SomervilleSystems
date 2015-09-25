@@ -641,7 +641,7 @@ They load to the specified containers -->
             <script>
 
                 // initialize the map
-              var map = L.map('map').setView([42.3947, -71.10548], 13);
+              var map = L.map('map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
 
               // load a tile layer
               L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',

@@ -20,6 +20,11 @@
     <!-- Highcharts scripts -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
       <script src="js/highcharts.js"></script>
+
+    <!-- Leaflet scripts -->
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+      <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
       
     <!-- Google Analytics -->
 
@@ -585,21 +590,6 @@ They load to the specified containers -->
     </div>
 </div>
 
-<!-- Satisfaction Map -->
-<div class="container">
-    <div class="marketing">
-	<div class="row-fluid">
-	  <h1 class="section header">Neighborhood Satisfaction</h1>
-	    <p>Residents in Davis Square and Union Square rate their neighborhood satisfaction very high.
-	    East Somerville is still high, but relatively lower than other parts of the city.</p>
-	    <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
-               <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="http://a.tiles.mapbox.com/v3/resistat.SomervilleNeighborhoodSatisfaction2/mm/zoompan,geocoder,legend,share.html?secure=1#14/42.3952/-71.1000">
-                </iframe>
-            </div>
-	</div>
-    </div>
-</div>
 
 <!-- Public Safety -->
 <div class="container">
@@ -658,13 +648,65 @@ They load to the specified containers -->
     <div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">Quality of Life 311 Calls</h1>
-	    <p>This is a random sample of the top quality-of-life calls from the year 2013: reports of rats, graffiti and noisy neighbors.
-	    It shows where these types of calls tend to cluster, e.g., noise calls in the vicinity of Tufts.</p>
-	    <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
-               <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://a.tiles.mapbox.com/v3/resistat.SomervilleQoL2/mm/zoompan,geocoder,legend,share.html?secure=1#14/42.3952/-71.1000">
-                </iframe>
-            </div>
+	    <p>This is a random sample of the top quality-of-life calls from the year 2015: reports of calls about <FONT COLOR="#900000">graffiti</FONT>, <FONT COLOR="#8bbc22">rats</FONT>, and <FONT COLOR="#1aadce">trash</FONT>. It shows where these types of calls tend to cluster. We also track these on a weekly basis <a href="http://www.somervillema.gov/dashboard/daily.html">here</a>.</p>
+        <div class="row">
+        <div class="span12">
+            <div id="qol-map" style="height: 400px"></div>
+            <script>
+
+              // initialize the map
+              var map = L.map('qol-map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
+
+              // load a tile layer
+              L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+                {
+                  attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                  maxZoom: 17,
+                  minZoom: 9
+                }).addTo(map);
+
+              // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
+
+              // Function to make popup
+              function onEachFeature(feature, layer) {
+                    if (feature.properties && feature.properties.typeName) {
+                        layer.bindPopup(feature.properties.typeName);
+                    }
+                }
+
+              function filling(x) {
+                return x == 'Trash/debris on sidewalk report' ? "#1aadce" :
+                       x == 'Rats' ? "#8bbc22" :
+                       x == 'Graffiti' ? "#900000" :
+                       "#808080";
+              }         
+
+              function pointToLayer (feature, latlng) {
+                  return new L.CircleMarker(latlng, {
+                      radius: 8,
+                      fillColor: filling(feature.properties["typeName"]),
+                      color: "#000",
+                      weight: 1,
+                      opacity: .75,
+                      fillOpacity: 0.75
+                    })
+                }
+
+              $.ajax({
+              dataType: "json",
+              url: "./geo/QualityOfLifeCSSample.geojson",
+              success: function (response) {
+                    geojsonLayer = L.geoJson(response, {
+                      pointToLayer: pointToLayer,
+                      onEachFeature : onEachFeature
+                    }).addTo(map);
+                }
+              }).error(function() {});
+
+            </script>
+        </div>
+        </div>
+
 	</div>
     </div>
 </div>
