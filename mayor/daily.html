@@ -786,12 +786,11 @@ They load to the specified containers -->
               var map = L.map('qol-map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
 
               // load a tile layer
-              L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
-                {
-                  attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
-                  maxZoom: 17,
-                  minZoom: 9
-                }).addTo(map);
+              L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+              }).addTo(map);
 
               // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
 
