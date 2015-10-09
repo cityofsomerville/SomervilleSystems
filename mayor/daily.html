@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/keen-dashboards.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -779,7 +779,59 @@ They load to the specified containers -->
             Cell Title
           </div>
           <div class="chart-stage">
-            <img data-src="holder.js/100%x240/white">
+            <div id="qol-map" style="height: 400px"></div>
+            <script>
+
+              // initialize the map
+              var map = L.map('qol-map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
+
+              // load a tile layer
+              L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+                {
+                  attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                  maxZoom: 17,
+                  minZoom: 9
+                }).addTo(map);
+
+              // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
+
+              // Function to make popup
+              function onEachFeature(feature, layer) {
+                    if (feature.properties && feature.properties.typeName) {
+                        layer.bindPopup(feature.properties.typeName);
+                    }
+                }
+
+              function filling(x) {
+                return x == 'Trash/debris on sidewalk report' ? "#1aadce" :
+                       x == 'Rats' ? "#8bbc22" :
+                       x == 'Graffiti' ? "#900000" :
+                       "#808080";
+              }         
+
+              function pointToLayer (feature, latlng) {
+                  return new L.CircleMarker(latlng, {
+                      radius: 8,
+                      fillColor: filling(feature.properties["typeName"]),
+                      color: "#000",
+                      weight: 1,
+                      opacity: .75,
+                      fillOpacity: 0.75
+                    })
+                }
+
+              $.ajax({
+              dataType: "json",
+              url: "../geo/QualityOfLifeCSSample.geojson",
+              success: function (response) {
+                    geojsonLayer = L.geoJson(response, {
+                      pointToLayer: pointToLayer,
+                      onEachFeature : onEachFeature
+                    }).addTo(map);
+                }
+              }).error(function() {});
+
+            </script>
           </div>
           <div class="chart-notes">
             Notes about this chart
