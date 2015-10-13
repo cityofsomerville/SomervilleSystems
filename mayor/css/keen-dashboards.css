@@ -49,8 +49,8 @@ body.application hr {
 }
 
 .chart-wrapper {
-  background: #fff;
-  border: 1px solid #e2e2e2;
+  background: black;
+  border: 1px solid #2a2a2b;
   border-radius: 3px;
   margin-bottom: 10px;
 }
@@ -70,7 +70,7 @@ body.application hr {
 }
 
 .chart-wrapper .chart-notes {
-  background: #fbfbfb;
+  background: #2a2a2b;
   border-top: 1px solid #e2e2e2;
   color: #808080;
   font-size: 12px;
