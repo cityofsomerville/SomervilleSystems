@@ -6,15 +6,37 @@ library(dplyr)
 
 #
 # Load Data
-d <- read_excel("/Users/DHadley/P/Somerstat Data/MV_Crash_Data/data/")
-d <- read_excel("../../MV_Crash_Data/data/Somerville Crash Data 2010-2015 Socrata.xlsx")
+d <- read_excel("/Users/DHadley/P/Somerstat Data/MV_Crash_Data/data/Somerville Crash Data 2010-2015 Socrata.xlsx")
+# d <- read_excel("../../MV_Crash_Data/data/Somerville Crash Data 2010-2015 Socrata.xlsx")
 
-d <- d[,1:15]
+d <- d[,1:19]
 
 injured_ped <- d %>% 
-  filter(`Pedestrian?` == 1, `Injury?` == 1)
+  filter(`Pedestrian` == 1, `Injury` == 1)
 
 ped <- d %>% 
-  filter(`Pedestrian?` == 1 ) %>% 
+  filter(`Pedestrian` == 1 ) %>% 
   group_by(Location) %>% 
   summarise(n = n())
+
+###### Map it! ######
+library(ggmap)
+ped$Location <- paste(ped$Location, "Somerville", "MA", sep=", ")
+
+# Geocodes using the Google engine
+locs <- geocode(ped$Location)
+#d <- bind_cols(d, locs) # Add the lat and long back to d
+# ^ Didn't work, so
+ped$longitude <- locs$lon
+ped$latitude <- locs$lat
+
+# Convert to geojson and put it on our server
+library(leafletR)
+
+toGeoJSON(ped, "PedestrianCollisions", "../geo/")
+
+ftpUpload(what = "../geo/PedestrianCollisions.geojson",
+          to = "ftp://spider/PedestrianCollisions.geojson",
+          verbose = TRUE,
+          userpwd = "", 
+          prequote="CWD /var/www/dashboard/geo/")
