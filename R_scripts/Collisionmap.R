@@ -30,11 +30,20 @@ locs <- geocode(ped$Location)
 ped$longitude <- locs$lon
 ped$latitude <- locs$lat
 
+# Latitude first
+ped_toMap <- ped[,c(4,3,1,2)]
+
+write.csv(ped_toMap, "../geo/PedestrianCollisions.csv", row.names = FALSE)
+
+ped_toMap <- read.csv("../geo/PedestrianCollisions.csv")
+
 # Convert to geojson and put it on our server
 library(leafletR)
 
-toGeoJSON(ped, "PedestrianCollisions", "../geo/")
+toGeoJSON(ped_toMap, "PedestrianCollisions", "../geo/")
 
+
+library(RCurl)
 ftpUpload(what = "../geo/PedestrianCollisions.geojson",
           to = "ftp://spider/PedestrianCollisions.geojson",
           verbose = TRUE,
