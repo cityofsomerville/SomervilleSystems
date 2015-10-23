@@ -20,6 +20,11 @@
     <!-- Highcharts scripts -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
       <script src="js/highcharts.js"></script>
+
+    <!-- Leaflet scripts -->
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+      <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
       
     <!-- Google Analytics -->
 
@@ -498,30 +503,67 @@ They load to the specified containers -->
 
 <div class="container">
     <div class="marketing">
-      <h1 class="section header">MCAS Growth</h1>
-      <p>This motion chart shows the extrodinary growth in Somerville's Student Growth Percentile scores (SGP).
-      Click play to see the Somerville Public Schools progress to one of the top spots in the State on this very important metric
-      (if you are having trouble viewing the motion chart, click <a href="http://imgur.com/a/6l1qI" target="_blank">here</a>  for the images)
-      There is much more information
-      <a href="http://www.somervillema.gov/news/somerville-public-schools-show-phenomenal-growth-mcas" target="_blank">in the press release</a>.</p>
-	<div class="row-fluid">
+      <h1 class="section header">Collision Safety</h1>
+      <div class="row">
+          <div class="span12">
+              <p>This map shows the location of pedestrian collisions.</p>
 
-	    
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js">
-{"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AlY_jIpLYtpydDg4U1pGdHZHSEtqNzFkTW5YTnFpRVE&transpose=0&headers=1&range=A1%3AF486&gid=0&pub=1",
-"options":{"state":'{"xZoomedIn":false,"orderedByY":false,"sizeOption":"5","xLambda":1,"uniColorForNonSelected":false,"time":"2011","xZoomedDataMax":78,"showTrails":false,"iconType":"BUBBLE","iconKeySettings":[{"key":{"dim0":"Somerville"}},{"key":{"dim0":"Arlington"},"LabelX":1,"LabelY":-55},{"key":{"dim0":"Springfield"}},{"key":{"dim0":"Cambridge"}},{"key":{"dim0":"Medford"}},{"key":{"dim0":"Boston"},"LabelX":-9,"LabelY":-80}],"yAxisOption":"3","yZoomedDataMin":12,"dimensions":{"iconDimensions":["dim0"]},"yZoomedDataMax":72,"xZoomedDataMin":13,"nonSelectedAlpha":0.3,"xAxisOption":"2","playDuration":15000,"yLambda":1,"duration":{"timeUnit":"Y","multiplier":1},"yZoomedIn":false,"orderedByX":false,"colorOption":"4"}',
-"titleTextStyle":{"fontSize":16},"vAxes":[{"useFormatFromData":true,"title":"Left vertical axis title","minValue":null,
-"viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,
-"viewWindow":{"min":null,"max":null},"maxValue":null}],"booleanRole":"certainty","title":"Chart title",
-"hAxis":{"useFormatFromData":true,"title":"Horizontal axis title","minValue":null,"viewWindow":{"min":null,"max":null},
-"maxValue":null},"width":1000,"height":740,"animation":{"duration":0}},"state":{},"view":{},"isDefaultVisualization":true,
-"chartType":"MotionChart","chartName":"Chart 1"} </script>
-	
-	</div>
-    
+              <div id="map" style="height: 400px"></div>
+              <script>
+
+                // initialize the map
+                var map = L.map('map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
+
+                // load a tile layer
+                L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+                  {
+                    attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                    maxZoom: 17,
+                    minZoom: 9
+                  }).addTo(map);
+
+                
+                // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
+
+                // Function to make popup
+                function onEachFeature(feature, layer) {
+                      if (feature.properties && feature.properties.n) {
+                          layer.bindPopup(feature.properties.n);
+                      }
+                  }
+
+                function getRadiusStyle(x) {
+                  return x * 1;
+                }            
+
+                function pointToLayer (feature, latlng) {
+                    return new L.CircleMarker(latlng, {
+                        radius: getRadiusStyle(feature.properties["n"]),
+                        fillColor: "#900000",
+                        color: "#000",
+                        weight: 1,
+                        opacity: .75,
+                        fillOpacity: 0.75
+                      })
+                  }
+
+                $.ajax({
+                dataType: "json",
+                url: "./geo/PedestrianCollisions.geojson",
+                success: function (response) {
+                      geojsonLayer = L.geoJson(response, {
+                        pointToLayer: pointToLayer,
+                        onEachFeature : onEachFeature
+                      }).addTo(map);
+                  }
+                }).error(function() {});
+
+              </script>
+          </div>
+      </div>
     </div>
 	
-            </div>
+</div>
 
 
 
