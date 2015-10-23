@@ -505,8 +505,9 @@ They load to the specified containers -->
     <div class="marketing">
       <h1 class="section header">Collision Safety</h1>
       <div class="row">
+        <p>Safety on the streets of Somerville is a priority for both the City and its residents. The following maps shows the location of collisions involving pedestrians and cyclists from 2010 through August of 2015. A larger dot, which indicates an intersection with more crashes than others, is usually indicative of more activity at that intersection. The City takes this data seriously, and strives to eliminate as many safety hazards as possible.</p>
           <div class="span6">
-              <p>This map shows the location of collisions involving pedestrians.</p>
+              <p><b>Pedestrians</b></p>
 
               <div id="ped-map" style="height: 400px"></div>
               <script>
@@ -533,10 +534,12 @@ They load to the specified containers -->
                   }
 
                 function getRadiusStyle(x) {
-                  return x * 6;
-                }            
+                  area = x * 75;
+                  radius = Math.sqrt(area / 3.1416);
+                  return radius
+                }                
 
-                function pointToLayer (feature, latlng) {
+                function ppointToLayer (feature, latlng) {
                     return new L.CircleMarker(latlng, {
                         radius: getRadiusStyle(feature.properties["n"]),
                         fillColor: "#900000",
@@ -552,7 +555,7 @@ They load to the specified containers -->
                 url: "./geo/PedestrianCollisions.geojson",
                 success: function (response) {
                       geojsonLayer = L.geoJson(response, {
-                        pointToLayer: pointToLayer,
+                        pointToLayer: ppointToLayer,
                         onEachFeature : onEachFeature
                       }).addTo(pmap);
                   }
@@ -561,7 +564,7 @@ They load to the specified containers -->
               </script>
           </div>
           <div class="span6">
-              <p>This map shows the location of collisions involving cyclists.</p>
+              <p><b>Cyclists</b></p>
 
               <div id="cyclist-map" style="height: 400px"></div>
               <script>
@@ -588,13 +591,15 @@ They load to the specified containers -->
                   }
 
                 function getRadiusStyle(x) {
-                  return x * 6;
+                  area = x * 75;
+                  radius = Math.sqrt(area / 3.1416);
+                  return radius
                 }            
 
                 function pointToLayer (feature, latlng) {
                     return new L.CircleMarker(latlng, {
                         radius: getRadiusStyle(feature.properties["n"]),
-                        fillColor: "#900000",
+                        fillColor: "#8bbc22",
                         color: "#000",
                         weight: 1,
                         opacity: .75,
