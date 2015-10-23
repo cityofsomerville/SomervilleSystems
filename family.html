@@ -527,18 +527,18 @@ They load to the specified containers -->
 
                 // Function to make popup
                 function onEachFeature(feature, layer) {
-                      if (feature.properties && feature.properties.n) {
-                          layer.bindPopup(feature.properties.n);
+                      if (feature.properties && feature.properties.Location) {
+                          layer.bindPopup(feature.properties.Location);
                       }
                   }
 
                 function getRadiusStyle(x) {
-                  return x * 1;
+                  return x * 6;
                 }            
 
                 function pointToLayer (feature, latlng) {
                     return new L.CircleMarker(latlng, {
-                        radius: 8, //getRadiusStyle(feature.properties["n"]),
+                        radius: getRadiusStyle(feature.properties["n"]),
                         fillColor: "#900000",
                         color: "#000",
                         weight: 1,

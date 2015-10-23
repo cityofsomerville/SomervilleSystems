@@ -1,0 +1,2535 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BEACON STREET and PARK STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0632255,42.3577002]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " MEDFORD STREET and WARREN STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0876474,42.3737985]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "14 MCGRATH HIGHWAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0850043,42.374349]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "16 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1025474,42.3747225]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "15 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1019378,42.374913]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WEBSTER AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0949377,42.3749337]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " CONCORD AVENUE and BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1025083,42.375107]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "40 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.103185,42.3752629]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "50 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1032927,42.3757273]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Columbia St and Windsor Pl, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0943306,42.3757914]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "5",
+        "Location": " COLUMBIA STREET and WEBSTER AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0952351,42.3758647]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "176 Somerville Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0897727,42.3764446]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "71 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.103989,42.3765334]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BEACON STREET and WALDO AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1043623,42.3766268]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "216 MCGRATH HIGHWAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.088726,42.376733]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "Webster Ave and Prospect St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0955,42.376883]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BEACON STREET and SMITH AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1051816,42.377306]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "214 SOMERVILLE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.091283,42.37784]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "111 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.105379,42.377889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "119 Beacon St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1059052,42.3779194]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " LINE STREET and WASHINGTON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1072776,42.3780914]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "8",
+        "Location": " BEACON STREET and WASHINGTON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.106382,42.3782892]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "25 Webster Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0964319,42.378413]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SOMERVILLE AVENUE and ALLEN STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0930733,42.3787206]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "86 JOY STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0866277,42.3787758]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BEACON STREET and DURHAM STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1072109,42.3789522]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "6",
+        "Location": " PROSPECT STREET and SOMERVILLE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0941078,42.3791063]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "7 Union Sq, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.095477,42.3792811]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "157 Beacon St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1071879,42.379335]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Columbus Ave and Washington St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0930682,42.3795065]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "192 Washington St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.090907,42.379531]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BEACON STREET and PROPERZI WAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1079565,42.3795578]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WASHINGTON STREET and BONNER AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0939847,42.3795851]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "3",
+        "Location": " WEBSTER AVENUE and WASHINGTON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0964021,42.3796323]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "182 WASHINGTON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0902719,42.3796474]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "237 WASHINGTON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0935965,42.3797596]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "175 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1076885,42.379791]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "64 UNION SQUARE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0963621,42.3799411]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BEACON STREET and ARNOLD COURT, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1085073,42.3800161]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "3 BOW STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0964455,42.3800301]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "181 Washington St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.091109,42.380092]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "160 WASHINGTON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.088856,42.380116]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1090842,42.3804901]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WASHINGTON STREET and JOY STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0885832,42.3806671]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "3",
+        "Location": "400 SOMERVILLE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1015967,42.3807302]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Washington St and Tufts St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0875544,42.3809863]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "365 Somerville Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0991496,42.3812361]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "94 WASHINGTON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0860955,42.381333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SOMERVILLE AVENUE and CHURCH STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1005403,42.3815227]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BOW STREET and WESLEY PARK, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0977567,42.3816491]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BOW STREET and SUMMER STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0983021,42.3816555]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "33 BOW STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0974952,42.3816778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "440 SOMERVILLE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.102381,42.381748]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " SOMERVILLE AVENUE and QUINCY STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1012716,42.3817512]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Washington St and Florence St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0830775,42.38179]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "75 WASHINGTON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.084671,42.381824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BEACON STREET and KENT STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.110883,42.3819408]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "419 Somerville Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1014884,42.3819998]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WASHINGTON STREET and INNER BELT ROAD, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0815211,42.3820437]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "241 Beacon St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1109934,42.3820486]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WALNUT STREET and HIGHLAND AVENUE and SOMERVILLE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1024254,42.3821249]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " VINAL AVENUE and SUMMER STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0983547,42.3821972]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "260 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.111898,42.382322]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "7 Washington Street, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08145,42.382388]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Somerville Ave and Dane St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1034094,42.3824407]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Somerville Ave and Loring St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1041532,42.3827009]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "30 Summer St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0989455,42.3827734]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WALNUT STREET and ALDERSEY STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0957429,42.3828675]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "570 Somerville Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1084771,42.3829153]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Somerville Ave and Properzi Way, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1050939,42.3829252]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SOMERVILLE AVENUE and LAUREL STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1054273,42.3829957]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Munroe St and Walnut St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0955095,42.3831796]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Somerville Ave and Park St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1063139,42.3831974]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SOMERVILLE AVENUE and CENTRAL STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1069016,42.3833311]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SACRAMENTO STREET and BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1126424,42.3833749]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "41 School St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.100754,42.383403]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SOMERVILLE AVENUE and BEECH STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1079791,42.3835696]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "275 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.111771,42.3835829]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "594 Somerville Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.109286,42.383643]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " PRESCOTT STREET and SUMMER STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0997413,42.3836825]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "295 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1130295,42.3837008]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "624 Somerville Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1106127,42.3837335]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SOMERVILLE AVENUE and BLEACHERY COURT, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1087743,42.3837467]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "596 SOMERVILLE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1094869,42.3838109]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "304 Beacon St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.113411,42.3838219]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "577 Somerville Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1084857,42.3838689]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "35 PEARL STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0816113,42.3838815]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " SOMERVILLE AVENUE and SPRING STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.109476,42.3839008]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "3",
+        "Location": " SOMERVILLE AVENUE and KENT STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1097087,42.3839475]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "312 BEACON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.113789,42.3841021]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Somerville Ave and Belmont St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1109898,42.3842555]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " SUMMER STREET and SCHOOL STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1003999,42.3843689]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " HIGHLAND AVENUE and HAMLET STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0926238,42.3845416]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Walnut St and Grandview Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.094555,42.3845713]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SOMERVILLE AVENUE and LOWELL STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1118757,42.3845931]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "86 Myrtle St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0831573,42.3850902]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "680 Somerville Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1132231,42.3851294]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "84 FLINT STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0898086,42.3851419]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "3",
+        "Location": " SOMERVILLE AVENUE and CRAIGIE STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1128913,42.3852149]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "17 Belmont St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1104393,42.3853217]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "689 Somerville Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.112913,42.385457]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Somerville Ave and Elm St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1136035,42.3855028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Cross St and Pearl St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0878325,42.3857024]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "6",
+        "Location": " BEACON STREET and OXFORD STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1161841,42.3860143]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "Central St and Summer St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1050912,42.3860322]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "301 MEDFORD STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0939018,42.3860716]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Lombardi Way and Broadway, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0787498,42.3861868]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " BROADWAY and MOUNT VERNON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0788702,42.3862206]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "711 SOMERVILLE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1143317,42.3862566]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Summer St and Harvard St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1068014,42.3866244]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " PEARL STREET and DANA STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0908197,42.3866432]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Highland Ave and School St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0987169,42.3868313]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "114 HIGHLAND AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1005969,42.3872039]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "12 Glen St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.084276,42.387237]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "Pearl St and Walnut St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0931605,42.3873566]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "130 HIGHLAND AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.10148,42.387472]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " MOSSLAND STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1161651,42.3875215]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "115 HIGHLAND AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.099912,42.387546]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "4",
+        "Location": " FOLEY STREET and ASSEMBLY SQ DRIVE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0994968,42.3875968]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "School St and Madison St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0982006,42.3876041]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SUMMER STREET and, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1096232,42.3877952]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Broadway and Glen St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08417,42.3878167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " CEDAR STREET and ELM STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.115425,42.3879583]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "138 BROADWAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0847269,42.388064]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Pearl St and Marshall St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0957494,42.3881671]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "141 Highland Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1023857,42.3882475]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "25 Illinois Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0826764,42.3882788]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " MEDFORD STREET and PEARL STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0962952,42.3882985]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "160 HIGHLAND AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1040809,42.388404]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "3",
+        "Location": " CENTRAL STREET and HIGHLAND AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1034359,42.3884241]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SUMMER STREET and CRAIGIE STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1106213,42.3884332]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "74 Elm St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.116274,42.388532]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " HIGHLAND AVENUE and WALDO STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1042946,42.3887145]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SCHOOL STREET and RICHDALE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09741,42.3887757]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "353 MEDFORD STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0962865,42.3887792]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "167 BROADWAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0859219,42.3889422]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Elm St and Cherry St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1166126,42.3892348]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Bonair St and Walnut St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0919612,42.3893565]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "190 Highland Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1062039,42.3893967]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "191 BROADWAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.086896,42.389494]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " ELM STREET and WHITE STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1169921,42.3896347]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Linden Ave and Summer St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1126775,42.389823]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Central St and Willoughby St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1024315,42.3898434]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "195 Highland Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.106374,42.389846]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Francis St and Highland Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1079523,42.3902029]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " MARSHALL STREET and EVERGREEN AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0940482,42.3908412]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WALNUT STREET and BROADWAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0906239,42.3909797]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "138 ELM STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1184328,42.390994]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Elm St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.118544,42.3911155]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " ASSEMBLY SQUARE DRIVE and GRAND UNION BOULEVARD, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0799614,42.3913094]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " ELM STREET and WILLOW AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1187665,42.3913149]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SYCAMORE STREET and MEDFORD STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0994049,42.3913289]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "414 MEDFORD STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.099758,42.391359]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " SUMMER STREET and CHERRY STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1149866,42.3914194]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " SCHOOL STREET and EVERGREEN AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0956539,42.391425]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " VERNON STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1037125,42.3921946]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " HIGHLAND AVENUE and CEDAR STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1124128,42.3922125]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " CENTRAL STREET and MEDFORD STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1005865,42.392482]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BROADWAY and TEMPLE STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0934064,42.3925566]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BROADWAY and BELLINGHAM STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.03409,42.3927141]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " GRANT STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0900398,42.3928856]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Willow Ave and Summer St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1176751,42.3928956]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "499 Foley St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0803484,42.3930349]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "187 ELM STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1202673,42.3930843]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BROADWAY and SCHOOL STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0944105,42.3932298]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WINDSOR ROAD and WILLOW AVENUE and HAWTHORNE STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1171936,42.39359]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "201 ELM STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1204952,42.3937682]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " CEDAR STREET and ALPINE STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1112535,42.3937835]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Summer St and Cutter Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1206131,42.3940936]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "390 Broadway, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.098024,42.394598]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "379 Broadway, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.096732,42.3946452]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Elm St and Bowers Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1214561,42.3947474]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Orchard St and Day St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1248,42.3948856]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "238 Elm St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1218533,42.3949292]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "243 ELM STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1215738,42.3952682]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "256 Elm St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1222838,42.395533]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WILLOW AVENUE and MORRISON AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1157237,42.3956925]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " MEDFORD STREET and NORWOOD AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1031062,42.3957026]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " HIGHLAND AVENUE and GROVE STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1204966,42.3957061]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "393 HIGHLAND AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1199548,42.3957976]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "403 HIGHLAND AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.120841,42.396128]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "411 Highland Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1213324,42.3963159]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " TEN HILLS ROAD and PUTNAM ROAD, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0853692,42.3963527]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "9 Holland St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.12288,42.3971329]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "201 Willow Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.11412,42.3973839]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "30 COLLEGE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.122012,42.397414]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "31 College Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1213374,42.3975756]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "36 College Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.121646,42.3977375]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": "Broadway and Charles E. Ryan Rd, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1056987,42.3977741]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BROADWAY and WILLIAMS STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1060347,42.3978851]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Elm St and Moreland St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0970745,42.397911]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "COLLEGE AVENUE and CHAPEL STREET and HALL AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1189719,42.3979833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " LOWDEN AVENUE and KIDDER AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1151648,42.3980049]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "57 HOLLAND STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.123656,42.3981031]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "40 COLLEGE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.121735,42.398135]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " HOLLAND STREET and BUENA VISTA ROAD, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1239122,42.3982181]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "40 CAMERON AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.128608,42.398337]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "56 COLLEGE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.121368,42.39844]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " COLLEGE AVENUE and CHAPEL STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1205715,42.398705]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "91 Holland St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1244724,42.3989372]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " GORHAM STREET and HOLLAND STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1252368,42.3998502]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "710 BROADWAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1125769,42.3998534]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "133 HOLLAND STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.125252,42.4001393]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " HOLLAND STREET and ELMWOOD STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1257086,42.4004341]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "884 Broadway, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.11827,42.400569]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BROADWAY and BAY STATE AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1143386,42.4006346]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "164 HOLLAND STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.126153,42.4006505]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "854 BROADWAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1174086,42.4007051]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Broadway and Warner St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.116231,42.400968]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " HOLLAND STREET and CAMERON AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.126181,42.401052]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "190 Holland St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.126604,42.401324]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "1020 Broadway, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1232414,42.4015866]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Warner St and Broadway and College Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1168534,42.4016881]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "1017 BROADWAY, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1230816,42.4016916]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "3",
+        "Location": " BROADWAY and PAULINA STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1237159,42.4018427]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " MASON STREET and WHITMAN STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1223065,42.402041]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "32 CLARENDON AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1286768,42.402573]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "1127 Broadway, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1267277,42.4031902]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BROADWAY and CLARENDON AVENUE, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1276129,42.4034575]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Broadway and Weston Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1286642,42.403998]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "College Ave and Lower Campus Way, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1172064,42.4040151]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "2",
+        "Location": " PACKARD AVENUE and POWDER HOUSE BOULEVARD, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1234739,42.4044589]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " CURTIS STREET and POWDER HOUSE BOULEVARD, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1258479,42.4054336]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "216 College Ave, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1174262,42.405656]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "1293 Broadway, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1307668,42.4057502]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " BROADWAY and NORTH STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1313375,42.4058176]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "Latin Way and Professor's Row, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1203151,42.4061406]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": " WALNUT STREET and SUMMER STREET, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.113778,42.414777]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "61 Prospect St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0832373,42.428117]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "n": "1",
+        "Location": "82 Prospect St, Somerville, MA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0833212,42.4282043]
+      }
+    }
+  ]
+}
