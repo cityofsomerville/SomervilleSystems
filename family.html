@@ -499,20 +499,20 @@ They load to the specified containers -->
     </div>
 </div>
 
-<!-- MCAS chart -->
+<!-- Collision Maps -->
 
 <div class="container">
     <div class="marketing">
       <h1 class="section header">Collision Safety</h1>
       <div class="row">
-          <div class="span12">
-              <p>This map shows the location of pedestrian collisions.</p>
+          <div class="span6">
+              <p>This map shows the location of collisions involving pedestrians.</p>
 
-              <div id="map" style="height: 400px"></div>
+              <div id="ped-map" style="height: 400px"></div>
               <script>
 
                 // initialize the map
-                var map = L.map('map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
+                var pmap = L.map('ped-map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
 
                 // load a tile layer
                 L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
@@ -520,7 +520,7 @@ They load to the specified containers -->
                     attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
                     maxZoom: 17,
                     minZoom: 9
-                  }).addTo(map);
+                  }).addTo(pmap);
 
                 
                 // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
@@ -554,7 +554,62 @@ They load to the specified containers -->
                       geojsonLayer = L.geoJson(response, {
                         pointToLayer: pointToLayer,
                         onEachFeature : onEachFeature
-                      }).addTo(map);
+                      }).addTo(pmap);
+                  }
+                }).error(function() {});
+
+              </script>
+          </div>
+          <div class="span6">
+              <p>This map shows the location of collisions involving cyclists.</p>
+
+              <div id="cyclist-map" style="height: 400px"></div>
+              <script>
+
+                // initialize the map
+                var cmap = L.map('cyclist-map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
+
+                // load a tile layer
+                L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+                  {
+                    attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+                    maxZoom: 17,
+                    minZoom: 9
+                  }).addTo(cmap);
+
+                
+                // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
+
+                // Function to make popup
+                function onEachFeature(feature, layer) {
+                      if (feature.properties && feature.properties.Location) {
+                          layer.bindPopup(feature.properties.Location);
+                      }
+                  }
+
+                function getRadiusStyle(x) {
+                  return x * 6;
+                }            
+
+                function pointToLayer (feature, latlng) {
+                    return new L.CircleMarker(latlng, {
+                        radius: getRadiusStyle(feature.properties["n"]),
+                        fillColor: "#900000",
+                        color: "#000",
+                        weight: 1,
+                        opacity: .75,
+                        fillOpacity: 0.75
+                      })
+                  }
+
+                $.ajax({
+                dataType: "json",
+                url: "./geo/CyclistCollisions.geojson",
+                success: function (response) {
+                      geojsonLayer = L.geoJson(response, {
+                        pointToLayer: pointToLayer,
+                        onEachFeature : onEachFeature
+                      }).addTo(cmap);
                   }
                 }).error(function() {});
 
