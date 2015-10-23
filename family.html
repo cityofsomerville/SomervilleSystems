@@ -538,7 +538,7 @@ They load to the specified containers -->
 
                 function pointToLayer (feature, latlng) {
                     return new L.CircleMarker(latlng, {
-                        radius: getRadiusStyle(feature.properties["n"]),
+                        radius: 8, //getRadiusStyle(feature.properties["n"]),
                         fillColor: "#900000",
                         color: "#000",
                         weight: 1,
