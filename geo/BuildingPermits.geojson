@@ -1,0 +1,2194 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Certificate of Inspection 172 at 50 Talbot Ave",
+        "PermitAmount": "130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.120002746582,42.4050102233887]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Certificate of Inspection #539 Next Wave School",
+        "PermitAmount": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0849456787109,42.3895950317383]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Certificate of Inspection #509 Full Circle School",
+        "PermitAmount": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0869903564453,42.3868675231934]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Certificate of inspection",
+        "PermitAmount": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0990905761719,42.3915824890137]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "unit 1gas piping",
+        "PermitAmount": "190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1052627563477,42.3806838989258]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "unit2 gas piping",
+        "PermitAmount": "190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1052627563477,42.3806838989258]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "unit 3 gas piping",
+        "PermitAmount": "190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1052627563477,42.3806838989258]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "unit 4 gas piping",
+        "PermitAmount": "190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1052627563477,42.3806838989258]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "unit 5 gas piping",
+        "PermitAmount": "190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1052627563477,42.3806838989258]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "unit 6 gas piping",
+        "PermitAmount": "190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1052627563477,42.3806838989258]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Certificate of inspection",
+        "PermitAmount": "100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0876235961914,42.3836898803711]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Dumpster Permit",
+        "PermitAmount": "400"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1016902,42.3865846]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "reface existing      12x2  sign  (Pat's Towing)5.5x6  sign  (Pat's Towing w/ 2 phone #'s)",
+        "PermitAmount": "313.75"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1034164428711,42.3962478637695]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "electrical feed from panel to new ac condenser and disconnect",
+        "PermitAmount": "75"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.112702,42.3979894]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas stove",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0917691,42.3884577]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Kitchen",
+        "PermitAmount": "100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0917691,42.3884577]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Repair front dormer, shingles in rear of yard new railings for first floor rear porch",
+        "PermitAmount": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.116392,42.3897989]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": " Add 20' shed dormer to third floor. And new bath room to third floor.",
+        "PermitAmount": "1311"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0953216552734,42.3803672790527]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Dumpster on st",
+        "PermitAmount": "100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.088981628418,42.3740997314453]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas stove",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0992612,42.383404]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "3rd floor right side unit. Replacing fixtures in original bathroom(tub, lav, toilet). Kitchen sink with disposal, dishawasher and gas stove. Adding a new bathroom (shower, lav, toilet. ",
+        "PermitAmount": "120"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0992612,42.383404]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas range first floor",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.099069,42.3776895]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "sink, dishwasher, disposal, water piping",
+        "PermitAmount": "70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.099069,42.3776895]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "strip and re roof asphalt shingles",
+        "PermitAmount": "95"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0875427,42.3985837]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "new gas stove on 2nd floor",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1266113,42.4083405]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "3 new bathrooms 1 new kitchen washing machine garbage disposal",
+        "PermitAmount": "190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1266113,42.4083405]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "To strip roof of existing asphalt shingles then to re-roof using a new G.A.F Timberline architectural shingle system",
+        "PermitAmount": "456"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0958311,42.3994058]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "replace existing exterior wall siding with new siding,everlast composite siding,,install new replacement windows with proper flashing,",
+        "PermitAmount": "1159"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1111265,42.3910255]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "trash removal",
+        "PermitAmount": "100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1022545,42.3961872]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Build out the existing lower level in my house and convert the space into 2 bedrooms and a bathroom, but installing new partition walls, a new window and 4 replacement windows, a new bathroom, a new wet bar, and several new closets. In addition, I want to",
+        "PermitAmount": "920"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09334,42.3953]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "To strip all roofs to deck, to re-shingle sloped sections using a new G.A.F Lifetime architectural shingle system. all flat roofs to receive 1/2 inch HD POLY ISO AND A FULLY ADHERED .060 EPDM RUBBER ROOFING SYSTEM",
+        "PermitAmount": "285"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1207072,42.3984367]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "install solar array lagged into rafters",
+        "PermitAmount": "391"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0924597,42.3944219]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "wire construction trailor",
+        "PermitAmount": "160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0,0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "WIRE CONSTRUCTION TRAILOR",
+        "PermitAmount": "160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0,0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Wire construction Trailor",
+        "PermitAmount": "160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0,0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Wire construction trailor",
+        "PermitAmount": "160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0,0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Remove 7 site Light poles from Block 6 parking lot",
+        "PermitAmount": "75"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0,0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Temporary permit for the Armory of Horror to set up an indoor Haunted House structure in the Assembly Hall of the Arts at the Armory building.  ",
+        "PermitAmount": "164"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1059923,42.3896883]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Installing 19 Solar panels on the south facing roof of house.",
+        "PermitAmount": "506"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1055797,42.394979]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Roof mounted Grid tied PV Solar System26 Modules @ 285 watts26 Micro inverters7.41 KWDc",
+        "PermitAmount": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.119968,42.397597]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Strip an re roof. Remove and dispose of existing roof covering. Install 1/2" Plywood over existing substrate. Install ice and water shield to first 6' of roof, synthetic paper to remainder, 8" aluminum drip edge to perimeter, lifetime shingles to roof, ne",
+        "PermitAmount": "209"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.11068,42.390104]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Demolish existing carpeting, interior of covered porch, bath fixtures, kitchen cabinets. Repair existing front porch by changing the Pressure treated wood floor and removing existing failing windows. Repair sheetrock and some rotted siding from water dama",
+        "PermitAmount": "2070"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1112985,42.3894249]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Demolish 1 story Garage. ",
+        "PermitAmount": "150"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.11621,42.40221]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Installation of twelve (12) LG 315 watt solar panels and one (1) SolarEdge SE3000A-US inverter.",
+        "PermitAmount": "368"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1085116,42.3980909]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "install 39 replacement windows no structural changes",
+        "PermitAmount": "320"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1091156005859,42.3806304931641]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace 24 windows, replace siding at some elevations, replace brick masonry steps with new wood steps.",
+        "PermitAmount": "2780"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1182708740234,42.3967933654785]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Rooftop Solar Array: 13.734 kW DC Panels: 42 Sunpower 327WInverter: SolarEdge SE1000Racking: SnapNRack",
+        "PermitAmount": "1392"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1177139282227,42.3959083557129]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "install 2 sinks",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0993881225586,42.3914260864258]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace front stairs",
+        "PermitAmount": "80"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0956268310547,42.3838005065918]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Install fully adhered EPDM roof over existing roof.",
+        "PermitAmount": "280"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0867385864258,42.3899269104004]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Remove existing bath tub and replace with a new one.",
+        "PermitAmount": "440"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0998382568359,42.3793296813965]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Remove the existing floor boards and joist of the back deck, replace the rubber roof under and install new joists and floor boards.",
+        "PermitAmount": "160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1026458740234,42.3931465148926]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Certificate of occupancy for vintage retail store",
+        "PermitAmount": "195"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1017761230469,42.382007598877]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "strip and reroof",
+        "PermitAmount": "160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0898513793945,42.3863220214844]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Dumpster will be located at 163 Pearl St.",
+        "PermitAmount": "100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0898513793945,42.3863220214844]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "remove existing deck floor and railings on rear of 64 Dartmouth st  .replace with new deck flooring and new railings . railings to be forty-two inches high",
+        "PermitAmount": "220"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0960540771484,42.3925743103027]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "install new 200 amp service. rewire 2 units",
+        "PermitAmount": "610"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0831756591797,42.3819580078125]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "lay-over lower loading dock roof with a base layer of 1" iso fully adhere tpo membrane.",
+        "PermitAmount": "336"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0898132324219,42.3774185180664]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "We are roughing in all plumbing for a restaurant.",
+        "PermitAmount": "280"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1224365234375,42.3961410522461]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "installation of 3.78 KW solar panels",
+        "PermitAmount": "140"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.108283996582,42.3982124328613]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Wire second floor apartment",
+        "PermitAmount": "194"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0824279785156,42.3875122070312]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Gas Boiler Replacement In Basement",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1137771606445,42.3884544372559]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "To Strip roof of existing asphalt shingles then to re-roof using a new G.A.F TIMBERLINE ARCHITECTURAL SHINGLE SYSTEM",
+        "PermitAmount": "200"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1320266723633,42.4040565490723]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "upgrade venting on boilers and water heatersgas pipe water heaters",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0864486694336,42.390209197998]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Gas Test for existing gas piping",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1077499389648,42.3902168273926]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Interior Gut / Interior Demolition ONLY. Plans with application to construct",
+        "PermitAmount": "100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1292724609375,42.4115371704102]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "removing wall in basement",
+        "PermitAmount": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0895614624023,42.3969879150391]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Siding permitRemove and reinstall electrical items on exterior of house.",
+        "PermitAmount": "105"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1016387939453,42.3849067687988]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replacing a garage's new roofingStrip the old one away and install a new one.  ice and water shield will be installed around the edges.",
+        "PermitAmount": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1231994628906,42.3996162414551]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace existing gas hot water heater ",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0910263061523,42.38623046875]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Reconnect 3 gas stoves",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0899047851562,42.3820419311523]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "2 replacement windows no structural",
+        "PermitAmount": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0879135131836,42.3983192443848]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Roof replacement and removal of old shingles",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1176223754883,42.398853302002]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas testing",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0858917236328,42.3870697021484]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas testing",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0858917236328,42.3870697021484]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Strip off one layer of wood siding clapboard. install vinyl siding to exterior of house and cover trim",
+        "PermitAmount": "1000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1016387939453,42.3849067687988]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace plaster, electrical and spray foam insulation in sunporch, install double french door.  install new cabinet, replace counter tops. Divide closet into 2 closets.  ",
+        "PermitAmount": "840"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.123161315918,42.4027862548828]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "!Renovate kitchen and baths",
+        "PermitAmount": "110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0847015380859,42.3872413635254]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Renovate kitchen",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0847015380859,42.3872413635254]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "WATER HEATER",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1044616699219,42.3814697265625]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "WATER HEATER",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1044616699219,42.3814697265625]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Minor Renovation/Upgrade to Bathroom including Re-tile tub walls and Flooring.  Change: Vanity, Toilet, Shower Valve.  Also re-tile kitchen Backsplash.",
+        "PermitAmount": "456"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1171493530273,42.3967666625977]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "water heater",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1009750366211,42.382381439209]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "water heater",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1009750366211,42.382381439209]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Air sealing and insulation ",
+        "PermitAmount": "130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0898895263672,42.3912467956543]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Strip and Re-roof using Owens Corning TruDefinition Duration architectural shingles, replace all pipe boots, install 8" drip edge. ",
+        "PermitAmount": "180"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1090927124023,42.3938255310059]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Installing new kitchen sink.",
+        "PermitAmount": "80"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1040649414062,42.3811874389648]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "wire lights in basement for storage space",
+        "PermitAmount": "45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0914535522461,42.3929328918457]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "replacing old fha furnace",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1106262207031,42.3983688354492]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Gas stove",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.096556,42.3804376]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Plumbing to bathroom and kitchen",
+        "PermitAmount": "100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.096556,42.3804376]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Waste, vent and water piping with grease trap",
+        "PermitAmount": "275"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0,0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Renovate 3rd floor bathroom.",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1181134,42.3986007]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "adding 2nd floor bathroom",
+        "PermitAmount": "70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1129143,42.3841052]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "replace stove",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.092257,42.38267]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "kit sink and laundry",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.092257,42.38267]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "test",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.099559,42.392093]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "bathroom remodel",
+        "PermitAmount": "70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.10114,42.393706]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "dryer",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0858840942383,42.3965873718262]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "dryer",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0962600708008,42.3955955505371]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "dryer",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0838775634766,42.3828048706055]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "urgent care fit out",
+        "PermitAmount": "260"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0952072143555,42.3935928344727]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "re ga pipe  for  temp heat",
+        "PermitAmount": "80"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1218490600586,42.3951644897461]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "new wiring to unit-2 kitchen and two bathrooms, upgrade service from 100 to 200 amps",
+        "PermitAmount": "188"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1094741821289,42.3916778564453]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Add new circuit for a dimmer and 8 puck lights,add new coax cable for tv,add 2 hdmi cables for tv,add 2 duplex outlets .",
+        "PermitAmount": "46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.10791015625,42.3838958740234]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "3 bathrooms1 kitchen1 laundry",
+        "PermitAmount": "160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0904769897461,42.3915138244629]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "1 boiler1 stove",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0904769897461,42.3915138244629]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Install two new high efficiency boilers",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.128632,42.412718]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Install two new high efficiency boilers",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.128632,42.412718]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace front inner entrance door with no structural changes.",
+        "PermitAmount": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0833275,42.3822382]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "strip and re-roof the entire house",
+        "PermitAmount": "240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1141148,42.4010906]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Air sealing and insulation ",
+        "PermitAmount": "110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1283617,42.4027227]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Air sealing and insulation ",
+        "PermitAmount": "170"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.12825,42.402636]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Service upgrade with public.  Sump pump outlet.  Exterior flood light.",
+        "PermitAmount": "150"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1180113,42.3934081]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Natural gas high efficiency furnace replacement",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0802383422852,42.3864936828613]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "strip and re roof 2,400 sft asphalt shingles and 720 rubber roof",
+        "PermitAmount": "360"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0811545,42.3842306]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "repair front stairs",
+        "PermitAmount": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0969749,42.3826242]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping.",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1011199951172,42.3915557861328]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping.",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1011199951172,42.3915557861328]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Wire new single family home ",
+        "PermitAmount": "623"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.097900390625,42.3931922912598]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Wiring a new partition us , outlets inside conference room,outlets and sconces  inside of two telephone room,wiring and install track lights according with plans,disconnect any unused wires and minor repairs if needed.",
+        "PermitAmount": "165"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1003096,42.3814221]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Make repairs to wiring damaged by fire, and install three new light fixtures in fire damaged area of ceiling. ",
+        "PermitAmount": "75"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1208801269531,42.3957710266113]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Removed and disposal of old roofing. strip old roof and install new roof. ",
+        "PermitAmount": "240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.115626,42.398304]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Install two new Rinnai water heaters.",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.119615,42.401986]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Install two new Rinnai water heaters.",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.119615,42.401986]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "new toilet tub and lav on second fl.exsisting bath new bath room on 3rd fi con sisting of toilet lav and shower",
+        "PermitAmount": "100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1075319,42.3911671]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Gas test and inspection",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.106330871582,42.3895568847656]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "replace two  ovens",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0986429,42.388158]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Plumbing for new bar/brewery/restaurant",
+        "PermitAmount": "250"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0941619873047,42.3928451538086]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas for new bar/brewery/restaurant",
+        "PermitAmount": "70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0941619873047,42.3928451538086]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace Boiler",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1146545410156,42.3850402832031]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace boiler.",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1146545410156,42.3850402832031]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace 1 Street light Pole that was taken out by a tractor tailor truck. ",
+        "PermitAmount": "75"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [0,0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "install  100 amp temp service  for construction",
+        "PermitAmount": "195"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.109439,42.394277]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace gas furnace w/ Carrier 59MN7 60K BTUH Infinity modulating gas furnace ",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.105219,42.389836]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "remodel",
+        "PermitAmount": "90"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1066663,42.384034]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "remodel",
+        "PermitAmount": "240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1066663,42.384034]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Furnish and install access control cabling to (250)  Doors @ 399 Revolution Drive Somerville, MA (Partners Admin building",
+        "PermitAmount": "365"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0811996459961,42.3927955627441]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace lighting in the day care center due to the sprinkler leak",
+        "PermitAmount": "90"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0895433,42.3958724]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "take out cellar ceiling knob & tubing, add 2 outlets",
+        "PermitAmount": "85"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.128173828125,42.4005088806152]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Demo of existing restaurant, build out of space including lights, power and fire alarm, control wiring for HVAC for Carwell Urgent Care",
+        "PermitAmount": "567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0952072143555,42.3935928344727]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1057776,42.395216]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0905990600586,42.3889923095703]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0905990600586,42.3889923095703]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "replace emergency & exit lighting in common hallways, add 6 units replace 10",
+        "PermitAmount": "67"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1019378,42.374913]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0905990600586,42.3889923095703]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0905990600586,42.3889923095703]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0905990600586,42.3889923095703]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0905990600586,42.3889923095703]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.083956,42.386073]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0857772827148,42.3884353637695]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0857772827148,42.3884353637695]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0868835449219,42.3897857666016]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0868835449219,42.3897857666016]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0914154052734,42.3939971923828]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0928573608398,42.387866973877]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Existing Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0902099609375,42.392879486084]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "19 Lincoln Ave.Test Existing Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.08033,42.38568]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Existing Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1052017211914,42.3975219726562]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Existing Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1052017211914,42.3975219726562]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test Existing Gas Lines",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1052017211914,42.3975219726562]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": " install a new backflow device for outside irrigation",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1197053,42.3946893]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "direct replace a gas stove. I installed factory supplied anti tip device",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1203079223633,42.3945121765137]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Install separate circuits to kitchen counter and window ac units",
+        "PermitAmount": "46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1135025024414,42.3962440490723]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace Gas Boilers and electronic automatic water feeders ",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1219227,42.4035355]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Back Flow Vales for 2 Burnham gas boilers& 2 electronic  automatic water feeders",
+        "PermitAmount": "70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1219227,42.4035355]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas test",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0932883,42.3899894]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas test unit 5a",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.094439,42.391195]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas test",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1043930053711,42.3964309692383]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "gas test",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0956733,42.3898143]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Gas furnace",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1100573,42.3974317]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "2 gas furnaces1 gas stove1 gas tankless",
+        "PermitAmount": "70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1159117,42.387685]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "remodel1 1/2 baths laundry 2 furnaceskitchen tankless",
+        "PermitAmount": "130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1159117,42.387685]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "To remove and reinstall existing fixtures for new siding job, building permit number is B15-001831. ",
+        "PermitAmount": "90"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.111717,42.393929]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "install new furance for first and second floor. install new power vented hot water heaters",
+        "PermitAmount": "70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0951073,42.3801565]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Gas stove and dryer",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1270599365234,42.4020576477051]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Remodel bathroom and kitchen and added laundry",
+        "PermitAmount": "90"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1270599365234,42.4020576477051]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "remodel 1st. floor bathroom",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1171327,42.3966327]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "remodel",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0899018,42.3941084]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "remodel",
+        "PermitAmount": "150"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0899018,42.3941084]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas lines.",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1032638549805,42.3957633972168]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas line.   14  Minnesota Ave Unit 1",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0852203369141,42.3886756896973]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas line.  16 Minnesota Ave Unit 2",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0852203369141,42.3886756896973]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "replace furnace",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0930786132812,42.3873558044434]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "stove",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1110000610352,42.390209197998]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "sink, dish washer",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.1110000610352,42.390209197998]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "dishwasher",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.112419128418,42.3935966491699]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Replace dishwasher in kitchen",
+        "PermitAmount": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.112419128418,42.3935966491699]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 19 FENWICK ST APT 2",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0953750610352,42.3945808410645]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 19 FENWICK ST APT 3",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0953750610352,42.3945808410645]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 72 FLINT ST APT 2",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.089434,42.384985]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 17 HEATH ST SUITE 2",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0932842,42.3941193]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 17 HEATH ST SUITE 3",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.09326171875,42.3940467834473]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 20 HEATH ST SUITE 2",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0934829711914,42.3939552307129]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 61-63 HEATH ST APT 2",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0950469970703,42.394947052002]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 22 HOWE ST APT 2",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0962371826172,42.3898773193359]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 13 KENSINGTON AVE Basement",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0868835449219,42.3897857666016]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 418 MEDFORD ST",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0999172,42.3915422]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ProjectName": "Test existing gas piping. 11 MELVILLE",
+        "PermitAmount": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-71.0865783691406,42.3981475830078]
+      }
+    }
+  ]
+}
