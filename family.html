@@ -166,11 +166,11 @@ They load to the specified containers -->
             },
         
         xAxis: {
-                categories: ['1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010']
+                categories: ['1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014']
             },
     yAxis: {
         title: {
-                    text: 'Births per 1,000 Females Ages 15-44'
+                    text: 'Births per 1,000 Residents'
                 },
                 plotLines: [{
                     value: 0,
@@ -186,10 +186,10 @@ They load to the specified containers -->
         
         series: [{
         name: 'Somerville',
-            data: [12.2,12.1,12.0,11.3,11.7,11.9,11.0,12.0,11.4,12.8,12.7,13.3,12.4]
+            data: [12.2,12.1,12.0,11.3,11.7,11.9,11.0,12.0,11.4,12.8,12.7,13.3,12.4,12.9,12.9,12.7,12.9]
           }, {
         name: 'Massachusetts',
-            data: [13.1,12.9,12.8,12.8,12.7,12.6,12.4,11.9,12.1,12.1,11.8,11.4,11.1]
+            data: [13.1,12.9,12.8,12.8,12.7,12.6,12.4,11.9,12.1,12.1,11.8,11.4,11.1,11.1,11.0,10.9,11.0]
         }]
     });
 
@@ -203,7 +203,7 @@ They load to the specified containers -->
                 text: 'Age Distribution'
             },
          subtitle: {
-                text: 'Source: 2010 US Census'
+                text: 'Source: 2010-2014 American Community Survey'
             },
         
         tooltip: {
@@ -234,10 +234,10 @@ They load to the specified containers -->
 
         series: [{
         name: 'Somerville',
-            data: [4.6,3.1,2.6,4.6,12.2,18.6,12.8,8.3,6,5.4,4.9,4.2,3.8,2.6,2.1,1.7,1.4,1.4]
+            data: [5.3,3.3,3.1,4.7,11.6,18.0,13.1,7.8,6.4,4.5,5.3,3.9,3.8,2.7,2,1.4,1.7,1.3]
           }, {
         name: 'Massachusetts',
-            data: [5.6,5.9,6.2,7.1,7.3,6.7,6.2,6.4,7.2,7.9,7.6,6.6,5.7,4,2.9,2.5,2.1,2.2]
+            data: [5.5,5.7,6.0,7.0,7.3,7.0,6.4,6.0,6.9,7.5,7.6,6.9,5.9,4.4,3.2,2.5,2.0,2.3]
         }]
     });
 
@@ -253,7 +253,7 @@ They load to the specified containers -->
                 text: 'Region of Birth'
             },
          subtitle: {
-                text: 'Source: 2007-2011 American Community Survey'
+                text: 'Source: 2010-2014 American Community Survey'
             },
         
     tooltip: {
@@ -263,13 +263,13 @@ They load to the specified containers -->
         series: [{
         name: 'Region',
             data: [
-                ['United States',   74.0],
-        ['Latin America', 10.2],
-        ['Asia',    7.9],
-                ['Europe',       6.1],
-                ['Africa',     0.8],
-        ['North America', 0.8],
-                ['Oceania',   0.3],
+                ['United States',   75.7],
+        ['Latin America', 8.6],
+        ['Asia',    7.8],
+                ['Europe',       5.7],
+                ['Africa',     1.7],
+        ['North America', 0.5],
+                ['Oceania',   0.1],
         ]
     }]
     });
@@ -285,7 +285,7 @@ They load to the specified containers -->
                 text: 'Language Spoken at Home'
         },
         subtitle: {
-                text: 'Source: 2007-2011 American Community Survey'
+                text: 'Source: 2010-2014 American Community Survey'
             },
         
     tooltip: {
@@ -295,41 +295,41 @@ They load to the specified containers -->
         series: [{
         name: 'Language',
             data: [
-        ['English',67.7],
-        ['Spanish or Spanish Creole',9.0],
-        ['Portuguese or Portuguese Creole',7.3],
-        ['Other Indic languages',2.3],
-        ['Chinese',2.3],
-        ['French Creole',1.6],
+        ['English',68.8],
+        ['Spanish or Spanish Creole',7.4],
+        ['Portuguese or Portuguese Creole',7.0],
+        ['Other Indic languages',2.5],
+        ['Chinese',2.4],
+        ['French Creole',2.1],
         ['French',1.3],
-        ['Italian',1.0],
-        ['Hindi',0.9],
-        ['Greek',0.8],
-        ['Other Asian languages',0.8],
-        ['Hebrew',0.6],
-        ['Russian',0.5],
-        ['Korean',0.5],
-        ['German',0.4],
-        ['Japanese',0.4],
-        ['African languages',0.4],
-        ['Gujarati',0.3],
-        ['Thai',0.3],
-        ['Other Indo-European languages',0.3],
-        ['Arabic',0.3],
-        ['Urdu',0.2],
-        ['Scandinavian languages',0.2],
-        ['Persian',0.2],
-        ['Mon-Khmer/Cambodian',0.1],
-        ['Serbo-Croatian',0.1],
-        ['Polish',0.1],
-        ['Vietnamese',0.1],
-        ['Tagalog',0.1],
+        ['Italian',1.2],
+        ['African languages',0.9],
+        ['Other Asian languages',0.8],        
+        ['Hindi',0.7],
+        ['Arabic',0.5],
+        ['Greek',0.5],
+        ['German',0.4],        
+        ['Armenian',0.4],        
+        ['Russian',0.4],        
+        ['Korean',0.3],        
+        ['Japanese',0.3],        
+        ['Hebrew',0.3],
+        ['Scandinavian languages',0.3],
+        ['Vietnamese',0.2],        
+        ['Gujarati',0.2],
+        ['Urdu',0.2],        
+        ['Other Indo-European languages',0.2],        
+        ['Tagalog',0.2],        
+        ['Persian',0.1],        
+        ['Thai',0.1],
         ['Other West Germanic languages',0.1],
         ['Other Slavic languages',0.1],
-        ['Other Pacific Island languages',0.1],
-        ['Laotian',0.0],
-        ['Armenian',0.0],
-        ['Other Native North American languages',0.0],
+        ['Polish',0.1],
+        ['Hmong', 0.05],
+        ['Laotian',0.05],        
+        ['Hungarian',0.02],
+        ['Serbo-Croatian',0.02],
+        ['Navajo',0.01],      
         ]
     }]
     });
@@ -413,9 +413,8 @@ They load to the specified containers -->
     
     <div class="row-fluid">
         <h1 class="section header">Housing</h1>
-    <p>Somerville's stock of affordable housing units has increased by more than 500 since 2002. These units represent about 10% of
-    the City's housing stock. Somerville residents set a goal of adding an additional 1,200 affordable units through the
-    SomerVision process.</p>
+    <p>Somerville's stock of affordable housing units has increased by nearly 600 since 2002. These units represent about 10% of
+    the City's housing stock. In SomerVision, residents set a goal of adding 1,200 affordable units between 2010 and 2030.</p>
       <div class="row">
         <div class="span4">
             <div class="tasks-header bg-color dark-blue rounded-top">
@@ -462,24 +461,23 @@ They load to the specified containers -->
       <h1 class="section header">Demographics</h1>
 
 <!-- Births Chart -->
-      <p>Women of reproductive age in Somerville have been more likely to give birth than their counterparts in
-      Massachusetts since 2007.</p>
+      <p>Births in Somerville are trending upward, increasing from a low of 849 in 2004 (or 11 births per 1,000 residents) to 974 (or 12.9 births per 1,000 residents) a decade later. The oppposite is true statewide, where the birthrate has steadily decreased since 1998. As a result, the Somerville birth rate has consistently exceeded the Massachusetts rate since 2007.</p>
     <div class="row-fluid">
         <div id="BirthsChartContainer" style="width:100%; height:400px;"></div>
     </div>
     
 <!-- Age Chart -->
 <br></br>
-      <p>The proportion of Somerville's population between the ages of 20 and 34 is remarkably large, over 40%, which is more than
-      double the equivalent proportion in Massachusetts. In fact, Somerville has the second largest concentration of 25- to 34-year-olds in the country behind Hoboken, NJ.</p>
+      <p>The proportion of Somerville's population between the ages of 20 and 34 is remarkably large, nearly 43%, which is more than
+      double the equivalent proportion statewide. In fact, Somerville has the second largest concentration of 25- to 34-year-olds in the country behind Hoboken, NJ.</p>
     <div class="row-fluid">
         <div id="AgeChartContainer" style="width:100%; height:400px;"></div>
     </div>
 
 <!-- Diversity -->
 <br></br>
-      <p>Somerville is an incredibly diverse city. Over a quarter of the population was born outside of the United States, and our
-      residents speak more than 35 languages at home.</p>
+      <p>Somerville is an incredibly diverse city. A quarter of the population was born outside of the United States, and our
+      residents speak 35 languages at home.</p>
     <div class="row-fluid">
     <div class="span6">
         <div id="BirthRegionChartContainer" style="width:100%; height:400px;"></div>
