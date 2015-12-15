@@ -470,6 +470,61 @@ They load to the specified containers -->
     </div>
 </div>
 
+<!-- Liquor Licenses Chart -->
+<center>
+<div id="container" style="width:400px; height:400px;">
+	<script>
+		$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'City of Somerville Liquor Licenses'
+        },
+        subtitle: {
+            text: 'By Year of Issuance'
+        },
+        xAxis: {
+            categories: [
+                'Before 2001',
+                '2001-2005',
+                '2006-2010',
+                '2011-2015',
+                'Not Issued'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Number of Licenses Issued'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Number of Licenses',
+            data: [25, 17, 24, 41, 6]
+
+        }]
+    });
+});
+	</script>
+</div>
+</center>
 
     <!-- Footer
     ================================================== -->
