@@ -233,6 +233,55 @@ They load to the specified containers -->
         }]
     });
     
+<!-- Fire Calls -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'FireContainer',
+        type: 'column'
+        },
+
+    title: {
+                text: 'Fire Department Calls'
+            },
+         subtitle: {
+                text: 'Somerville Fire Alarm'
+        },        
+        xAxis: {
+                categories: ["2008", "2009", "2010", "2011", "2012", "2013", "2014"]
+        },
+
+    yAxis: {
+        title: {
+                    text: 'Volume of Calls'
+                },
+                labels: {
+            format: '{value}'
+        },
+        plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+        },
+
+        series: [{
+        name: 'Fire',
+            data: [352, 299, 320, 319, 376, 476, 375]
+          }, {
+        name: 'Medical',
+            data: [5142, 5327, 5401, 5188, 5391, 6075, 6211]
+           }, {
+        name: 'Service',
+            data: [1365, 1433, 1780, 1549, 1541, 2154, 1967]
+        }, {
+        name: 'Other Emergency',
+            data: [ 4994, 4648, 5014, 4999, 4630, 4288, 4475]
+        }
+
+        ]
+    });
+
+
 <!-- Property Tax -->
     var chart1 = new Highcharts.Chart({
         chart: {
@@ -643,6 +692,21 @@ They load to the specified containers -->
     <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
     <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 </div><!-- /.carousel -->
+
+<div class="container">
+    <div class="marketing">
+    <div class="row-fluid">
+      <h2 class="section header">Fire Department</h2>
+        <p>The Somerville Fire Department responds to around 12,000 calls each year. In 2014, medical calls accounted for nearly half (48%) of all calls. Since 2008, fire-related calls consistently make up only 3% of total calls.</p>
+        <div class="row">
+        <div class="span12">
+            <div id="FireContainer" style="width:100%; height:400px;"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
 
 
 <!-- 311 Map -->
