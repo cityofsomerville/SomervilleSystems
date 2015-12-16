@@ -20,6 +20,11 @@
     <!-- Highcharts scripts -->
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
       <script src="js/highcharts.js"></script>
+
+    <!-- Leaflet scripts -->
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+      <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
       
     <!-- Google Analytics -->
 
@@ -470,9 +475,60 @@ They load to the specified containers -->
     </div>
 </div>
 
+<!-- ======================= Alcohol Licenses Map ======================= -->
 
-    <!-- Footer
-    ================================================== -->
+<div class="container">
+    <div class="marketing">
+      <h1 class="section header">Alcohol Licensing</h1>
+      	<div class="row">
+        <p>The City currently administers 110 alcohol licenses, plus three farmers series pouring permits. More than 50% of these licenses are privately-owned and therefore transferrable. Of the 110 alcohol licenses, 90% are issued to restaurants and over half were issued in the last ten years. Alcohol licenses are critical to the success of Somerville restaurants and the development of Somerville as a regional dining destination.</p>
+          	<div class="span6">
+              	<div id="alc-map" style="height: 400px"></div>
+              <script>
+
+                // initialize the map
+                var alcmap = L.map('alc-map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
+
+                // load a tile layer
+                L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+                  {
+                    attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://data.somervillema.gov">The City of Somerville</a>',
+                    maxZoom: 17,
+                    minZoom: 9
+                  }).addTo(alcmap);
+
+                // function to add points to layer and style them
+                function pointToLayer (feature, latlng) {
+                    return new L.CircleMarker(latlng, {
+                        radius: 5,
+                        fillColor: "#8bbc22",
+                        color: "#000",
+                        weight: 1,
+                        opacity: .75,
+                        fillOpacity: 0.75
+                      })
+                  }
+
+                // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
+                $.ajax({
+                dataType: "json",
+                url: "./geo/liquorlicenses.geojson",
+                success: function (response) {
+                      geojsonLayer = L.geoJson(response, {
+                        pointToLayer: pointToLayer,
+                        onEachFeature : onEachFeature
+                      }).addTo(alcmap);
+                  }
+                }).error(function() {});
+
+              </script>
+          	</div>
+      	</div>
+  	</div>
+</div>
+
+
+    <!-- Footer ================================================== -->
     <footer class="footer">
       <div class="container">
         <p>Somerville Systems : Daniel Hadley, Emily Monea, & Skye Stewart | <a href="https://github.com/DanielHadley/SomervilleSystems">Code.</a></p>
