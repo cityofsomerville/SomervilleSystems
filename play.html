@@ -497,6 +497,12 @@ They load to the specified containers -->
                     minZoom: 9
                   }).addTo(alcmap);
 
+                function onEachFeature(feature, layer) {
+                      if (feature.properties && feature.properties.Address) {
+                          layer.bindPopup(feature.properties.Address);
+                      }
+                  }                
+
                 // function to add points to layer and style them
                 function pointToLayer (feature, latlng) {
                     return new L.CircleMarker(latlng, {
@@ -516,7 +522,7 @@ They load to the specified containers -->
                 success: function (response) {
                       geojsonLayer = L.geoJson(response, {
                         pointToLayer: pointToLayer,
-                        onEachFeature : onEachFeature
+                        onEachFeature: onEachFeature
                       }).addTo(alcmap);
                   }
                 }).error(function() {});
