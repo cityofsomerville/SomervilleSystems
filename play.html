@@ -544,10 +544,10 @@ They load to the specified containers -->
                     minZoom: 9
                 	}).addTo(alcmap);
 
-                // popup information function, currently showing 'Address' from the .geoJSON
+                // popup information function, currently showing 'Name' from AlcoholLicenses.geoJSON
                 function onEachFeature(feature, layer) {
-                    if (feature.properties && feature.properties.Address) {
-                       	layer.bindPopup(feature.properties.Address);
+                    if (feature.properties && feature.properties.Name) {
+                       	layer.bindPopup(feature.properties.Name);
                     }
                 }                
 
@@ -566,7 +566,7 @@ They load to the specified containers -->
                 // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
                 $.ajax({
                 dataType: "json",
-                url: "./geo/liquorlicenses.geojson",
+                url: "./geo/AlcoholLicenses.geojson",
                 success: function (response) {
                       geojsonLayer = L.geoJson(response, {
                         pointToLayer: pointToLayer,
