@@ -1,0 +1,1 @@
+This is just for the daily geojson so that it is separated from the rest
