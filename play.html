@@ -143,6 +143,42 @@ They load to the specified containers -->
             data: [674,129,124,107,102,81,72,71,68,61]
 	}]
     });
+
+
+
+<!-- Field Use by User Type, 2015 -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'FieldsContainer',
+	    type: 'pie'
+        },
+	title: {
+                text: 'Reserved Field Use Time by User Type for All Fields including Dilboy, 2015 (%)'
+            },
+	     subtitle: {
+                text: 'Source: City of Somerville'
+            },
+	    
+	    
+	tooltip: {
+            pointFormat: '<b>{point.y:,.1f}%</b>'
+        },
+
+        series: [{
+	    name: 'Field Use Time',
+            data: [
+                ['Somerville Youth',   61.4],
+                ['Somerville Adults and Youth',       2.2],
+                ['Somerville Adults',    18.3],
+                ['Amateur and Pro Teams',     2],
+                ['Universities',   2.4],
+		['Serves Somerville Adults', 11.9],
+		['Serves Somerville Youth', .4],
+		['Non-Somerville Youth', 1.4]
+		]
+	}]
+    });
+    
     
 <!-- Temporary Food Licenses -->
    
@@ -346,9 +382,27 @@ They load to the specified containers -->
     </div>
 </div>
 
+
+<!-- Field Use by User Type, 2015 -->
+<div class="container"> 
+	 <div class="marketing">
+	 <div class="row-fluid">
+	    	<h1 class="section header">Somerville Fields</h1>
+	    	<p>The Somerville Recreation Dept. issues permits for the use of nine City fields, as well as the DCR-owned Dilboy Field. The fields can be reserved for a variety of social and athletic events, and more information can be found 
+	    	<a href="https://www.somervillerec.com/info/" target="_blank">here.</a>
+	        The majority of field time (61.4%) is reserved by Somerville youth leagues and organizations.</p>
+	    </div>
+	    <div class="span12">
+		<div id="FieldsContainer" style="width:100%; height:400px;"></div>
+	    </div>
+	</div>
+</div>
+
+
+
 <!-- Special Events -->
 <div class="container">
-    <div class="marketing">
+	<div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">Special Events</h1>
 	    <p>While analyzing data from the 2013 happiness survey, SomerStat discovered that one of
@@ -357,6 +411,7 @@ They load to the specified containers -->
 	    that bring neighbors together - a fact which can be seen in the explosion of temporary food licenses over the past few years.</p>
 	    <div id="MoveChartContainer" style="width:100%; height:400px;"></div>
 	</div>
+	
 <br></br>	  
 	<div class="row-fluid">
 	    <div class="span6">
@@ -522,6 +577,9 @@ They load to the specified containers -->
 	</div>
     </div>
 </div>
+
+<br></br>
+
 
 <!-- ======================= Alcohol Licenses Section ======================= -->
 
