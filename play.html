@@ -604,13 +604,8 @@ They load to the specified containers -->
 
                 // popup information function, currently showing 'Address' from the .geoJSON
                 function onEachFeature(feature, layer) {
-<<<<<<< HEAD
-                    if (feature.properties && feature.properties.name) {
-                       	layer.bindPopup(feature.properties.name);
-=======
                     if (feature.properties && feature.properties.Address) {
                        	layer.bindPopup(feature.properties.Address);
->>>>>>> parent of e3106e8... Update to alcohol license map
                     }
                 }
 
