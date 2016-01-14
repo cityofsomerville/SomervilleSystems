@@ -660,10 +660,11 @@ They load to the specified containers -->
 
               // Function to make popup
               function onEachFeature(feature, layer) {
-                    if (feature.properties && feature.properties.OCI) {
-                        layer.bindPopup(feature.properties.OCI);
-                    }
-                }
+                popupOptions = {maxWidth: 200};
+                layer.bindPopup("<b>PCI:</b> " + feature.properties.OCI +
+                  "<br><b>Street Name: </b>" + feature.properties.STREETNAME,
+                  popupOptions);
+              }
 
               // styling
               // styling
