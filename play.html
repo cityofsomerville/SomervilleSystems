@@ -602,10 +602,10 @@ They load to the specified containers -->
                     minZoom: 9
                 	}).addTo(alcmap);
 
-                // popup information function, currently showing 'Address' from the .geoJSON
+                // popup information function, currently showing 'Name' from the .geoJSON
                 function onEachFeature(feature, layer) {
-                    if (feature.properties && feature.properties.Address) {
-                       	layer.bindPopup(feature.properties.Address);
+                    if (feature.properties && feature.properties.Name) {
+                       	layer.bindPopup(feature.properties.Name);
                     }
                 }
 
