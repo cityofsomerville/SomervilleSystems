@@ -605,7 +605,7 @@ They load to the specified containers -->
                 // popup information function, currently showing the property 'PopupContent' from the .geoJSON
                 function onEachFeature(feature, layer) {
                     if (feature.properties) {
-                       	layer.bindPopup(feature.properties.PopupContent);
+                       	layer.bindPopup(properties.PopupContent);
                     }
                 }
 
