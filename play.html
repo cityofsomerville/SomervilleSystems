@@ -604,8 +604,8 @@ They load to the specified containers -->
 
                 // popup information function, currently showing 'Address' and 'Name' from liquorlicenses.geoJSON
                 function onEachFeature(feature, layer) {
-                    if (feature.properties && feature.properties.Address) {
-                       	layer.bindPopup(feature.properties.Address + feature.properties.Name);
+                    if (feature.properties && feature.properties.Address && feature.properties.Name) {
+                       	layer.bindPopup(feature.properties.Address + " | " + feature.properties.Name);
                     }
                 }
 
