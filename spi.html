@@ -17,14 +17,10 @@
       <script src="js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Highcharts scripts -->
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-      <script src="js/highcharts.js"></script>
+    <!-- Highcharts scripts: notice I use the CDN and not local versions of these -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="https://code.highcharts.com/highcharts.js"></script>
 
-    <!-- Leaflet scripts -->
-      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
-      <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
-      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
       
     <!-- Google Analytics -->
 
@@ -37,6 +33,43 @@
   ga('create', 'UA-13225056-2', 'auto');
   ga('send', 'pageview');
 	  </script>
+
+    <!-- Just a few in-line styles for the sparklines -->
+      <style media="screen" type="text/css">
+
+      #result {
+          text-align: right;
+          color: gray;
+          min-height: 2em;
+      }
+      #table-sparkline {
+          margin: 0 auto;
+          border-collapse: collapse;
+      }
+      th {
+          font-weight: bold;
+          text-align: left;
+      }
+      td, th {
+          padding: 5px;
+          border-bottom: 1px solid silver;
+          height: 20px;
+      }
+
+      thead th {
+          border-top: 2px solid gray;
+          border-bottom: 2px solid gray;
+      }
+      .highcharts-tooltip>span {
+          background: white;
+          border: 1px solid silver;
+          border-radius: 3px;
+          box-shadow: 1px 1px 2px #888;
+          padding: 8px;
+      }
+
+
+      </style>
     
 </head>
 
@@ -95,528 +128,158 @@
 They load to the specified containers -->
 
 <script>
-    $(function() {
-    Highcharts.setOptions({
-        chart: {
-            backgroundColor: 'rgba(230, 230, 230, .9)',
-            borderWidth: 1,
-            plotBackgroundColor: 'rgba(255, 255, 255, .9)',
-            plotShadow: true,
-            plotBorderWidth: 1,
-	    style: {
-            fontFamily: 'Helvetica'
-	    }
-        }
-    });
+   $(function () {
+       /**
+        * Create a constructor for sparklines that takes some sensible defaults and merges in the individual
+        * chart options. This function is also available from the jQuery plugin as $(element).highcharts('SparkLine').
+        */
+       Highcharts.SparkLine = function (a, b, c) {
+           var hasRenderToArg = typeof a === 'string' || a.nodeName,
+               options = arguments[hasRenderToArg ? 1 : 0],
+               defaultOptions = {
+                   chart: {
+                       renderTo: (options.chart && options.chart.renderTo) || this,
+                       backgroundColor: null,
+                       borderWidth: 0,
+                       type: 'area',
+                       margin: [2, 0, 2, 0],
+                       width: 120,
+                       height: 20,
+                       style: {
+                           overflow: 'visible'
+                       },
+                       skipClone: true
+                   },
+                   title: {
+                       text: ''
+                   },
+                   credits: {
+                       enabled: false
+                   },
+                   xAxis: {
+                       labels: {
+                           enabled: false
+                       },
+                       title: {
+                           text: null
+                       },
+                       startOnTick: false,
+                       endOnTick: false,
+                       tickPositions: []
+                   },
+                   yAxis: {
+                       endOnTick: false,
+                       startOnTick: false,
+                       labels: {
+                           enabled: false
+                       },
+                       title: {
+                           text: null
+                       },
+                       tickPositions: [0]
+                   },
+                   legend: {
+                       enabled: false
+                   },
+                   tooltip: {
+                       backgroundColor: null,
+                       borderWidth: 0,
+                       shadow: false,
+                       useHTML: true,
+                       hideDelay: 0,
+                       shared: true,
+                       padding: 0,
+                       positioner: function (w, h, point) {
+                           return { x: point.plotX - w / 2, y: point.plotY - h };
+                       }
+                   },
+                   plotOptions: {
+                       series: {
+                           animation: false,
+                           lineWidth: 1,
+                           shadow: false,
+                           states: {
+                               hover: {
+                                   lineWidth: 1
+                               }
+                           },
+                           marker: {
+                               radius: 1,
+                               states: {
+                                   hover: {
+                                       radius: 2
+                                   }
+                               }
+                           },
+                           fillOpacity: 0.25
+                       },
+                       column: {
+                           negativeColor: '#910000',
+                           borderColor: 'silver'
+                       }
+                   }
+               };
 
-<!-- Public Safety All Crime -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'AllCrimeChartContainer',
-	    type: 'line'
-        },
-	title: {
-                text: 'Crime in Somerville'
-        },
-	     subtitle: {
-                text: 'Source: NIBRS & Somerville Police Department'
-        },
-	    
-        xAxis: {
-                categories: ['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015']
-        },
-	yAxis: {
-                title: {
-                    text: 'Number of Offenses'
-                },
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-        },
+           options = Highcharts.merge(defaultOptions, options);
 
-        series: [{
-	    name: 'All Offenses',
-            data: [2806, 2435, 2447, 2213, 2186, 1869, 1635, 2132]
-	      }, {
-	    name: 'Violent Offenses',
-            data: [487, 476, 433, 473, 456, 336, 393, 430]
-	      }, {
-	    name: 'Property Offenses',
-            data: [2341, 1970, 2028, 1758, 1752, 1551, 1253, 1702]
-        }]
-    });
+           return hasRenderToArg ?
+               new Highcharts.Chart(a, options, c) :
+               new Highcharts.Chart(options, b);
+       };
 
-<!-- Public Safety Violent Crime -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'ViolentCrimeChartContainer',
-	    type: 'line'
-        },
-	title: {
-                text: 'Violent Crime'
-        },
-	     subtitle: {
-                text: 'Source: NIBRS & Somerville Police Department'
-        },
-	    
-        xAxis: {
-                categories: ['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015']
-        },
-	yAxis: {
-		min: 0,
-                title: {
-                    text: 'Number of Offenses'
-                },
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-        },
+       var start = +new Date(),
+           $tds = $('td[data-sparkline]'),
+           fullLen = $tds.length,
+           n = 0;
 
-        series: [{
-	    name: 'Murder',
-            data: [2, 3, 0, 1, 0, 0, 1, 0]
-	      }, {
-	    name: 'Rape',
-            data: [20, 8, 14, 17, 22, 18, 10, 8]
-	      }, {
-	    name: 'Robbery',
-            data: [112, 104, 79, 89, 84, 51, 58, 40]
-	      }, {
-	    name: 'Aggravated Assault',
-            data: [150, 167, 136, 151, 152, 111, 137, 135]
-        }]
-    });
-    
-<!-- Public Safety Property Crime -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'PropertyCrimeChartContainer',
-	    type: 'line'
-        },
-	title: {
-                text: 'Property Crime'
-        },
-	     subtitle: {
-                text: 'Source: NIBRS & Somerville Police Department'
-        },
-	    
-        xAxis: {
-                categories: ['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015']
-        },
-	yAxis: {
-                title: {
-                    text: 'Number of Offenses'
-                },
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-        },
+       // Creating 153 sparkline charts is quite fast in modern browsers, but IE8 and mobile
+       // can take some seconds, so we split the input into chunks and apply them in timeouts
+       // in order avoid locking up the browser process and allow interaction.
+       function doChunk() {
+           var time = +new Date(),
+               i,
+               len = $tds.length,
+               $td,
+               stringdata,
+               arr,
+               data,
+               chart;
 
-        series: [{
-	    name: 'Burglary',
-            data: [461, 494, 514, 416, 349, 431, 192, 305]
-	      }, {
-	    name: 'Theft from Motor Vehicle',
-            data: [801, 490, 625, 392, 470, 323, 315, 298]
-	      }, {
-	    name: 'Other Larceny',
-            data: [829, 823, 711, 799, 800, 696, 634, 966]
-	      }, {
-	    name: 'Theft of Motor Vehicle',
-            data: [250, 163, 178, 151, 133, 101, 112, 133]
-        }]
-    });
-    
-<!-- Fire Calls -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'FireContainer',
-        type: 'column'
-        },
+           for (i = 0; i < len; i += 1) {
+               $td = $($tds[i]);
+               stringdata = $td.data('sparkline');
+               arr = stringdata.split('; ');
+               data = $.map(arr[0].split(', '), parseFloat);
+               chart = {};
 
-    title: {
-                text: 'Fire Department Calls'
-            },
-         subtitle: {
-                text: 'Somerville Fire Alarm'
-        },        
-        xAxis: {
-                categories: ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015"]
-        },
+               if (arr[1]) {
+                   chart.type = arr[1];
+               }
+               $td.highcharts('SparkLine', {
+                   series: [{
+                       data: data,
+                       pointStart: 1
+                   }],
+                   tooltip: {
+                       headerFormat: '<span style="font-size: 10px">' + $td.parent().find('th').html() + ', Q{point.x}:</span><br/>',
+                       pointFormat: '<b>{point.y}.000</b> USD'
+                   },
+                   chart: chart
+               });
 
-    yAxis: {
-        title: {
-                    text: 'Volume of Calls'
-                },
-                labels: {
-            format: '{value}'
-        },
-        plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-        },
+               n += 1;
 
-        series: [{
-        name: 'Fire',
-            data: [352, 299, 320, 319, 376, 476, 375, 417]
-          }, {
-        name: 'Medical',
-            data: [5142, 5327, 5401, 5188, 5391, 6075, 6211, 6331,]
-           }, {
-        name: 'Service',
-            data: [1365, 1433, 1780, 1549, 1541, 2154, 1967, 2048]
-        }, {
-        name: 'Other Emergency',
-            data: [ 4994, 4648, 5014, 4999, 4630, 4288, 4475, 4887]
-        }
+               // If the process takes too much time, run a timeout to allow interaction with the browser
+               if (new Date() - time > 500) {
+                   $tds.splice(0, i + 1);
+                   setTimeout(doChunk, 0);
+                   break;
+               }
+           }
+       }
+       doChunk();
 
-        ]
-    });
-
-
-<!-- Property Tax -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'PropertyTaxChartContainer',
-	    type: 'column'
-        },
-	title: {
-                text: 'Property Taxes, FY2014'
-            },
-	     subtitle: {
-                text: 'Source: City of Somerville'
-            },
-	    
-        xAxis: {
-                categories: ['Cambridge','Brookline','Somerville','Boston','Saugus','Watertown','Malden','Medford',
-			     'Winchester','Everett','Chelsea','Melrose','Belmont','Arlington','Revere','Lynn']
-            },
-	yAxis: {
-                title: {
-                    text: 'Tax on $400,000 Property with Residential Exemption ($)'
-                },
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-            },
-	    
-	tooltip: {
-            pointFormat: '<b>${point.y:,.0f}</b>'
-        },
-	
-	legend: {
-	    enabled: false
-	},
-
-        series: [{
-	    name: 'Property Tax',
-            data: [1545,2561,{
-                y: 3156,
-                color: '#263c53'},3268,4644,4706,4801,4900,5064,5187,5193,5312,5400,5516,6220,6852]
-	      }]
-    });
-
-<!-- Revenue -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'RevChartContainer',
-	    type: 'pie'
-        },
-	title: {
-                text: 'Revenue, Fiscal Year 2014'
-            },
-	     subtitle: {
-                text: 'Source: City of Somerville'
-            },
-	    
-	    
-	tooltip: {
-            pointFormat: '<b>${point.y:,.0f}</b>'
-        },
-
-        series: [{
-	    name: 'Revenue',
-            data: [
-                ['Taxes',   123320008.4],
-                ['State Aid',       46979050.8],
-                ['Other',    9787302.25],
-                ['Fines and Forfeits',     7829841.8],
-                ['Licenses and Permits',   5872381.35],
-		['Fees', 1174476.27],
-		['Penalities and Interest', 978730.225],
-		['Misc Recurring', 391492.09]
-		]
-	}]
-    });
-    
-<!-- Expenditures -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'ExChartContainer',
-	    type: 'pie'
-        },
-	title: {
-                text: 'Expenditures, Fiscal Year 2014'
-            },
-	     subtitle: {
-                text: 'Source: City of Somerville'
-            },
-	    
-	tooltip: {
-            pointFormat: '<b>${point.y:,.0f}</b>'
-        },
-
-        series: [{
-	    name: 'Expenditures',
-            data: [
-                ['School Department',   56766353],
-                ['Public Safety',       37191748],
-                ['Pension and Fringe',    35234288],
-                ['Public Works',     23489525],
-                ['General Government',   15659684],
-		['State Assessments', 11744763],
-		['Debt Service', 9787302],
-		['Culture and Recreation', 2740445],
-		['Other', 1761714],
-		['Overlay Reserve', 1565968]
-		]
-	}]
-    });
-
-
-
- <!-- DPW work orders -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-        renderTo: 'AnnualWorkOrderChartContainer',
-        type: 'column'
-        },
-    title: {
-            text: 'On-Time Completion of DPW Work Orders'
-        },
-    subtitle: {
-        text: 'Source: City of Somerville'
-    },
-        tooltip: {
-            formatter: function() {
-                return this.x + '<br/>' + '<b>' + this.series.name + ': ' + this.y + '%' + '</b>';
-        }
-        },   
-        xAxis: {
-        categories: ['On Time','24 Hours Late','48 Hours Late','72 Hours Late', 'More than 72 Hours Late']
-        },
-    yAxis: {
-            title: {
-                    text: 'Percent Completed'
-            },
-            labels: {
-        format: '{value}%'
-        },
-        plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-            }]
-        },
-    plotOptions: {
-        series: {
-            pointWidth: 15
-        }
-    },
-        series: [{
-        name: '2008',
-            data: [85.5,0.9,0.6,0.6,11.9]
-        }, {
-        name: '2009',
-            data: [82.7,2.3,0.8,0.8,12.7]
-        }, {
-        name: '2010',
-            data: [83.0,1.9,1.1,0.6,12.7]
-        }, {
-        name: '2011',
-            data: [79.3,2.6,1.3,0.9,15.0]
-        }, {
-        name: '2012',
-            data: [87.6,2.1,0.7,0.6,8.4]
-        }, {
-        name: '2013',
-            data: [83.1,3.0,1.3,0.9,10.7]
-        }, {
-        name: '2014',
-            data: [79.8,2.4,1.1,1.1,14.3] 
-        }]
-    });
-
-
-
-
-
-<!-- DPW work orders (pie) -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'WorkOrder2ChartContainer',
-	    type: 'pie'
-        },
-	title: {
-                text: 'On-Time Completion of DPW Work Orders, 2013 (through October)'
-            },
-	     subtitle: {
-                text: 'Source: City of Somerville'
-            },
-	    
-	tooltip: {
-            pointFormat: '<b>{point.y:,.0f}%</b>'
-        },
-
-        series: [{
-	    name: 'Work Orders',
-            data: [
-                ['On Time',83.3],
-                ['24 Hours Late',3.1],
-                ['48 Hours Late',1.4],
-                ['72 Hours Late',10.4]
-		]
-	}]
-    });
-
-<!-- 311 calls -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: '311CallsChartContainer',
-	    type: 'pie'
-        },
-	title: {
-                text: '311 Calls, 2013 (through November)'
-            },
-	     subtitle: {
-                text: 'Source: City of Somerville'
-            },
-	    
-	tooltip: {
-            pointFormat: '<b>{point.y:,.0f}%</b>'
-        },
-
-        series: [{
-	    name: 'Percent of 311 calls',
-            data: [
-                ['Answered within 20 seconds',84.74],
-                ['Answered after 20 seconds/abandoned',15.26]
-	    ]
-	}]
-    });
-
-<!-- Happiness -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'HappyChartContainer',
-	    type: 'column'
-        },
-	title: {
-                text: 'Resident Satisfaction (Out of Ten)'
-            },
-	     subtitle: {
-                text: 'Source: SomerStat'
-            },
-	    
-        xAxis: {
-                categories: ["Happiness", "Life Satisfaction", "City Satisfaction", "Neighborhood Satisfaction", "Civic Pride",
-                    "Safety at Night", "Neighborhood Aesthetics", "Neighborhood Parks"]
-            },
-	yAxis: {
-                title: {
-                    text: 'Satisfaction'
-                },
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-            },
-	    
-	tooltip: {
-            pointFormat: '<b>{point.y:,.1f}</b>'
-        },
-	
-	legend: {
-	    enabled: false
-	},
-
-        series: [{
-	    name: 'Satisfaction',
-            data: [7.84, 8.06, 8.23, 8.01, 8.19, 7.80, 7.07, 7.68]
-	      }]
-    });
-
-<!-- Happiness2 -->
-     var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'Happy2ChartContainer',
-	    type: 'column'
-        },
-	title: {
-                text: 'Resident Satisfaction (Out of Five)'
-            },
-	     subtitle: {
-                text: 'Source: SomerStat'
-            },
-	    
-        xAxis: {
-                categories: ["Availability of Information about City Services", "Cost of Housing", "Overall Quality of Public Schools", "Trust in Police",
-                    "Maintenance of Streets", "Availability of Community Events"]
-            },
-	yAxis: {
-                title: {
-                    text: 'Satisfaction'
-                },
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-            },
-	    
-	tooltip: {
-            pointFormat: '<b>{point.y:,.1f}</b>'
-        },
-	
-	legend: {
-	    enabled: false
-	},
-
-        series: [{
-	    name: 'Satisfaction',
-            data: [4.24, 2.60, 3.26, 3.76, 3.37, 4.23]
-	      }]
-    });
-    
-<!-- This is an empty chart- a place holder if we want to use more than one chart but style them in the same way -->
-    var chart2 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'container2',
-            type: 'column'
-        },
-
-        xAxis: {
-            type: 'datetime'
-        },
-
-        series: [{
-            data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
-            pointStart: Date.UTC(2010, 0, 1),
-            pointInterval: 3600 * 1000 // one hour
-        }]
-    });
-});
+   });
 </script>
 
 <!-- Happiness -->
@@ -624,290 +287,491 @@ They load to the specified containers -->
     <div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">Social Progress Index</h1>
-	  <p>Somerville made headlines when it became the first city in the country to measure wellbeing through
-	  a citywide survey in 2011. These charts show data from the 2015 survey, which demonstrated that city residents have a high
-	  degree of satisfaction, both with their personal lives and with Somerville as a place to live. The lowest average
-	  rating was given to the cost of housing, while the highest ratings were given for the City's social and community
-	  events and the availability of information about city services. Access the raw data <a href="https://data.somervillema.gov/Happiness/Somerville-Happiness-Survey-responses-2011-2013-20/w898-3dfm">here</a>. </p>
+	  <p>Here is a place to write text about <a href="http://www.socialprogressimperative.org/data/spi">the Social Progress Index</a>. </p>
 	    <div class="row">
-		<div class="span6">
-		    <div id="HappyChartContainer" style="width:100%; height:400px;"></div>
-		</div>
-		<div class="span6">
-		    <div id="Happy2ChartContainer" style="width:100%; height:400px;"></div>
-		</div>
+    		<div class="span12">
+    		    <div id="result"></div>
+                <table id="table-sparkline">
+                    <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>Income</th>
+                            <th>Income per quarter</th>
+                            <th>Costs</th>
+                            <th>Costs per quarter</th>
+                            <th>Result</th>
+                            <th>Result per quarter</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-sparkline">
+                        <tr>
+                            <th>Alabama</th>
+                            <td>254</td>
+                            <td data-sparkline="71, 78, 39, 66 "/>
+                            <td>296</td>
+                            <td data-sparkline="68, 52, 80, 96 "/>
+                            <td>-42</td>
+                            <td data-sparkline="3, 26, -41, -30 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Alaska</th>
+                            <td>246</td>
+                            <td data-sparkline="87, 44, 74, 41 "/>
+                            <td>181</td>
+                            <td data-sparkline="29, 54, 73, 25 "/>
+                            <td>65</td>
+                            <td data-sparkline="58, -10, 1, 16 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Arizona</th>
+                            <td>101</td>
+                            <td data-sparkline="56, 12, 8, 25 "/>
+                            <td>191</td>
+                            <td data-sparkline="69, 14, 53, 55 "/>
+                            <td>-90</td>
+                            <td data-sparkline="-13, -2, -45, -30 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Arkansas</th>
+                            <td>303</td>
+                            <td data-sparkline="81, 50, 78, 94 "/>
+                            <td>76</td>
+                            <td data-sparkline="36, 15, 14, 11 "/>
+                            <td>227</td>
+                            <td data-sparkline="45, 35, 64, 83 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>California</th>
+                            <td>200</td>
+                            <td data-sparkline="61, 80, 10, 49 "/>
+                            <td>217</td>
+                            <td data-sparkline="100, 8, 52, 57 "/>
+                            <td>-17</td>
+                            <td data-sparkline="-39, 72, -42, -8 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Colorado</th>
+                            <td>118</td>
+                            <td data-sparkline="13, 48, 21, 36 "/>
+                            <td>273</td>
+                            <td data-sparkline="98, 86, 8, 81 "/>
+                            <td>-155</td>
+                            <td data-sparkline="-85, -38, 13, -45 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Connecticut</th>
+                            <td>201</td>
+                            <td data-sparkline="6, 64, 44, 87 "/>
+                            <td>148</td>
+                            <td data-sparkline="60, 13, 73, 2 "/>
+                            <td>53</td>
+                            <td data-sparkline="-54, 51, -29, 85 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Delaware</th>
+                            <td>161</td>
+                            <td data-sparkline="7, 27, 49, 78 "/>
+                            <td>298</td>
+                            <td data-sparkline="19, 90, 100, 89 "/>
+                            <td>-137</td>
+                            <td data-sparkline="-12, -63, -51, -11 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>District of Columbia</th>
+                            <td>106</td>
+                            <td data-sparkline="18, 39, 27, 22 "/>
+                            <td>185</td>
+                            <td data-sparkline="62, 97, 24, 2 "/>
+                            <td>-79</td>
+                            <td data-sparkline="-44, -58, 3, 20 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Florida</th>
+                            <td>249</td>
+                            <td data-sparkline="51, 24, 90, 84 "/>
+                            <td>244</td>
+                            <td data-sparkline="47, 40, 74, 83 "/>
+                            <td>5</td>
+                            <td data-sparkline="4, -16, 16, 1 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Georgia</th>
+                            <td>183</td>
+                            <td data-sparkline="36, 80, 39, 28 "/>
+                            <td>212</td>
+                            <td data-sparkline="43, 25, 52, 92 "/>
+                            <td>-29</td>
+                            <td data-sparkline="-7, 55, -13, -64 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Hawaii</th>
+                            <td>232</td>
+                            <td data-sparkline="73, 34, 74, 51 "/>
+                            <td>172</td>
+                            <td data-sparkline="1, 83, 49, 39 "/>
+                            <td>60</td>
+                            <td data-sparkline="72, -49, 25, 12 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Idaho</th>
+                            <td>166</td>
+                            <td data-sparkline="25, 43, 31, 67 "/>
+                            <td>152</td>
+                            <td data-sparkline="30, 30, 75, 17 "/>
+                            <td>14</td>
+                            <td data-sparkline="-5, 13, -44, 50 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Illinois</th>
+                            <td>336</td>
+                            <td data-sparkline="56, 84, 98, 98 "/>
+                            <td>151</td>
+                            <td data-sparkline="61, 12, 77, 1 "/>
+                            <td>185</td>
+                            <td data-sparkline="-5, 72, 21, 97 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Indiana</th>
+                            <td>216</td>
+                            <td data-sparkline="52, 87, 64, 13 "/>
+                            <td>216</td>
+                            <td data-sparkline="2, 47, 94, 73 "/>
+                            <td>0</td>
+                            <td data-sparkline="50, 40, -30, -60 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Iowa</th>
+                            <td>135</td>
+                            <td data-sparkline="41, 45, 19, 30 "/>
+                            <td>159</td>
+                            <td data-sparkline="17, 34, 45, 63 "/>
+                            <td>-24</td>
+                            <td data-sparkline="24, 11, -26, -33 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Kansas</th>
+                            <td>184</td>
+                            <td data-sparkline="52, 43, 65, 24 "/>
+                            <td>215</td>
+                            <td data-sparkline="20, 42, 97, 56 "/>
+                            <td>-31</td>
+                            <td data-sparkline="32, 1, -32, -32 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Kentucky</th>
+                            <td>289</td>
+                            <td data-sparkline="85, 74, 98, 32 "/>
+                            <td>219</td>
+                            <td data-sparkline="37, 38, 93, 51 "/>
+                            <td>70</td>
+                            <td data-sparkline="48, 36, 5, -19 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Louisiana</th>
+                            <td>257</td>
+                            <td data-sparkline="89, 18, 87, 63 "/>
+                            <td>201</td>
+                            <td data-sparkline="19, 54, 35, 93 "/>
+                            <td>56</td>
+                            <td data-sparkline="70, -36, 52, -30 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Maine</th>
+                            <td>194</td>
+                            <td data-sparkline="17, 68, 61, 48 "/>
+                            <td>133</td>
+                            <td data-sparkline="44, 35, 42, 12 "/>
+                            <td>61</td>
+                            <td data-sparkline="-27, 33, 19, 36 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Maryland</th>
+                            <td>204</td>
+                            <td data-sparkline="74, 12, 74, 44 "/>
+                            <td>157</td>
+                            <td data-sparkline="65, 58, 22, 12 "/>
+                            <td>47</td>
+                            <td data-sparkline="9, -46, 52, 32 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Massachusetts</th>
+                            <td>172</td>
+                            <td data-sparkline="44, 35, 69, 24 "/>
+                            <td>115</td>
+                            <td data-sparkline="26, 3, 69, 17 "/>
+                            <td>57</td>
+                            <td data-sparkline="18, 32, 0, 7 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Michigan</th>
+                            <td>177</td>
+                            <td data-sparkline="99, 26, 13, 39 "/>
+                            <td>185</td>
+                            <td data-sparkline="20, 37, 99, 29 "/>
+                            <td>-8</td>
+                            <td data-sparkline="79, -11, -86, 10 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Minnesota</th>
+                            <td>99</td>
+                            <td data-sparkline="34, 30, 16, 19 "/>
+                            <td>137</td>
+                            <td data-sparkline="49, 43, 24, 21 "/>
+                            <td>-38</td>
+                            <td data-sparkline="-15, -13, -8, -2 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Mississippi</th>
+                            <td>205</td>
+                            <td data-sparkline="38, 75, 31, 61 "/>
+                            <td>179</td>
+                            <td data-sparkline="0, 68, 100, 11 "/>
+                            <td>26</td>
+                            <td data-sparkline="38, 7, -69, 50 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Missouri</th>
+                            <td>135</td>
+                            <td data-sparkline="37, 48, 2, 48 "/>
+                            <td>202</td>
+                            <td data-sparkline="41, 64, 17, 80 "/>
+                            <td>-67</td>
+                            <td data-sparkline="-4, -16, -15, -32 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Montana</th>
+                            <td>195</td>
+                            <td data-sparkline="48, 81, 38, 28 "/>
+                            <td>237</td>
+                            <td data-sparkline="44, 33, 86, 74 "/>
+                            <td>-42</td>
+                            <td data-sparkline="4, 48, -48, -46 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Nebraska</th>
+                            <td>286</td>
+                            <td data-sparkline="98, 55, 82, 51 "/>
+                            <td>232</td>
+                            <td data-sparkline="89, 54, 28, 61 "/>
+                            <td>54</td>
+                            <td data-sparkline="9, 1, 54, -10 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Nevada</th>
+                            <td>221</td>
+                            <td data-sparkline="66, 4, 57, 94 "/>
+                            <td>214</td>
+                            <td data-sparkline="59, 39, 94, 22 "/>
+                            <td>7</td>
+                            <td data-sparkline="7, -35, -37, 72 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>New Hampshire</th>
+                            <td>136</td>
+                            <td data-sparkline="32, 21, 1, 82 "/>
+                            <td>306</td>
+                            <td data-sparkline="88, 85, 65, 68 "/>
+                            <td>-170</td>
+                            <td data-sparkline="-56, -64, -64, 14 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>New Jersey</th>
+                            <td>194</td>
+                            <td data-sparkline="31, 40, 24, 99 "/>
+                            <td>147</td>
+                            <td data-sparkline="7, 45, 12, 83 "/>
+                            <td>47</td>
+                            <td data-sparkline="24, -5, 12, 16 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>New Mexico</th>
+                            <td>207</td>
+                            <td data-sparkline="66, 93, 18, 30 "/>
+                            <td>261</td>
+                            <td data-sparkline="97, 28, 79, 57 "/>
+                            <td>-54</td>
+                            <td data-sparkline="-31, 65, -61, -27 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>New York</th>
+                            <td>316</td>
+                            <td data-sparkline="48, 95, 76, 97 "/>
+                            <td>193</td>
+                            <td data-sparkline="68, 5, 97, 23 "/>
+                            <td>123</td>
+                            <td data-sparkline="-20, 90, -21, 74 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>North Carolina</th>
+                            <td>175</td>
+                            <td data-sparkline="31, 71, 2, 71 "/>
+                            <td>188</td>
+                            <td data-sparkline="93, 5, 81, 9 "/>
+                            <td>-13</td>
+                            <td data-sparkline="-62, 66, -79, 62 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>North Dakota</th>
+                            <td>181</td>
+                            <td data-sparkline="3, 90, 62, 26 "/>
+                            <td>288</td>
+                            <td data-sparkline="70, 63, 82, 73 "/>
+                            <td>-107</td>
+                            <td data-sparkline="-67, 27, -20, -47 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Ohio</th>
+                            <td>189</td>
+                            <td data-sparkline="70, 50, 6, 63 "/>
+                            <td>163</td>
+                            <td data-sparkline="21, 94, 4, 44 "/>
+                            <td>26</td>
+                            <td data-sparkline="49, -44, 2, 19 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Oklahoma</th>
+                            <td>188</td>
+                            <td data-sparkline="66, 46, 53, 23 "/>
+                            <td>172</td>
+                            <td data-sparkline="26, 25, 35, 86 "/>
+                            <td>16</td>
+                            <td data-sparkline="40, 21, 18, -63 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Oregon</th>
+                            <td>165</td>
+                            <td data-sparkline="82, 31, 38, 14 "/>
+                            <td>257</td>
+                            <td data-sparkline="91, 9, 80, 77 "/>
+                            <td>-92</td>
+                            <td data-sparkline="-9, 22, -42, -63 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Pennsylvania</th>
+                            <td>268</td>
+                            <td data-sparkline="33, 88, 82, 65 "/>
+                            <td>129</td>
+                            <td data-sparkline="30, 29, 41, 29 "/>
+                            <td>139</td>
+                            <td data-sparkline="3, 59, 41, 36 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Rhode Island</th>
+                            <td>164</td>
+                            <td data-sparkline="8, 86, 32, 38 "/>
+                            <td>182</td>
+                            <td data-sparkline="88, 8, 18, 68 "/>
+                            <td>-18</td>
+                            <td data-sparkline="-80, 78, 14, -30 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>South Carolina</th>
+                            <td>91</td>
+                            <td data-sparkline="24, 18, 0, 49 "/>
+                            <td>193</td>
+                            <td data-sparkline="72, 62, 21, 38 "/>
+                            <td>-102</td>
+                            <td data-sparkline="-48, -44, -21, 11 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>South Dakota</th>
+                            <td>184</td>
+                            <td data-sparkline="73, 17, 64, 30 "/>
+                            <td>221</td>
+                            <td data-sparkline="21, 91, 57, 52 "/>
+                            <td>-37</td>
+                            <td data-sparkline="52, -74, 7, -22 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Tennessee</th>
+                            <td>233</td>
+                            <td data-sparkline="92, 24, 25, 92 "/>
+                            <td>131</td>
+                            <td data-sparkline="5, 18, 42, 66 "/>
+                            <td>102</td>
+                            <td data-sparkline="87, 6, -17, 26 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Texas</th>
+                            <td>211</td>
+                            <td data-sparkline="33, 80, 68, 30 "/>
+                            <td>225</td>
+                            <td data-sparkline="86, 58, 36, 45 "/>
+                            <td>-14</td>
+                            <td data-sparkline="-53, 22, 32, -15 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Utah</th>
+                            <td>362</td>
+                            <td data-sparkline="89, 98, 96, 79 "/>
+                            <td>225</td>
+                            <td data-sparkline="35, 51, 88, 51 "/>
+                            <td>137</td>
+                            <td data-sparkline="54, 47, 8, 28 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Vermont</th>
+                            <td>119</td>
+                            <td data-sparkline="4, 19, 56, 40 "/>
+                            <td>152</td>
+                            <td data-sparkline="17, 66, 27, 42 "/>
+                            <td>-33</td>
+                            <td data-sparkline="-13, -47, 29, -2 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Virginia</th>
+                            <td>127</td>
+                            <td data-sparkline="24, 27, 41, 35 "/>
+                            <td>71</td>
+                            <td data-sparkline="30, 2, 36, 3 "/>
+                            <td>56</td>
+                            <td data-sparkline="-6, 25, 5, 32 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Washington</th>
+                            <td>165</td>
+                            <td data-sparkline="40, 11, 63, 51 "/>
+                            <td>245</td>
+                            <td data-sparkline="46, 41, 94, 64 "/>
+                            <td>-80</td>
+                            <td data-sparkline="-6, -30, -31, -13 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>West Virginia</th>
+                            <td>248</td>
+                            <td data-sparkline="66, 56, 97, 29 "/>
+                            <td>171</td>
+                            <td data-sparkline="65, 53, 37, 16 "/>
+                            <td>77</td>
+                            <td data-sparkline="1, 3, 60, 13 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Wisconsin</th>
+                            <td>183</td>
+                            <td data-sparkline="24, 55, 21, 83 "/>
+                            <td>224</td>
+                            <td data-sparkline="80, 64, 13, 67 "/>
+                            <td>-41</td>
+                            <td data-sparkline="-56, -9, 8, 16 ; column"/>
+                        </tr>
+                        <tr>
+                            <th>Wyoming</th>
+                            <td>231</td>
+                            <td data-sparkline="52, 49, 97, 33 "/>
+                            <td>251</td>
+                            <td data-sparkline="96, 50, 23, 82 "/>
+                            <td>-20</td>
+                            <td data-sparkline="-44, -1, 74, -49 ; column"/>
+                        </tr>
+                    </tbody>
+                </table>
+    		</div>
 	    </div>
 	</div>
     </div>
 </div>
 
 
-<!-- Public Safety -->
-<div class="container">
-    <div class="marketing">
-	<div class="row-fluid">
-	  <h1 class="section header">Public Safety</h1>
-      <h2 class="section header">Police Department</h2>
-        <p>Crime in Somerville has dropped by roughly one third since 2008. This decline can be attributed to national trends (e.g., newer cars are more difficult to steal), the City's education and economic development initiatives, and the Police Department's efforts to use data-driven strategies to identify problems and deploy resources. The City saw an increase in reported larceny in 2015.  The majority of this activity is shoplifting taking place in areas of increased commercial and retail development, like Assembly Square. </p>
-	    <div class="row">
-		<div class="span4">
-		    <div id="AllCrimeChartContainer" style="width:100%; height:400px;"></div>
-		</div>
-		<div class="span4">
-		    <div id="ViolentCrimeChartContainer" style="width:100%; height:400px;"></div>
-		</div>
-		<div class="span4">
-		    <div id="PropertyCrimeChartContainer" style="width:100%; height:400px;"></div>
-		</div>
-	    </div>
-	</div>
-    </div>
-</div>
-
-<br></br>
-<!--  Carousel - consult the Twitter Bootstrap docs at
-      http://twitter.github.com/bootstrap/javascript.html#carousel -->
-<div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
-  <div class="carousel-inner">
-    <div class="item active"><!-- class of active since it's the first item -->
-      <img class="center" src="./img/StreetRobberies.png" alt="" />
-      <div class="carousel-caption">
-        <p>Street Robberies</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="center" src="./img/AllBurglary.png" alt="" />
-      <div class="carousel-caption">
-        <p>All Burglary</p>
-      </div>
-    </div>
-    <div class="item">
-      <img class="center" src="./img/CarBreaks.png" alt="" />
-      <div class="carousel-caption">
-        <p>Car Breaks</p>
-      </div>
-    </div>
-  </div><!-- /.carousel-inner -->
-  <!--  Next and Previous controls below
-        href values must reference the id for this carousel -->
-    <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
-</div><!-- /.carousel -->
-
-<div class="container">
-    <div class="marketing">
-    <div class="row-fluid">
-      <h2 class="section header">Fire Department</h2>
-        <p>The Somerville Fire Department responds to around 13,000 calls each year. In 2015, medical calls accounted for nearly half (46%) of all calls. Since 2008, fire-related calls consistently make up only 3% of total calls. "Other Emergency" calls include issues like gas leaks, electrical or power problems, hazmat issues, etc.  "Service" calls are non-emergency calls like assisting elderly or invalid residents, helping people locked out of their homes or getting cats out of trees. </p>
-        <div class="row">
-        <div class="span12">
-            <div id="FireContainer" style="width:100%; height:400px;"></div>
-        </div>
-        </div>
-    </div>
-    </div>
-</div>
-
-
-
-<!-- 311 Map -->
-<div class="container">
-    <div class="marketing">
-	<div class="row-fluid">
-	  <h1 class="section header">Quality of Life 311 Calls</h1>
-	    <p>This is a random sample of the top quality-of-life calls from the year 2015: reports of calls about <FONT COLOR="#900000">graffiti</FONT>, <FONT COLOR="#8bbc22">rats</FONT>, and <FONT COLOR="#1aadce">trash</FONT>. It shows where these types of calls tend to cluster. We also track these on a weekly basis <a href="http://www.somervillema.gov/dashboard/daily.html">here</a>.</p>
-        <div class="row">
-        <div class="span12">
-            <div id="qol-map" style="height: 400px"></div>
-            <script>
-
-              // initialize the map
-              var map = L.map('qol-map', {scrollWheelZoom:false}).setView([42.3947, -71.10548], 13);
-
-              // load a tile layer
-              L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
-                {
-                  attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
-                  maxZoom: 17,
-                  minZoom: 9
-                }).addTo(map);
-
-              // load GeoJSON from an external file: gis.stackexchange.com/questions/68489/how-to-load-external-geojson-file-into-leaflet-map
-
-              // Function to make popup
-              function onEachFeature(feature, layer) {
-                    if (feature.properties && feature.properties.typeName) {
-                        layer.bindPopup(feature.properties.typeName);
-                    }
-                }
-
-              function filling(x) {
-                return x == 'Trash/debris on sidewalk report' ? "#1aadce" :
-                       x == 'Rats' ? "#8bbc22" :
-                       x == 'Graffiti' ? "#900000" :
-                       "#808080";
-              }         
-
-              function pointToLayer (feature, latlng) {
-                  return new L.CircleMarker(latlng, {
-                      radius: 8,
-                      fillColor: filling(feature.properties["typeName"]),
-                      color: "#000",
-                      weight: 1,
-                      opacity: .75,
-                      fillOpacity: 0.75
-                    })
-                }
-
-              $.ajax({
-              dataType: "json",
-              url: "./geo/QualityOfLifeCSSample.geojson",
-              success: function (response) {
-                    geojsonLayer = L.geoJson(response, {
-                      pointToLayer: pointToLayer,
-                      onEachFeature : onEachFeature
-                    }).addTo(map);
-                }
-              }).error(function() {});
-
-            </script>
-        </div>
-        </div>
-
-	</div>
-    </div>
-</div>
-
-<!-- City Operations -->
-<div class="container">
-    <div class="marketing">
-	<div class="row-fluid">
-	  <h1 class="section header">City Operations</h1>
-	  <p>Over 80 percent of calls to 311 are answered within 20 seconds. Many of these calls result in the creation of a work
-	  order for the Department of Public Works, which completes over 80 percent of its work orders on time. There is variation
-	  over the year, though, such as when heavy snow pushed the on-time completion rate in February 2013 down to 51 percent.</p>
-	    <div class="row">
-		<div class="span6">
-		    <div id="311CallsChartContainer" style="width:100%; height:400px;"></div>
-		</div>
-		<div class="span6">
-		    <div id="WorkOrder2ChartContainer" style="width:100%; height:400px;"></div>
-		</div>
-	    </div>
-<br></br>
-        
-        <div id="AnnualWorkOrderChartContainer" style="width:100%; height:400px;"></div>
-	</div>
-    </div>
-</div>
-
-<!-- Fiscal Management -->
-<div class="container">
-    <div class="marketing">
-	<div class="row-fluid">
-	  <h1 class="section header">Fiscal Management</h1>
-	    <p>Somerville has some of the lowest property taxes in the metropolitan area when the residential exemption is factored in.
-	    The City has had to rely more on taxes as state aid has declined, but still maintains a generous exemption for residents.
-	    The largest categories of expenditures are the schools, public safety and works, and the pensions and benefits of employees.</p>
-	    <div id="PropertyTaxChartContainer" style="width:100%; height:400px;"></div> 
-	</div>
-
-<br></br>
-
-	<div class="row-fluid"> 
-	    <div class="span6">
-		<div id="RevChartContainer" style="width:100%; height:400px;"></div>
-	    </div>
-	    <div class="span6">
-		<div id="ExChartContainer" style="width:100%; height:400px;"></div>
-	    </div>
-	</div>
-
-<br></br>
-<!-- Tableau Visual -->
-    <p>Below is an historical view of Somerville's actual expenditures and revenue by category and adjusted for inflation.  
-    The Percent Difference chart displays year over year increases or decreases in funding for particular categories as a percentage of the prior year.
-    Hover over a category to reveal exact amounts for each fiscal year and use the slider bar to change what years are displayed.  Selecting a category will highlight it and reveal its corresponding trend line.
-
-    Notable trends include the increased reliance on Property Tax for revenue over the past decade as well as an incredible 28% cost savings for Employee Benefits between FY12 and FY13 achieved through switching to Massachusetts Group Insurance Commission.
-    </p>
-    <center>
-    <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
-        <div class='tableauPlaceholder' style='width: 1004px; height: 869px;'>
-            <noscript>
-                <a href='#'><img alt='Inf Adj Dash ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FY&#47;FY05toFY15RevenueandExpenseCategories&#47;InfAdjDash&#47;1_rss.png' style='border: none' /></a>
-            </noscript>
-            <object class='tableauViz' width='1004' height='869' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='site_root' value='' />
-                <param name='name' value='FY05toFY15RevenueandExpenseCategories&#47;InfAdjDash' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FY&#47;FY05toFY15RevenueandExpenseCategories&#47;InfAdjDash&#47;1.png' /> <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='showVizHome' value='no' />
-                <param name='showTabs' value='y' />
-                <param name='bootstrapWhenNotified' value='true' />
-            </object>
-        </div>
-    </div>
-    </center>
-</div>
-
-
-
-
-<!-- Transportation Map -->
-<div class="container">
-
-  <div class="marketing">
-    
-    <div class="row-fluid">
-        <h1 class="section header">Transportation</h1>
-      <div class="row">
-        <div class="span4">
-            <div class="tasks-header bg-color dark-blue rounded-top">
-                <div class="box-padding narrow-horizontal clearfix">
-                    <h4 class="light no-margin">Summary</h4>
-                </div>
-            </div>
-            <div class="bg-color dark-blue columns clearfix">
-		<div class="col_50 lines lines-light aligncenter">
-                    <h5 class="no-margin normal">Roadway in Somerville</h5>
-		    <h2 class="normal inline">93 Miles</h2>
-		</div>
-		<div class="col_50 lines lines-light aligncenter">
-                    <h5 class="no-margin normal">Reconstructed since 2004</h5>
-		    <h2 class="normal inline">35 Miles</h2>
-		</div>
-	    </div>
-            <div class="bg-color greenfade">
-		<div class="box-padding aligncenter">
-		    <h5 class="no-margin normal">SomerVision goal</h5>
-			<h1 class="no-margin normal">50%</h1>
-			<h5 class="no-margin normal">Of New Trips via Transit, Bike, or Walking</h5>
-		</div>
-	    </div>
-	    	<a href="http://www.somervillema.gov/sites/default/files/SomerVisionComprehensivePlanWithAppendicesAdoptedApril-19-2012.pdf" target="_blank" id="code" type="submit" class="btn btn-large btn-block">More Info</a>
-        </div>
-        <div class="span8">
-            <div class="iframe-rwd"> <!-- http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing -->
-               <iframe width="425" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps/ms?msa=0&amp;msid=211435730713785105131.000492ea712f7e25c9ddf&amp;ie=UTF8&amp;t=p&amp;z=13&amp;output=embed">
-                </iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Seattle,+WA&amp;aq=0&amp;oq=seattle&amp;sll=37.822293,-85.76824&amp;sspn=6.628688,16.907959&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;z=11&amp;ll=47.60621,-122.332071" style="color:#0000FF;text-align:left">View Larger Map</a></small>
-            </div>
-            <p>Proposed Green Line Extension</p>
-       </div>
-        
-        </div>
-     </div>
-
-  </div>
-
-</div>
 
 
 
