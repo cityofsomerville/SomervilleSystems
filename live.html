@@ -475,7 +475,7 @@ They load to the specified containers -->
 	    
 	tooltip: {
             pointFormat: '<b>{point.y:,.1f}</b>'
-        },
+        },2013
 	
 	legend: {
 	    enabled: false
@@ -487,6 +487,103 @@ They load to the specified containers -->
 	      }]
     });
     
+<!-- Election Results -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'electionChartContainer',
+            type: 'column'
+        },
+	    title: {
+	    	text: "Mayoral Election Results"
+    	},
+	    subtitle: {
+		text: "City of Somerville"
+	    },
+
+        xAxis: {
+          	categories: ["2007", "2009", "2011", "2013", "2015"]
+        },
+	
+	yAxis: {
+	   title: { 
+		text: "Results"
+	   },
+	legend: {
+	    align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+	},
+	plotOptions: {
+            column: {
+                stacking: 'normal',
+            }
+	},
+
+        series: [{
+	    name: 'Joseph Curdatone',
+            data: [1, 2, 3, 7706, 4949]
+	       },{
+	    name: 'Write-In',
+	    data: [1, 2, 3, 363, 365]
+	       }, {
+	    name: 'Blank',
+	    data: [1, 2, 3, 2172, 1232]
+		],
+	   },
+    });
+		
+<!-- Election Turnout -->
+    var chart2 = new Highcharts.Chart ({
+        chart: {
+            renderTo: 'electionChartContainer2'
+            type: 'column'
+		 },
+	    title: {
+	    	text: "Election Turnout"
+    	},
+	    subtitle: {
+		text: "City of Somerville"
+	    },
+
+        xAxis: {
+          	categories: ["2007", "2009", "2011", "2013", "2015"]
+        },
+	
+	yAxis: {
+	   min: 0,
+	   title: { 
+		text: "Turnout Percentage"
+	   },
+	legend: {
+	    align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+	},
+	plotOptions: {
+            column: {
+                stacking: 'normal',
+            },
+	},
+	tooltip: {
+            formatter: function () {
+                return '<b>' + this.x + '</b><br/>' +
+                    this.series.name + ': ' + this.y + '<br/>' +
+                    'Total: ' + this.point.stackTotal;
+            },
+        series: [{
+	    name: 'Mayor',
+            data: [1, 2, 3, 22.0, 14.1]
+	       },{
+	    name: 'Alderman-at-Large',
+	    data: [1, 2, 3, 78.1, 56.5]
+	       }],
+	},
+    });
+	    
 <!-- This is an empty chart- a place holder if we want to use more than one chart but style them in the same way -->
     var chart2 = new Highcharts.Chart({
         chart: {
