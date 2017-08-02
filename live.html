@@ -282,118 +282,6 @@ They load to the specified containers -->
     });
 
 
-<!-- Property Tax -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'PropertyTaxChartContainer',
-	    type: 'column'
-        },
-	title: {
-                text: 'Property Taxes, FY2014'
-            },
-	     subtitle: {
-                text: 'Source: City of Somerville'
-            },
-	    
-        xAxis: {
-                categories: ['Cambridge','Brookline','Somerville','Boston','Saugus','Watertown','Malden','Medford',
-			     'Winchester','Everett','Chelsea','Melrose','Belmont','Arlington','Revere','Lynn']
-            },
-	yAxis: {
-                title: {
-                    text: 'Tax on $400,000 Property with Residential Exemption ($)'
-                },
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-            },
-	    
-	tooltip: {
-            pointFormat: '<b>${point.y:,.0f}</b>'
-        },
-	
-	legend: {
-	    enabled: false
-	},
-
-        series: [{
-	    name: 'Property Tax',
-            data: [1545,2561,{
-                y: 3156,
-                color: '#263c53'},3268,4644,4706,4801,4900,5064,5187,5193,5312,5400,5516,6220,6852]
-	      }]
-    });
-
-<!-- Revenue -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'RevChartContainer',
-	    type: 'pie'
-        },
-	title: {
-                text: 'Revenue, Fiscal Year 2014'
-            },
-	     subtitle: {
-                text: 'Source: City of Somerville'
-            },
-	    
-	    
-	tooltip: {
-            pointFormat: '<b>${point.y:,.0f}</b>'
-        },
-
-        series: [{
-	    name: 'Revenue',
-            data: [
-                ['Taxes',   123320008.4],
-                ['State Aid',       46979050.8],
-                ['Other',    9787302.25],
-                ['Fines and Forfeits',     7829841.8],
-                ['Licenses and Permits',   5872381.35],
-		['Fees', 1174476.27],
-		['Penalities and Interest', 978730.225],
-		['Misc Recurring', 391492.09]
-		]
-	}]
-    });
-    
-<!-- Expenditures -->
-    var chart1 = new Highcharts.Chart({
-        chart: {
-            renderTo: 'ExChartContainer',
-	    type: 'pie'
-        },
-	title: {
-                text: 'Expenditures, Fiscal Year 2014'
-            },
-	     subtitle: {
-                text: 'Source: City of Somerville'
-            },
-	    
-	tooltip: {
-            pointFormat: '<b>${point.y:,.0f}</b>'
-        },
-
-        series: [{
-	    name: 'Expenditures',
-            data: [
-                ['School Department',   56766353],
-                ['Public Safety',       37191748],
-                ['Pension and Fringe',    35234288],
-                ['Public Works',     23489525],
-                ['General Government',   15659684],
-		['State Assessments', 11744763],
-		['Debt Service', 9787302],
-		['Culture and Recreation', 2740445],
-		['Other', 1761714],
-		['Overlay Reserve', 1565968]
-		]
-	}]
-    });
-
-
 
  <!-- DPW work orders -->
     var chart1 = new Highcharts.Chart({
@@ -802,26 +690,11 @@ They load to the specified containers -->
 </div>
 
 <!-- Fiscal Management -->
-<div class="container">
-    <div class="marketing">
 	<div class="row-fluid">
 	  <h1 class="section header">Fiscal Management</h1>
-	    <p>Somerville has some of the lowest property taxes in the metropolitan area when the residential exemption is factored in.
-	    The City has had to rely more on taxes as state aid has declined, but still maintains a generous exemption for residents.
-	    The largest categories of expenditures are the schools, public safety and works, and the pensions and benefits of employees.</p>
-	    <div id="PropertyTaxChartContainer" style="width:100%; height:400px;"></div> 
-	</div>
+	    <p>"Check out our new budget explorer at budget.somervillema.gov."></div> 
 
 <br></br>
-
-	<div class="row-fluid"> 
-	    <div class="span6">
-		<div id="RevChartContainer" style="width:100%; height:400px;"></div>
-	    </div>
-	    <div class="span6">
-		<div id="ExChartContainer" style="width:100%; height:400px;"></div>
-	    </div>
-	</div>
 
 <br></br>
 <!-- Tableau Visual -->
