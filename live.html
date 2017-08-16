@@ -475,7 +475,7 @@ They load to the specified containers -->
 	    
 	tooltip: {
             pointFormat: '<b>{point.y:,.1f}</b>'
-        },
+        },2013
 	
 	legend: {
 	    enabled: false
@@ -487,6 +487,103 @@ They load to the specified containers -->
 	      }]
     });
     
+<!-- Election Results -->
+    var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'electionChartContainer',
+            type: 'column'
+        },
+	    title: {
+	    	text: "Mayoral Election Results"
+    	},
+	    subtitle: {
+		text: "City of Somerville"
+	    },
+
+        xAxis: {
+          	categories: ["2009", "2011", "2013", "2015"]
+        },
+	
+	yAxis: {
+	   title: { 
+		text: "Results"
+	   },
+	legend: {
+	    align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+	},
+	plotOptions: {
+            column: {
+                stacking: 'normal',
+            }
+	},
+
+        series: [{
+	    name: 'Joseph Curdatone',
+            data: [2, 3, 7706, 4949]
+	       },{
+	    name: 'Write-In',
+	    data: [2, 3, 363, 365]
+	       }, {
+	    name: 'Blank',
+	    data: [2, 3, 2172, 1232]
+		],
+	   },
+    });
+		
+<!-- Election Turnout -->
+    var chart2 = new Highcharts.Chart ({
+        chart: {
+            renderTo: 'electionChartContainer2'
+            type: 'column'
+		 },
+	    title: {
+	    	text: "Election Turnout"
+    	},
+	    subtitle: {
+		text: "City of Somerville"
+	    },
+
+        xAxis: {
+          	categories: ["2009", "2011", "2013", "2015"]
+        },
+	
+	yAxis: {
+	   min: 0,
+	   title: { 
+		text: "Turnout Percentage"
+	   },
+	legend: {
+	    align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+	},
+	plotOptions: {
+            column: {
+                stacking: 'normal',
+            },
+	},
+	tooltip: {
+            formatter: function () {
+                return '<b>' + this.x + '</b><br/>' +
+                    this.series.name + ': ' + this.y + '<br/>' +
+                    'Total: ' + this.point.stackTotal;
+            },
+        series: [{
+	    name: 'Mayor',
+            data: [1, 2, 3, 22.0, 14.1]
+	       },{
+	    name: 'Alderman-at-Large',
+	    data: [2, 3, 78.1, 56.5]
+	       }],
+	},
+    });
+	    
 <!-- This is an empty chart- a place holder if we want to use more than one chart but style them in the same way -->
     var chart2 = new Highcharts.Chart({
         chart: {
@@ -505,6 +602,9 @@ They load to the specified containers -->
         }]
     });
 });
+	
+<!--Beginning of Script-->
+	
 </script>
 
 <!-- Happiness -->
@@ -528,6 +628,25 @@ They load to the specified containers -->
 	</div>
     </div>
 </div>
+
+<!--Elections-->
+<div class ="container">
+   <div class ="marketing">
+	<div class ="row-fluid">
+	  <h1 class ="section header">Elections</h1>
+	    <p>Here is the some data on the past few local elections in Somerville.</p>
+		<div class ="row">
+	           <div class ="span4">
+			<div id ="electionChartContainer" style ="width:100%; height:400px;"></div>
+			</div>
+		   <div class ="span4">
+			<div id ="electionChartContainer2" style ="width:100%; height:400px;"></div>
+			</div>
+		</div>
+	   </div>
+	</div>
+    </div>
+		
 
 
 <!-- Public Safety -->
@@ -697,40 +816,6 @@ They load to the specified containers -->
 <br></br>
 
 <br></br>
-<!-- Tableau Visual -->
-    <p>Below is an historical view of Somerville's actual expenditures and revenue by category and adjusted for inflation.  
-    The Percent Difference chart displays year over year increases or decreases in funding for particular categories as a percentage of the prior year.
-    Hover over a category to reveal exact amounts for each fiscal year and use the slider bar to change what years are displayed.  Selecting a category will highlight it and reveal its corresponding trend line.
-
-    Notable trends include the increased reliance on Property Tax for revenue over the past decade as well as an incredible 28% cost savings for Employee Benefits between FY12 and FY13 achieved through switching to Massachusetts Group Insurance Commission.
-    </p>
-    <center>
-    <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
-        <div class='tableauPlaceholder' style='width: 1004px; height: 869px;'>
-            <noscript>
-                <a href='#'><img alt='Inf Adj Dash ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FY&#47;FY05toFY15RevenueandExpenseCategories&#47;InfAdjDash&#47;1_rss.png' style='border: none' /></a>
-            </noscript>
-            <object class='tableauViz' width='1004' height='869' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='site_root' value='' />
-                <param name='name' value='FY05toFY15RevenueandExpenseCategories&#47;InfAdjDash' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FY&#47;FY05toFY15RevenueandExpenseCategories&#47;InfAdjDash&#47;1.png' /> <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='showVizHome' value='no' />
-                <param name='showTabs' value='y' />
-                <param name='bootstrapWhenNotified' value='true' />
-            </object>
-        </div>
-    </div>
-    </center>
-</div>
-
-
 
 
 <!-- Transportation Map -->
